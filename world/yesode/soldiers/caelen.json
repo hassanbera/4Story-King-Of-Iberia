@@ -1,0 +1,94 @@
+{
+  "id": 32700,
+  "name": "Caelen",
+  "title": "Yesode Acemisi",
+  "race": "human",
+  "sex": "male",
+  "class": "warrior",
+  "country": 1,
+  "level": 1,
+  "clientTemplate": 32600,
+  "serverTemplate": 32603,
+  "equipment": {
+    "0": 121,
+    "1": 1021,
+    "3": 4601,
+    "5": 4602,
+    "6": 4603,
+    "7": 4605,
+    "8": 4604
+  },
+  "anchors": {
+    "start": {
+      "display": "Marad",
+      "databaseName": "Marat",
+      "npcId": 20058,
+      "position": [
+        5366.22,
+        95.01,
+        4661.17
+      ]
+    },
+    "end": {
+      "display": "Remings",
+      "databaseName": "Lemmings",
+      "npcId": 20065,
+      "position": [
+        5477.82,
+        84.75,
+        4775.8
+      ]
+    }
+  },
+  "routeStatus": "candidate_requires_ingame_walk",
+  "waypoints": [
+    [
+      5366.22,
+      95.01,
+      4658.5
+    ],
+    [
+      5375.46,
+      89.93,
+      4762.14
+    ],
+    [
+      5391.9,
+      88.14,
+      4753.47
+    ],
+    [
+      5410.5,
+      89.17,
+      4742.85
+    ],
+    [
+      5423.86,
+      88.52,
+      4751.62
+    ],
+    [
+      5438.37,
+      85.13,
+      4756.23
+    ],
+    [
+      5449.79,
+      83.1,
+      4761.28
+    ],
+    [
+      5469.8,
+      83.4,
+      4762.59
+    ],
+    [
+      5476.0,
+      84.75,
+      4772.5
+    ]
+  ],
+  "movement": "walk",
+  "onArrival": "hold",
+  "positionEvidence": "Start uses accepted Marad graph stop. Intermediate positions use existing map-0 monster spawn coordinates. Final point offsets Remings NPC; collision not yet verified."
+}

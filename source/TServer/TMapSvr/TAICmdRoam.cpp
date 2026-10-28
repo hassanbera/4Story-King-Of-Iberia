@@ -11,6 +11,10 @@ CTAICmdRoam::~CTAICmdRoam()
 
 DWORD CTAICmdRoam::GetDelay( CTMonster *pMON, DWORD dwEventHost, DWORD dwRHId, BYTE bRHType)
 {
+	if(pMON->m_pSPAWN && pMON->m_pSPAWN->m_pSPAWN &&
+		pMON->m_pSPAWN->m_pSPAWN->m_bRoamType == 6)
+		return 500;
+
 	// Ambient residents get a bounded, varied pause.
 	if(pMON->m_pSPAWN && pMON->m_pSPAWN->m_pSPAWN &&
 		pMON->m_pSPAWN->m_pSPAWN->m_bRoamType == 5)

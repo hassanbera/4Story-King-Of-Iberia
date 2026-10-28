@@ -1643,6 +1643,39 @@ BYTE CTMonster::MoveNext(FLOAT &fPosX, FLOAT &fPosY, FLOAT &fPosZ, BYTE &bAction
 
 
 
+	// Ordered soldier routes never wrap: the final waypoint is a holding post.
+	if(m_pSPAWN->m_pSPAWN->m_bRoamType == 6 && m_bMode == MT_NORMAL)
+	{
+		VPATHPOINT &path = m_pSPAWN->m_pSPAWN->m_vPathPoint;
+		if(path.empty() || path.size() > 200)
+			return FALSE;
+		if(m_bCurPathID >= path.size())
+			m_bCurPathID = 0;
+		if(fabs(m_fPosY - pHOST->m_fPosY) > MAX_ROAMHEIGHT ||
+			GetDistance(m_fPosX, m_fPosZ, pHOST->m_fPosX, pHOST->m_fPosZ) > MAX_ROAMBOUND)
+			return FALSE;
+		LPTPATHPOINT point = path[m_bCurPathID];
+		if(GetDistance(point->m_fPosX, point->m_fPosZ, m_fPosX, m_fPosZ) <= 1.25f &&
+			fabs(point->m_fPosY - m_fPosY) <= 3.0f)
+		{
+			if(size_t(m_bCurPathID) + 1 == path.size())
+			{
+				bAction = TA_STAND;
+				return TRUE;
+			}
+			++m_bCurPathID;
+			point = path[m_bCurPathID];
+			m_fStartX = m_fPosX;
+			m_fStartY = m_fPosY;
+			m_fStartZ = m_fPosZ;
+		}
+		fPosX = point->m_fPosX;
+		fPosY = point->m_fPosY;
+		fPosZ = point->m_fPosZ;
+		bAction = TA_WALK;
+		return TRUE;
+	}
+
 	// Ambient route graphs are shared by every resident on this map. A chosen
 	// distant stop is reached along graph edges, never by a direct shortcut.
 	WORD wGraphID = m_pSPAWN->m_pSPAWN->m_bRoamType == 5 ?
