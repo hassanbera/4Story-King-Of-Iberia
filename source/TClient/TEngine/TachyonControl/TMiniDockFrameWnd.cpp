@@ -1094,7 +1094,7 @@ BOOL CTMiniDockFrameWnd::OnEraseBkgnd( CDC* pDC)
 	return TRUE;
 }
 
-UINT CTMiniDockFrameWnd::OnNcHitTest( CPoint point)
+LRESULT CTMiniDockFrameWnd::OnNcHitTest( CPoint point)
 {
 	if( GetStyle() & MFS_MOVEFRAME )
 		ModifyStyle( MFS_MOVEFRAME, 0);

@@ -10,7 +10,7 @@
 
 ## Açık işler
 
-Girişte Beni hatırla değişikliğinin kaynak kodu ve kayıt testleri hazır. Çalışan istemciye yükleme, sıfır içerikli istemci kütüphanelerinin giderilmesine bağlı; ayrıntı `docs/LOGIN_REMEMBER_ME.md` içinde.
+Girişte Beni hatırla değişikliğinin kaynak kodu ve kayıt testleri hazır. EngineLib, TCML, TUIs ve zlib yeniden üretildi. Tam istemci EXE'si için kalan dış SDK bağımlılıkları ve derleme uyarlamaları var; ayrıntı `docs/LOGIN_REMEMBER_ME.md` ve `docs/CLIENT_LIBRARIES_BUILD.md` içinde.
 
 1. Geliştirmeye, kullanıcının onayladığı mevcut PhilipMorris 3.3 oyunu ve mevcut veritabanı üzerinden devam etmek. Yesode'deki 30 sakin ve kabul edilmiş rota ağı korunacak. Yeni paralel oyun/veritabanı açmak çalışma planının parçası değildir.
 2. Bundan sonraki veritabanı ve içerik değişikliklerini mevcut ortama uygulanabilir, yedekli değişiklikler olarak kaydetmek. Oyuncu verisi içeren yedekleri Git'e eklememek.

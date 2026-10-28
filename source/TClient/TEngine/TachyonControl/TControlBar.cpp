@@ -3268,7 +3268,7 @@ UINT CTControlBar::NcButtons_HitTest( CPoint point,
 	return nFirstHT;
 }
 
-UINT CTControlBar::OnNcHitTest( CPoint point)
+LRESULT CTControlBar::OnNcHitTest( CPoint point)
 {
 	UINT nHT = NcButtons_HitTest(point);
 

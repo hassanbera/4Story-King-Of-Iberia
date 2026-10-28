@@ -4727,8 +4727,8 @@ void CTPaintManager::PaintControlBarBordersDefImpl( e_control_bar_border_type nC
 
 	if(dwStyle&CBRS_BORDER_3D)
 	{
-		rect1.right -= CX_BORDER;
-		rect1.bottom -= CY_BORDER;
+		rect1.right -= GetSystemMetrics(SM_CXBORDER);
+		rect1.bottom -= GetSystemMetrics(SM_CYBORDER);
 	}
 
 	if(dwStyle&CBRS_BORDER_TOP)
@@ -4738,32 +4738,32 @@ void CTPaintManager::PaintControlBarBordersDefImpl( e_control_bar_border_type nC
 		rect2.bottom -= afxData.cyBorder2;
 
 	if(dwStyle&CBRS_BORDER_LEFT)
-		dc.FillSolidRect( 0, rect2.top, CX_BORDER, rect2.Height(), clr);
+		dc.FillSolidRect( 0, rect2.top, GetSystemMetrics(SM_CXBORDER), rect2.Height(), clr);
 
 	if(dwStyle&CBRS_BORDER_TOP)
-		dc.FillSolidRect( 0, 0, rect.right, CY_BORDER, clr);
+		dc.FillSolidRect( 0, 0, rect.right, GetSystemMetrics(SM_CYBORDER), clr);
 
 	if(dwStyle&CBRS_BORDER_RIGHT)
-		dc.FillSolidRect( rect1.right, rect2.top, -CX_BORDER, rect2.Height(), clr);
+		dc.FillSolidRect( rect1.right, rect2.top, -GetSystemMetrics(SM_CXBORDER), rect2.Height(), clr);
 
 	if(dwStyle&CBRS_BORDER_BOTTOM)
-		dc.FillSolidRect( 0, rect1.bottom, rect.right, -CY_BORDER, clr);
+		dc.FillSolidRect( 0, rect1.bottom, rect.right, -GetSystemMetrics(SM_CYBORDER), clr);
 
 	if(dwStyle&CBRS_BORDER_3D)
 	{
 		clr = clrHi;
 
 		if(dwStyle&CBRS_BORDER_LEFT)
-			dc.FillSolidRect( 1, rect2.top, CX_BORDER, rect2.Height(), clr);
+			dc.FillSolidRect( 1, rect2.top, GetSystemMetrics(SM_CXBORDER), rect2.Height(), clr);
 
 		if(dwStyle&CBRS_BORDER_TOP)
-			dc.FillSolidRect( 0, 1, rect.right, CY_BORDER, clr);
+			dc.FillSolidRect( 0, 1, rect.right, GetSystemMetrics(SM_CYBORDER), clr);
 
 		if(dwStyle&CBRS_BORDER_RIGHT)
-			dc.FillSolidRect( rect.right, rect2.top, -CX_BORDER, rect2.Height(), clr);
+			dc.FillSolidRect( rect.right, rect2.top, -GetSystemMetrics(SM_CXBORDER), rect2.Height(), clr);
 
 		if(dwStyle&CBRS_BORDER_BOTTOM)
-			dc.FillSolidRect( 0, rect.bottom, rect.right, -CY_BORDER, clr);
+			dc.FillSolidRect( 0, rect.bottom, rect.right, -GetSystemMetrics(SM_CYBORDER), clr);
 	}
 
 	if(dwStyle&CBRS_BORDER_LEFT)

@@ -1680,7 +1680,7 @@ void CTachyonHUGEMAP::BuildBLOCK( CRect rect)
 
 	if( nBound < rect.Width() )
 	{
-		static offset[4][2] = {
+		static int offset[4][2] = {
 			{ 0, 0},
 			{ 1, 0},
 			{ 0, 1},

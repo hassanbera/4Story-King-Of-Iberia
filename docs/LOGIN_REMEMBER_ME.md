@@ -18,6 +18,6 @@ Durum: kaynak kodu hazır ve değişen dosyalar derlendi; çalışan oyun istemc
 
 ## Oyuna yüklemeyi engelleyen durum
 
-Tam istemci üretimi ayrıca denendi. Kaynak paketindeki bazı imleç kaynakları geçersiz; `EngineLib.lib` dosyasının tamamı sıfır baytlardan oluşuyor ve bağlayıcı `CVT1107 / LNK1123` ile duruyor. `TUIs.lib` ve `TCML.lib` dosyaları da tamamen sıfır baytlardan oluşuyor. Bu kütüphaneler geçerli kaynak derlemeleriyle üretilmeden veya geçerli karşılıkları temin edilmeden yeni EXE üretilemiyor.
+İlk tam istemci denemesinde boş `EngineLib.lib`, `TUIs.lib` ve `TCML.lib` dosyaları tespit edildi. 29 Ekim'de bu üç kütüphane kaynaklarından yeniden üretildi; zlib bağımlılığı da derlenip sınandı. Güncel durum `docs/CLIENT_LIBRARIES_BUILD.md` içindedir. Tam EXE üretimi hâlâ dış SDK kütüphaneleri ve önceki istemci kaynak/arayüz uyarlamaları nedeniyle tamamlanmadı.
 
 Çalışan istemci EXE'si değiştirilmedi. Kullanıcı mevcut oyunda kutucuğu henüz göremez. Oyun içinde görünüm ve yeniden başlatma testi bekliyor; özellik tamamlanmış olarak işaretlenmedi.

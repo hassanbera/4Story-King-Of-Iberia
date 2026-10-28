@@ -448,8 +448,8 @@ LPITEMIDLIST CTShell::GetFullyQualPidl( LPSHELLFOLDER lpsf, LPITEMIDLIST lpi)
 		CP_ACP,
 		MB_PRECOMPOSED,
 		szBuff, -1,
-		(USHORT *) szOleChar,
-		sizeof(szOleChar));
+		szOleChar,
+		_countof(szOleChar));
 
 	hr = lpsfDeskTop->ParseDisplayName(
 		NULL,

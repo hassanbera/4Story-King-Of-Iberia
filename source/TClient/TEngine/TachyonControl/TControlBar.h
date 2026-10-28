@@ -1131,7 +1131,7 @@ public:
 
 protected:
 	//{{AFX_MSG(CTControlBar)
-	afx_msg UINT OnNcHitTest(CPoint point);
+	afx_msg LRESULT OnNcHitTest(CPoint point);
 	afx_msg void OnNcCalcSize(BOOL bCalcValidRects, NCCALCSIZE_PARAMS FAR* lpncsp);
 	afx_msg void OnNcPaint();
 	afx_msg void OnCancelMode();

@@ -468,7 +468,7 @@ void CTachyonWnd::OnKeyUp( UINT nChar, UINT nRepCnt, UINT nFlags)
 		m_pMainFrame->OnKeyUp( nChar, nRepCnt, nFlags);
 }
 
-UINT CTachyonWnd::OnNcHitTest( CPoint point)
+LRESULT CTachyonWnd::OnNcHitTest( CPoint point)
 {
 	UINT nHIT = CWnd::OnNcHitTest(point);
 
