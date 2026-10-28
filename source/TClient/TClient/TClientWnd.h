@@ -17,6 +17,9 @@ public:
 	virtual ~CTClientWnd();
 
 	CReleaseChart m_vReleaseChart;
+	TButton *m_pRememberLogin;
+	void InitRememberLogin();
+	void SaveRememberLogin();
 
 public:
 	HCURSOR m_vTCURSOR[TCURSOR_COUNT];						// Cursor pool

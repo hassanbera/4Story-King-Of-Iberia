@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "TClient.h"
 #include "TClientWnd.h"
-#include "TClientWnd.h"
+#include "RememberLoginButton.h"
 #include "TMiniPopupDlg.h"
 #include "TItemUpDlg.h"
 #include "TItemUpGaugeDlg.h"
@@ -129,6 +129,7 @@ CString _on_chatcmd_snow(const CString& strCMD, const VECTORSTRING& vPARAM, DWOR
 
 CTClientWnd::CTClientWnd()
 {
+	m_pRememberLogin = NULL;
 	m_pINSTANCE = this;
 
 	m_MainGame.m_pTextCAM = &m_vTextCAM;
@@ -1700,6 +1701,7 @@ void CTClientWnd::InitResource( CString strGroupID,
 
 	m_bRelogin = FALSE;
 
+	InitRememberLogin();
 	LoadCustomCompPos();
 	CollectResolution(); // 해상도 수집
 
@@ -3874,7 +3876,7 @@ BOOL CTClientWnd::MessageBoxItemYesNo(
 {
 	return CTClientWnd::MessageBox(
 		strMSG,
-		0, 0,
+		CString(), CString(),
 		dwYesText,
 		dwNoText,
 		ID_FRAME_2BTN_ICON_MSGBOX,
@@ -3883,7 +3885,7 @@ BOOL CTClientWnd::MessageBoxItemYesNo(
 		vIgnoreID,
 		FALSE,
 		bModal,
-		0,
+		CString(),
 		dwImageIndex,
 		strImageTitle,
 		dwSound,
@@ -6918,4 +6920,54 @@ void CTClientWnd::OnTimer(UINT nIDEvent)
 	}
 
 	CTachyonWnd::OnTimer(nIDEvent);
+}
+
+// Saved credentials are scoped to this server and Windows user.
+void CTClientWnd::InitRememberLogin()
+{
+    if(m_pRememberLogin || m_strIPAddr.IsEmpty()) return;
+    TFrame *login = m_TNet.FindFrame(ID_FRAME_LOGIN);
+    if(!login || !m_MainGame.m_pGameSetting || !m_MainGame.m_pGameSetting->m_pTCHECK) return;
+    TComponent *id = login->FindKid(ID_CTRLINST_ID);
+    TComponent *pw = login->FindKid(ID_CTRLINST_PW);
+    if(!id || !pw) return;
+    CString endpoint;
+    endpoint.Format("%s:%lu", LPCTSTR(m_strIPAddr), m_dwPort);
+    m_pRememberLogin = new CRememberLoginButton(login,
+        m_MainGame.m_pGameSetting->m_pTCHECK[0]->m_pDESC, endpoint);
+    DWORD controlID = 0x7FFE1001;
+    while(login->FindKid(controlID)) ++controlID;
+    m_pRememberLogin->m_id = controlID;
+    m_pRememberLogin->m_strText = "Beni hatirla";
+    m_pRememberLogin->SetFont(id->GetFont(), id->GetTipFont());
+    m_pRememberLogin->SetTextAlign(ALIGN_LEFT);
+    m_pRememberLogin->m_nHMargine = 24;
+    CPoint position;
+    CSize size;
+    id->GetComponentPos(&position);
+    login->GetComponentSize(&size);
+    m_pRememberLogin->MoveComponent(CPoint(position.x, size.cy + 4));
+    m_pRememberLogin->SetComponentSize(CSize(170, 22));
+    login->SetComponentSize(CSize(size.cx, size.cy + 30));
+    login->AddKid(m_pRememberLogin);
+    std::string user, password;
+    if(RememberLoginStore::Load(LPCTSTR(endpoint), user, password))
+    {
+        id->m_strText = user.c_str();
+        pw->m_strText = password.c_str();
+        m_pRememberLogin->Select(TRUE);
+        SecureZeroMemory(&password[0], password.size());
+    }
+}
+
+void CTClientWnd::SaveRememberLogin()
+{
+    if(!m_pRememberLogin || !m_pRememberLogin->IsStateDown()) return;
+    CString endpoint;
+    endpoint.Format("%s:%lu", LPCTSTR(m_strIPAddr), m_dwPort);
+    TFrame *login = m_TNet.FindFrame(ID_FRAME_LOGIN);
+    TComponent *id = login->FindKid(ID_CTRLINST_ID);
+    TComponent *pw = login->FindKid(ID_CTRLINST_PW);
+    if(!RememberLoginStore::Save(LPCTSTR(endpoint), LPCTSTR(id->m_strText), LPCTSTR(pw->m_strText)))
+        ::MessageBoxA(GetSafeHwnd(), "Giris bilgileri kaydedilemedi.", "King Of Iberia", MB_OK | MB_ICONERROR);
 }

@@ -8,6 +8,7 @@
 
 int CTClientWnd::OnGM_START_4STORY()
 {
+	InitRememberLogin();
 	CTachyonRes::m_MEDIA.Play(
 		MEDIA_TMUSIC,
 		ID_BGM_INTRO);
@@ -70,6 +71,7 @@ int CTClientWnd::OnGM_LOGIN()
 
 	if(!pEditID->m_strText.IsEmpty())
 	{
+		SaveRememberLogin();
 		m_TNet.EnableComponent(FALSE);
 
 		m_pTNet->m_bSVR = SVR_LOGIN;
