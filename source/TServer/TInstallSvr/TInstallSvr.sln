@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TInstallSvr", "TInstallSvr.vcproj", "{55D2C932-62F4-49E0-BF8E-AA62FE23ABF5}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{55D2C932-62F4-49E0-BF8E-AA62FE23ABF5}.Debug.ActiveCfg = Debug|Win32
+		{55D2C932-62F4-49E0-BF8E-AA62FE23ABF5}.Debug.Build.0 = Debug|Win32
+		{55D2C932-62F4-49E0-BF8E-AA62FE23ABF5}.Release.ActiveCfg = Release|Win32
+		{55D2C932-62F4-49E0-BF8E-AA62FE23ABF5}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

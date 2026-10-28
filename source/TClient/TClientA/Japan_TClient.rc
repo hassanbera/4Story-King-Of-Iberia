@@ -1,0 +1,1730 @@
+#ifdef JAPAN
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// ÀÏº»¾î resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+ID_ERROR_DIALOG DIALOGEX 0, 0, 251, 197
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "??"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST_ERROR,7,40,237,69,LBS_NOINTEGRALHEIGHT | 
+                    LBS_NOSEL | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "???? ??",IDOK,7,176,182,14
+    PUSHBUTTON      "??",IDCANCEL,194,176,50,14
+    LTEXT           "?? ? ??? ?? ??? ???????.\n??? ???? ??? ?????.",
+                    IDC_STATIC_MESSAGE,7,7,237,20
+    LTEXT           "????",IDC_STATIC_CONTENTS,7,30,32,8
+    LTEXT           "?? ??? ?? ?? ?? ??? ??? ?? ? ????.\n\n??? ???? ?? ??? ????? ? ?????. ? ?? ??? ?? ?? ?? ??? ?? ?? ???? ???? ????. ????? ?? ????? ??? ??? ??? ?? ????? ? ??? ???.",
+                    IDC_STATIC_MESSAGE2,7,115,237,57
+END
+
+ID_PACKET_DIALOG DIALOGEX 0, 0, 529, 354
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | 
+    WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "?? ???"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST_PACKET,7,43,257,54,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "",IDC_LIST_CAPTURED,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_ALIGNLEFT | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,113,257,230
+    LTEXT           "??? ??",IDC_STATIC,7,102,71,8
+    LTEXT           "?? ??",IDC_STATIC,268,7,71,8
+    LTEXT           "???? ??",IDC_STATIC,7,34,242,8
+    LTEXT           "?? ????",IDC_STATIC,7,7,40,8
+    LTEXT           "??",IDC_STATIC,63,7,40,8
+    COMBOBOX        IDC_COMBO1,7,17,54,48,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,62,18,155,195,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "??",IDC_BUTTON_ADD,219,17,46,15
+    CONTROL         "",IDC_EDIT_OUTPUT,"RichEdit20A",ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN | WS_BORDER | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP,267,17,255,326
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    ID_ERROR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 244
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 190
+    END
+
+    ID_PACKET_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 522
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 343
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "4Story\n\n4Story\n\n\nTClient.Document\nTClient Document"
+    IDS_QUIT_TITLE          "ƒQ[ƒ€I—¹"
+    IDS_QUIT_MSG            "ƒQ[ƒ€‚ðI‚¦‚ÄƒvƒƒOƒ‰ƒ€‚ðI—¹‚µ‚Ü‚·B"
+    IDS_YES                 "‚Í‚¢"
+    IDS_NO                  "‚¢‚¢‚¦"
+    IDS_LOGIN_ID            "ID‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B"
+    IDS_ERROR_TITLE         "ƒGƒ‰["
+    IDS_OK                  "Šm”F"
+    IDS_CANCEL              "ŽæÁ"
+    IDS_CONNECT_FAILED      "ƒlƒbƒgƒ[ƒNƒGƒ‰[‚É‚æ‚èA\nƒT[ƒo[‚©‚çØ’f‚³‚ê‚Ü‚µ‚½B"
+    IDS_INVALID_PASSWD      "Password‚ªŠÔˆá‚Á‚Ä‚¢‚Ü‚·B\nPassword‚ðŠm”F‚µ‚Ä‚­‚¾‚³‚¢B"
+    IDS_DUPLICATE_CONNECT   "‚±‚ÌID‚ÅƒƒOƒCƒ“‚µ‚Ä‚¢‚él‚ª‚¢‚Ü‚·B\nÚ‘±‚ðI—¹‚µ‚Ü‚·B"
+    IDS_INVALID_VERSION     "ƒo[ƒWƒ‡ƒ“‚ªˆê’v‚µ‚Ü‚¹‚ñ‚Å‚µ‚½B\n‚à‚¤ˆê“xÚ‘±‚µ‚È‚¨‚µ‚Ä‚­‚¾‚³‚¢B"
+    IDS_INTERNAL            "ƒVƒXƒeƒ€ƒGƒ‰[‚Å‚·B\n‚µ‚Î‚ç‚­‚µ‚Ä‚©‚ç‚à‚¤ˆê“x‚¨ŽŽ‚µ‚­‚¾‚³‚¢B"
+    IDS_INVALID_USER        "Žg—pŽÒ‚ª‘¶Ý‚µ‚Ü‚¹‚ñB\nID‚ðŠm”F‚µ‚Ä‚­‚¾‚³‚¢B"
+    IDS_NOGROUP             "ƒT[ƒo[‚ª‘I‘ð‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "4Story King Of Iberia"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DUPNAME             "‚±‚Ì–¼‘O‚Í‚·‚Å‚ÉŽg—p‚³‚ê‚Ä‚¢‚Ü‚·B"
+    IDS_INVALID_SLOT        "ƒXƒƒbƒg‚ª‘I‘ð‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB"
+    IDS_NOCHANNEL           "ƒ`ƒƒƒ“ƒlƒ‹‚ð’T‚·‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB\nÚ‘±‚ðI—¹‚µ‚Ü‚·B"
+    IDS_NOCHAR              "ƒLƒƒƒ‰ƒNƒ^[‚ª‘I‘ð‚³‚ê‚Ä‚¢‚Ü‚¹‚ñB"
+    IDS_NOSERVER            "ƒT[ƒo[‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñB\n‚µ‚Î‚ç‚­‚µ‚Ä‚©‚ç‚à‚¤ˆê“x‚¨ŽŽ‚µ‚­‚¾‚³‚¢B"
+    IDS_NEW_CHAR            "VƒLƒƒƒ‰ƒNƒ^["
+    IDS_NONAME              "ƒLƒƒƒ‰ƒNƒ^[–¼‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B"
+    IDS_DELCHAR             "ƒLƒƒƒ‰ƒNƒ^[íœ"
+    IDS_INVALID_CHAR        "“à•”ƒGƒ‰[‚É‚æ‚èA\nƒT[ƒo[‚©‚çØ’f‚³‚ê‚Ü‚µ‚½B"
+    IDS_FILE_MONCHART       ".\\Tcd\\TMon.tcd"
+    IDS_FILE_ITEMCHART      ".\\Tcd\\TItem.tcd"
+    IDS_FILE_RACECHART      ".\\Tcd\\TRace.tcd"
+    IDS_FILE_HEADCHART      ".\\Tcd\\TFace.tcd"
+    IDS_FILE_BODYCHART      ".\\Tcd\\TBody.tcd"
+    IDS_FILE_PANTSCHART     ".\\Tcd\\TPants.tcd"
+    IDS_FILE_HANDCHART      ".\\Tcd\\THand.tcd"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILE_FOOTCHART      ".\\Tcd\\TFoot.tcd"
+    IDS_ERROR_ITEM_NODESTINVEN "‘ÎÛ‚ÌƒoƒbƒO‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñB"
+    IDS_ERROR_ITEM_NOSRCINVEN "ƒoƒbƒO‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñB"
+    IDS_ERROR_ITEM_NOSRCITEM "ƒAƒCƒeƒ€‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñB"
+    IDS_ERROR_ITEM_CANNOTEQUIP "ŠY“–ˆÊ’u‚É‘•’…‚Å‚«‚È‚¢ƒAƒCƒeƒ€‚Å‚·B"
+    IDS_ERROR_ITEM_INVENFULL "ƒoƒbƒO‚ÌƒXƒy[ƒX‚ª•s‘«‚µ‚Ä‚¢‚Ü‚·B"
+    IDS_FILE_ACTIONCHART    ".\\Tcd\\TAction.tcd"
+    IDS_NOSLOT              "ƒLƒƒƒ‰ƒNƒ^[‚ðì¬‚·‚éƒXƒƒbƒg‚ª‚ ‚è‚Ü‚¹‚ñB"
+    IDS_FMT_LEVEL           "%d"
+    IDS_FMT_GAUGE           "%d/%d"
+    IDS_FMT_NUMBER          "%d"
+    IDS_FILE_SKILLCHART     ".\\Tcd\\TSkill.tcd"
+    IDS_DELCHAR_TITLE       "ƒLƒƒƒ‰ƒNƒ^[íœ"
+    IDS_DELCHAR_MSG         "‘I‘ð‚³‚ê‚½ƒLƒƒƒ‰ƒNƒ^[‚ðíœ‚µ‚Ü‚·B\nPassword‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B"
+    IDS_FMT_PARTY_REQ       "[%s]‚Ìƒp[ƒeƒB‚Éµ‘Ò‚³‚ê‚Ü‚µ‚½B"
+    IDS_PARTY_REQ           "ƒp[ƒeƒB\‚µž‚Ý"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NOT_PARTYCHIEF      "ƒp[ƒeƒBƒŠ[ƒ_[‚Ì‚Ý‚ªƒp[ƒeƒBµ‘Ò‚ðs‚¦‚Ü‚·B"
+    IDS_NOPARTY             "ŠY“–ƒp[ƒeƒB‚ª‘¶Ý‚µ‚Ü‚¹‚ñB"
+    IDS_FMT_ALREADY_PARTY   "[%s]‚Í‚·‚Å‚É‘¼‚Ìƒp[ƒeƒB‚É“ü‚Á‚Ä‚¢‚Ü‚·B"
+    IDS_FMT_PARTY_WAITERS   "[%s]‚Í‘¼‚Ìƒp[ƒeƒB‚Éµ‘Ò‚³‚ê‚Ü‚µ‚½B"
+    IDS_FMT_PARTY_NOUSER    "[%s]‚ÍƒƒOƒAƒEƒg’†‚Å‚·B"
+    IDS_FMT_PARTY_DENY      "[%s]‚Íƒp[ƒeƒB‚Ö‚ÌŽQ‰Á‚ð’f‚è‚Ü‚µ‚½B"
+    IDS_PARTY_FULL          "ƒp[ƒeƒB‚Í–žˆõ‚Å‚·B"
+    IDS_REVIVAL_MSG         "•œŠˆ‚µ‚Ü‚·‚©H"
+    IDS_REVIVAL_TITLE       "•œŠˆ"
+    IDS_REVIVAL             "•œŠˆ"
+    IDS_CHAT_NORMAL         "ˆê”Ê"
+    IDS_CHAT_WHISPER        "‚³‚³‚â‚«"
+    IDS_CHAT_NATION         "‘S‘Ì"
+    IDS_CHAT_WORLD          "’m"
+    IDS_CHAT_PARTY          "ƒp[ƒeƒB"
+    IDS_CHAT_GUILD          "ƒMƒ‹ƒh"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FMT_CHAT_NAME       "[%s] (%s)"
+    IDS_KEYWORD_CHAT_NORMAL "/n /N /‚Ý /‚µ /ˆê”Ê /ƒm[ƒ}ƒ‹"
+    IDS_KEYWORD_CHAT_NATION "/w /W /‚Ä /‘S‘Ì"
+    IDS_MBOX_GUILD_BUILD    "V‚½‚ÉŠJÝ‚·‚éƒMƒ‹ƒh–¼‚ð“ü—Í‚µ‚½Œã‚É\nu‚Í‚¢v‚ð‰Ÿ‚µ‚Ä‚­‚¾‚³‚¢B"
+    IDS_KEYWORD_CHAT_PARTY  "/p /P /‚¹ /‚Ð /ƒp[ƒeƒB /ˆês"
+    IDS_KEYWORD_CHAT_GUILD  "/g /G /‚« /ƒMƒ‹ƒh"
+    IDS_KEYWORD_CHAT_WHISPER "/r /R /‚· /‚³‚³‚â‚«"
+    IDS_PASSWORD            "Password"
+    IDS_FMT_BUYITEM         "ƒAƒCƒeƒ€‚ðw“ü‚µ‚Ü‚·B\n[%s]"
+    IDS_EA                  "ŒÂ”"
+    IDS_BUYITEM             "ƒAƒCƒeƒ€w“ü"
+    IDS_FMT_BUYSTACK        "[%s]‚Íˆê“x‚É %dŒÂ‚Ü‚Åw“ü‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·Bw“ü‚µ‚Ü‚·‚©H"
+    IDS_FMT_BUYONE          "[%s]‚Í ‚PŒÂ‚©‚çw“ü‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·Bw“ü‚µ‚Ü‚·‚©H"
+    IDS_SELLITEM            "ƒAƒCƒeƒ€”Ì”„"
+    IDS_FMT_SELLITEM        "[%s] %dŒÂ‚ð [%s]‚É”Ì”„‚µ‚Ü‚·B"
+    IDS_FMT_SELLALL         "[%s]‚Í %dŒÂ‚Ü‚Å”Ì”„‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B\n\n”Ì”„‚µ‚Ü‚·‚©H"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FMT_SELLONE         "[%s]‚Í ‚PŒÂ‚©‚ç”Ì”„‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B\n\n”Ì”„‚µ‚Ü‚·‚©H"
+    IDS_SKILLTAB_PASSIVE    "“Á«"
+    IDS_SKILLTAB_ATTACK     "UŒ‚"
+    IDS_SKILLTAB_DEFENSE    "–hŒä"
+    IDS_SKILLTAB_STATE      "\‚¦"
+    IDS_SKILLTAB_BATTLE     "í–@"
+    IDS_SKILLTAB_ASSASSIN   "ˆÃŽE"
+    IDS_SKILLTAB_TRAP       "¶‘¶"
+    IDS_SKILLTAB_SHOOT      "ŽËŒ‚"
+    IDS_SKILLTAB_SURVIVAL   "¶‘¶"
+    IDS_SKILLTAB_FIRE       "‰Î‰Š"
+    IDS_SKILLTAB_ICE        "—â‹C"
+    IDS_SKILLTAB_ELEC       "“d‹C"
+    IDS_SKILLTAB_DIVINE     "_¹"
+    IDS_SKILLTAB_DARK       "ˆÃ•"
+    IDS_SKILLTAB_SACRIFICE  "‹]µ"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SKILLTAB_SUPPORT    "Žx‰‡"
+    IDS_SKILLTAB_SUMMON     "¢Š«"
+    IDS_SKILLTAB_CONTROL    "§Œä"
+    IDS_FILE_SKILLTREECHART ".\\Tcd\\TSkillTree.tcd"
+    IDS_FMT_REALPERCENT     "%.2f%%"
+    IDS_ACCEPT              "Žó‚¯‚é"
+    IDS_CLOSE               "•Â‚¶‚é"
+    IDS_FILE_QUEST          ".\\TQuest.mpq"
+    IDS_COMPLETE            "Š®—¹"
+    IDS_FMT_TERM            "%d."
+    IDS_FMT_REWARD          "%s\n%d ŒÂ"
+    IDS_ERROR_SILENCE       "“G‚É••ˆó‚³‚ê‚ÄŽg—p‚Å‚«‚È‚¢ƒXƒLƒ‹‚Å‚·B"
+    IDS_FMT_REWARD_EXP      "ŒoŒ±’l\n%d"
+    IDS_FMT_NAME            "%s"
+    IDS_QRESULT_COMPLETE    "(•ñ)"
+    IDS_QRESULT_INCOMPLETE  "(is’†)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_QRESULT_FAILED      "(Ž¸”s)"
+    IDS_QUEST_STATUS        "(%d/%d)"
+    IDS_FMT_COUNT           "(%d)"
+    IDS_GIVEUP              "•úŠü‚·‚é"
+    IDS_QUEST_CONTENT       "<“à—e>"
+    IDS_QUEST_SUMMARY       "<—v–ñ>"
+    IDS_QUEST_TERM          "<–Ú•W>"
+    IDS_FMT_QUEST_STATUS    "%s %s"
+    IDS_TCHARINFO_PHYSIC    "•¨—"
+    IDS_TCHARINFO_MAGIC     "–‚–@"
+    IDS_TCHARINFO_REG       "’ïR"
+    IDS_TCHARINFO_RANK      "Š‘®"
+    IDS_FILE_REGIONCHART    ".\\Tcd\\TRegion.tcd"
+    IDS_FILE_SKILLFUNCTION  ".\\Tcd\\TSkillFunction.tcd"
+    IDS_FMT_BASIC_STAT      "%3d"
+    IDS_FMT_CHARINFO_RANGE  "%d ~%d"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILE_INFOCHART      ".\\Tcd\\TInfo.tcd"
+    IDS_FILE_MINIMAP        ".\\Tcd\\TMinimap.tcd"
+    IDS_FILE_NPCCHART       ".\\Tcd\\TNPCTemp.tcd"
+    IDS_FILE_MAPNPC         ".\\Tcd\\TNPC%08x.tcd"
+    IDS_FMT_FIELDNAME       "%s"
+    IDS_FMT_FIELDTITLE      "[%s]\n%s"
+    IDS_SERVER_LOW          "‰õ“K"
+    IDS_SERVER_NORMAL       "¬ŽG"
+    IDS_SERVER_FULL         "–žˆõ"
+    IDS_NORMAL_SERVER       "ˆê”Ê"
+    IDS_BATTLE_SERVER       "í‘ˆ"
+    IDS_ERROR_NEEDWEAPON    "ƒXƒLƒ‹‚É•K—v‚È•Ší‚ð‘•”õ‚µ‚Ä‚¢‚Ü‚¹‚ñB"
+    IDS_ERROR_TOOCLOSE      "‘ÎÛ‚ª‹ß‚·‚¬‚Ü‚·B"
+    IDS_ERROR_LOOKAT        "‘ÎÛ‚ÉŒü‚©‚¤•K—v‚ª‚ ‚è‚Ü‚·B"
+    IDS_ERROR_TOOFAR        "‘ÎÛ‚ª‰“‚·‚¬‚Ü‚·B"
+    IDS_INFO_TITLE          "î•ñ"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_SKILL         "ƒXƒLƒ‹Žg—pŽ¸”s"
+    IDS_FILE_SFXCHART       ".\\Tcd\\TSFX.tcd"
+    IDS_FILE_STEPCHART      ".\\Tcd\\TSTEP.tcd"
+    IDS_FILE_MAPCHART       ".\\Tcd\\TMAP.tcd"
+    IDS_FILE_NODECHART      ".\\Tcd\\TNODE.tcd"
+    IDS_FMT_PATHFILE        ".\\Path\\TFLAG%08x.tpf"
+    IDS_GOTO_THUMB_MSG      "“ä‚Ì—Í‚ª\n‚ ‚È‚½‚Ì°‚ð¢Š«‚µ‚Ü‚·B"
+    IDS_GOTO_THUMB_TITLE    "°¢Š«"
+    IDS_FMT_DEAD            "[—Ís‚«‚½%s]"
+    IDS_FILE_SWITCHCHART    ".\\Tcd\\TSwitch.tcd"
+    IDS_FILE_GATECHART      ".\\Tcd\\TGate.tcd"
+    IDS_FILE_LIGHTCHART     ".\\Tcd\\TLIGHT.tcd"
+    IDS_FILE_BGMCHART       ".\\Tcd\\TBGM.tcd"
+    IDS_FILE_ACTIONDEFCHART ".\\Tcd\\TADEF.tcd"
+    IDS_ERROR_NEEDSKILLPOINT "ƒXƒLƒ‹ƒ|ƒCƒ“ƒg‚ª•s‘«‚µ‚Ä‚¢‚é‚½‚ßAƒXƒLƒ‹‚ðŠo‚¦‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB"
+    IDS_ERROR_NEEDPREVACT   "æsƒXƒLƒ‹‚ª”­“®‚³‚ê‚Ü‚¹‚ñ‚Å‚µ‚½B"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILE_ENVCHART       ".\\Tcd\\TENV.tcd"
+    IDS_VK_SNAPSHOT         "PtrScr"
+    IDS_GAMBLING_TITLE      "Žô”›"
+    IDS_GAMBLING_MSG        "‚µ‚Î‚ç‚­‚¨‘Ò‚¿‚­‚¾‚³‚¢B"
+    IDS_ITEM_ERR_GAMBLE     "‚±‚ÌƒAƒCƒeƒ€‚Í••ˆó‚³‚ê‚Ä‚¢‚Ü‚·B"
+    IDS_FMT_SKILL_REWARD    "%s"
+    IDS_FMT_DURATIONDEL     "[%s]‚Ì‘Ï‹v’l‚ª–³‚­‚È‚è•ö‚ê—Ž‚¿‚Ü‚µ‚½B"
+    IDS_EXTENSION_PERIOD    "ŠúŠÔ‰„’·"
+    IDS_FMT_DATE_YMD        "%04d/%02d/%02d"
+    IDS_LIMIT_PERIOD        "—˜—pŠúŒÀ"
+    IDS_BUY                 "w“ü"
+    IDS_CASH_WOULDBUY       "%d LEƒ|ƒCƒ“ƒg‚Å‚·Bw“ü‚µ‚Ü‚·‚©H"
+    IDS_ERR_CASHSHOP_NOTFOUND "ƒAƒCƒeƒ€‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñB"
+    IDS_ERR_CASHSHOP_MAXCOUNT "ƒAƒCƒeƒ€•ÛŠÇ” ‚ª‚¢‚Á‚Ï‚¢‚Å‚·B"
+    IDS_ERR_CASHSHOP_NEEDEXTEND "•ÛŠÇ” ‚Ì—˜—pŠúŒÀ‚ªI—¹‚µ‚Ü‚µ‚½B"
+    IDS_FMT_DATE_YMDHM      "%04d/%02d/%02d %02d:%02d"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_MAXLEVEL      "Šù‚ÉÅ‚ƒŒƒxƒ‹‚É“ž’B‚µ‚½ƒXƒLƒ‹‚Å‚·B"
+    IDS_ERROR_NEEDLEVELUP   "ƒŒƒxƒ‹‚ª’á‚¢‚½‚ßƒXƒLƒ‹‚ðŠo‚¦‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB"
+    IDS_ERROR_WRONGTARGET   "Žw’è‚³‚ê‚½‘ÎÛ‚É‚ÍŽg—p‚Å‚«‚È‚¢ƒXƒLƒ‹‚Å‚·B"
+    IDS_ERROR_NEEDPARENT    "‘O‚ÌƒXƒLƒ‹‚ðŠo‚¦‚Ä‚¢‚È‚¢‚½‚ßA‚±‚ÌƒXƒLƒ‹‚ðŠo‚¦‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB"
+    IDS_ERROR_WRONGREGION   "‚±‚Ì’nˆæ‚Å‚ÍŠY“–ƒXƒLƒ‹‚ðŽg—p‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB"
+    IDS_ERROR_MATCHCLASS    "ŠY“–ƒXƒLƒ‹‚ªŠo‚¦‚ç‚ê‚È‚¢E‹Æ‚Å‚·B"
+    IDS_ERROR_NEEDMONEY     "ŠŽ‹à‚ª‘«‚è‚È‚¢‚½‚ßAƒXƒLƒ‹‚ðŠo‚¦‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB"
+    IDS_ERROR_SPEEDYUSE     "ƒXƒLƒ‹‚ðƒ`ƒƒ[ƒW‚µ‚Ä‚¢‚Ü‚·B"
+    IDS_ERROR_NOTFOUND      "ŠY“–ƒXƒLƒ‹‚ð’T‚·‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB"
+    IDS_ERROR_NEEDMP        "ƒ}ƒi‚ª‘«‚è‚Ü‚¹‚ñB"
+    IDS_ERROR_NEEDHP        "ƒ‰ƒCƒt‚ª‘«‚è‚Ü‚¹‚ñB"
+    IDS_ERROR_TRANS         "”òs‘Ì‚Ö‚Ì•Ïg’†‚É‚ÍƒXƒLƒ‹‚ðŽg—p‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB"
+    IDS_ERROR_HIDE          "áŠQ•¨‚ÉŽÕ‚ç‚ê‚ÄƒXƒLƒ‹‚ðŽg—p‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB"
+    IDS_ERROR_STUN          "ƒXƒ^ƒ“’†‚É‚ÍƒXƒLƒ‹‚ðŽg—p‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB"
+    IDS_ERROR_DEAD          "°‚Ìó‘Ô‚Å‚ÍƒXƒLƒ‹‚ðŽg—p‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB"
+    IDS_FMT_SQUAD_NAME      "[%s]ƒtƒH[ƒX"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_NEED_PARTY    "ƒp[ƒeƒB‚ÉŽQ‰Á‚µ‚Ä‚¢‚Ü‚¹‚ñB"
+    IDS_ERROR_TARGET_NO_PARTY "‘ÎÛ‚ªƒp[ƒeƒB‚ÉŽQ‰Á‚µ‚Ä‚¢‚Ü‚¹‚ñB"
+    IDS_ERROR_NOT_COMMANDER "ƒtƒH[ƒXƒŠ[ƒ_[‚Ì‚Ý‚ªŽg—p‰Â”\‚È‹@”\‚Å‚·B"
+    IDS_ERROR_WRONG_TARGET  "‘ÎÛ‚ÌŽw’è‚ªŠÔˆá‚Á‚Ä‚¢‚Ü‚·B"
+    IDS_FMT_CORPS_ASK       "[%s]‚ª\nƒtƒH[ƒX‚É‡—¬‚·‚é‚±‚Æ‚ð’ñˆÄ‚µ‚Ü‚µ‚½B"
+    IDS_FMT_CORPS_DENY      "[%s]‚ª\nƒtƒH[ƒX‚É‡—¬‚·‚é‚±‚Æ‚ð’f‚è‚Ü‚µ‚½B"
+    IDS_ERROR_CORPS_ALREADY "Šù‚É‘¼‚ÌƒtƒH[ƒX‚ÉŽQ‰Á’†‚Å‚·B"
+    IDS_TCMD_NONE           "‘Ò‹@"
+    IDS_TCMD_MOVE           "ˆÚ“®"
+    IDS_TCMD_ATTACK         "UŒ‚"
+    IDS_TCMD_PROTECT        "Œì‰q"
+    IDS_UNKNOWN             "–¢Šm”F"
+    IDS_MENU_CHARINFO       "ƒLƒƒƒ‰ƒNƒ^[î•ñ"
+    IDS_MENU_SKILLINFO      "ƒXƒLƒ‹î•ñ"
+    IDS_MENU_EXITPARTY      "ƒp[ƒeƒB’E‘Þ"
+    IDS_MENU_GUILDINFO      "ƒMƒ‹ƒhî•ñ"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MENU_EXITGUILD      "ƒMƒ‹ƒh’E‘Þ"
+    IDS_MENU_EXITCORPS      "ƒtƒH[ƒX’E‘Þ"
+    IDS_MENU_PC_TRADE       "Žæˆø\¿"
+    IDS_MENU_PARTY_REQ      "ƒp[ƒeƒBµ‘Ò"
+    IDS_MENU_PARTY_KICK     "ƒp[ƒeƒBœ–¼"
+    IDS_MENU_GUILD_REQ      "ƒMƒ‹ƒhµ‘Ò"
+    IDS_MENU_CORPS_REQ      "ƒtƒH[ƒXµ‘Ò"
+    IDS_MENU_CORPS_KICK     "ƒtƒH[ƒX’E‘Þ"
+    IDS_MENU_SETCOMMANDER   "ƒtƒH[ƒXƒŠ[ƒ_[Œð‘ã"
+    IDS_MENU_SETCHIEF       "ƒp[ƒeƒBƒŠ[ƒ_[Œð‘ã"
+    IDS_FILE_SKYCHART       ".\\Tcd\\TSky.tcd"
+    IDS_FILE_POPUPITEMCHART ".\\Tcd\\TMenuItem.tcd"
+    IDS_FILE_POPUPMENUCHART ".\\Tcd\\TPopupMenu.tcd"
+    IDS_FILE_FOGCHART       ".\\Tcd\\TFog.tcd"
+    IDS_TCLASS_WARRIOR      "ƒEƒH[ƒŠƒA"
+    IDS_TCLASS_RANGER       "ƒAƒTƒVƒ“"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TCLASS_ARCHER       "ƒA[ƒ`ƒƒ["
+    IDS_TCLASS_WIZARD       "ƒƒCƒW"
+    IDS_TCLASS_PRIEST       "ƒvƒŠ[ƒXƒg"
+    IDS_TCLASS_SORCERER     "ƒTƒ‚ƒi["
+    IDS_INVALID_NAME        "Žg—p‚Å‚«‚È‚¢–¼‘O‚Å‚·B\nƒLƒƒƒ‰ƒNƒ^[–¼‚Í“ú–{ŒêE”ŽšEƒAƒ‹ƒtƒ@ƒxƒbƒg‚Ì‘g‚Ý‡‚í‚¹‚ª—˜—p‚Å‚«‚Ü‚·B"
+    IDS_NAME_TOO_LONG       "•¶Žš”‚ª‘½‚·‚¬‚Ü‚·B\n‘SŠp‚W•¶Žši”¼Šp‚P‚U•¶ŽšjˆÈ“à‚Ì–¼‘O‚Åì¬‚µ‚Ä‚­‚¾‚³‚¢B"
+    IDS_FMT_REVIVAL_REQ     "[%s]‚ª•œŠˆƒXƒLƒ‹‚ðŽg—p‚µ‚Ü‚µ‚½B•œŠˆ‚µ‚Ü‚·‚©H"
+    IDS_FMT_REVIVAL_REJECT  "[%s]‚ª•œŠˆ‚ð’f‚è‚Ü‚µ‚½B"
+    IDS_FILE_LEVELCHART     ".\\Tcd\\TLevel.tcd"
+    IDS_FMT_RUNE            "%d‹à‰Ý"
+    IDS_SKILLUPGRADEINFO_TITLE "[ŽŸ‚ÌƒXƒLƒ‹ƒŒƒxƒ‹‚Ìî•ñ]"
+    IDS_TEXT_MASTER         "ƒ}ƒXƒ^["
+    IDS_FMT_LUNA            "%d‹â‰Ý"
+    IDS_FMT_CRON            "%d“º‰Ý"
+    IDS_EXITGAME_MSG        "ƒQ[ƒ€‚ðI—¹‚µ‚Ä\nƒLƒƒƒ‰ƒNƒ^[‘I‘ð‚É–ß‚è‚Ü‚·B"
+    IDS_ERROR_CANNOT_OPEN_WORLDMAP "Žž‹ó—·s’†‚É‚Íƒ[ƒ‹ƒhƒ}ƒbƒv‚ðŽg—p‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FMT_WORLDMAP_TITLE  "[%s]%s"
+    IDS_FMT_WORLDMAP_NAME   "%s%s"
+    IDS_FILE_TCOUNTRYINFO   ".\\Tcd\\TCountryInfo.tcd"
+    IDS_FILE_TCLASSINFO     ".\\Tcd\\TClassInfo.tcd"
+    IDS_FILE_TRACEINFO      ".\\Tcd\\TRaceInfo.tcd"
+    IDS_CONTRY_D            "ƒfƒtƒWƒFƒ‹"
+    IDS_CONTRY_C            "ƒNƒ‰ƒNƒVƒIƒ“"
+    IDS_CONTRY_B            "ƒuƒƒA"
+    IDS_RACE_HUMAN          "ƒqƒ…[ƒ}ƒ“"
+    IDS_RACE_BEAST          "ƒEƒFƒAƒr[ƒXƒg"
+    IDS_RACE_NYMPH          "ƒtƒFƒAƒŠ["
+    IDS_DROP_ITEM           "‚±‚ÌƒAƒCƒeƒ€‚ðŽÌ‚Ä‚Ü‚·‚©H"
+    IDS_SET_HOME            "‚±‚Ì’nˆæ‚ð\n‹AŠÒ’n“_‚ÉÝ’è‚µ‚Ü‚·‚©H"
+    IDS_SET_RETURNPOS       "‚±‚Ì’nˆæ‚ð\n‹AŠÒ’n“_‚ÉÝ’è‚µ‚Ü‚µ‚½B"
+    IDS_ERROR_SET_RETURNPOS "‹AŠÒ’n“_‚ÌÝ’è‚ÉŽ¸”s‚µ‚Ü‚µ‚½B"
+    IDS_ERROR_ITEM_DEAD     "°‚Ìó‘Ô‚Å‚ÍƒAƒCƒeƒ€‚ðŽg—p‚Å‚«‚Ü‚¹‚ñB"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEXT_SELREWARD      "i‘I‘ð‚Pj"
+    IDS_FMT_PROBREWARD      "\n(%d %c Šm—¦)"
+    IDS_ERROR_SKILLMODE     "Œ»Ý‚Ì\‚¦‚Å‚ÍŽg—p‚Å‚«‚È‚¢ƒXƒLƒ‹‚Å‚·B"
+    IDS_FILE_LOADINGIMG     ".\\Intro\\Loading%d.bmp"
+    IDS_FILE_GAUGE          ".\\Intro\\Gauge.tga"
+    IDS_FMT_TRADE_REQ       "[%s]‚©‚çƒgƒŒ[ƒh‚ð\‚µž‚Ü‚ê‚Ü‚µ‚½B\nŽó‚¯‚Ü‚·‚©H"
+    IDS_ERROR_ITEM_BLOCK    "ƒXƒ^ƒ“ó‘Ô‚Å‚ÍƒAƒCƒeƒ€‚ðŽg—p‚Å‚«‚Ü‚¹‚ñB"
+    IDS_ERROR_ITEM_NOSKILL  "ŠY“–ƒAƒCƒeƒ€‚ðŽg—p‚Å‚«‚éƒXƒLƒ‹‚ª‚ ‚è‚Ü‚¹‚ñB"
+    IDS_ERROR_ITEM_TRADE    "ƒgƒŒ[ƒh’†‚ÍƒAƒCƒeƒ€‚ÌŽg—p‚¨‚æ‚ÑˆÚ“®‚Í‚Å‚«‚Ü‚¹‚ñB"
+    IDS_ERROR_ITEM_LEVEL    "ƒŒƒxƒ‹‚ª’á‚¢‚½‚ßŠY“–ƒAƒCƒeƒ€‚ðŽg—p‚Å‚«‚Ü‚¹‚ñB"
+    IDS_ERROR_ITEM_NOMATCHCLASS "ŠY“–ƒAƒCƒeƒ€‚ªŽg—p‚Å‚«‚éE‹Æ‚Å‚Í‚ ‚è‚Ü‚¹‚ñB"
+    IDS_ERROR_ITEM_BOTHHANDWEAPON "—¼Žè•Ší‚Æˆê‚ÉŽg—p‚Å‚«‚È‚¢ƒAƒCƒeƒ€‚Å‚·B"
+    IDS_ERROR_TRADE_INVALIDITEM "[%s]‚ÌƒgƒŒ[ƒhƒAƒCƒeƒ€‚Ì’†‚ÉA\nŽæˆø‚Å‚«‚È‚¢ƒAƒCƒeƒ€‚ªŠÜ‚Ü‚ê‚Ä‚¢‚Ü‚·B"
+    IDS_ERROR_TRADE_TARGET  "ƒgƒŒ[ƒh‘ÎÛ‚ª‘¶Ý‚µ‚Ü‚¹‚ñB"
+    IDS_ERROR_TRADE_NOMONEY "[%s]‚ÌŠŽ‹à‚ª‘«‚è‚Ü‚¹‚ñB"
+    IDS_ERROR_TRADE_NOITEM  "[%s]‚ÌƒgƒŒ[ƒhƒAƒCƒeƒ€‚Ì’†‚ÉA\nŠ—L‚µ‚Ä‚¢‚È‚¢ƒAƒCƒeƒ€‚ªŠÜ‚Ü‚ê‚Ä‚¢‚Ü‚·B"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_TRADE_ALREADY "[%s]‚ÍŠù‚É‘¼‚Ìl‚ÆƒgƒŒ[ƒh’†‚Å‚·B"
+    IDS_ERROR_TRADE_CANCEL  "[%s]‚ÍƒgƒŒ[ƒh‚ðŽæÁ‚Ü‚µ‚½B"
+    IDS_ERROR_TRADE_DENY    "[%s]‚ÍƒgƒŒ[ƒh‚ð’f‚è‚Ü‚µ‚½B"
+    IDS_ERROR_TRADE_ENEMY   "‘¼‚Ì‘‰Æ‚ÉŠ‘®‚µ‚Ä‚¢‚éƒLƒƒƒ‰ƒNƒ^[‚Æ‚ÍƒgƒŒ[ƒh‚Å‚«‚Ü‚¹‚ñB"
+    IDS_ERROR_TRADE_CANTRECV "ƒAƒCƒeƒ€‚ð“ü‚ê‚éƒoƒbƒO‚ª‚ ‚è‚Ü‚¹‚ñB"
+    IDS_ERROR_TRADE_SUCCESS "[%s]‚Æ‚ÌƒgƒŒ[ƒh‚ªŠ®—¹‚µ‚Ü‚µ‚½B"
+    IDS_NPC_REVIVAL         "C“¹Žm‚É•œŠˆ‚ðˆË—Š‚µ‚Ü‚·‚©H\nC“¹Žm‚Ì•œŠˆ‚Å‚ÍA‚æ‚è‹­‚¢ŒãˆâÇ‚ªŽc‚è‚Ü‚·B"
+    IDS_FMT_QUEST_SPEEKER   "%s :"
+    IDS_ERROR_CORPS_DEAD    "°‚Ìó‘Ô‚Å‚ÍƒtƒH[ƒX‚¨‚æ‚Ñƒp[ƒeƒB‚ðŠÇ—‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB"
+    IDS_FILE_ARROWDIR       ".\\Tcd\\TArrowDIR.tcd"
+    IDS_ERROR_PEACEZONE     "‚±‚Ì’nˆæ‚ÍŒ»Ý‹xíó‘Ô‚Ì‚½‚ßA‚¨ŒÝ‚¢‚ÉUŒ‚‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB"
+    IDS_ERROR_NOTARGET      "ƒXƒLƒ‹—Ìˆæ“à‚ÉƒXƒLƒ‹‚ð“WŠJ‚·‚é‘ÎÛ‚ª‚¢‚Ü‚¹‚ñB"
+    IDS_ERROR_NOTMOVESKILL  "ˆÚ“®’†‚É‚Í“WŠJ‚Å‚«‚È‚¢ƒXƒLƒ‹‚Å‚·B"
+    IDS_FMT_EXP             "(%d)‚ÌŒoŒ±’l‚ðŠl“¾‚µ‚Ü‚µ‚½B"
+    IDS_GETMONEY            "‚ðŠl“¾‚µ‚Ü‚µ‚½B"
+    IDS_FMT_DEFENDMA        "[%s]‚©‚ç(%d)‚Ìƒ_ƒ[ƒW‚ðŽó‚¯‚Ü‚µ‚½B"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FMT_DEFENDM         "(%d)‚Ìƒ_ƒ[ƒW‚ðŽó‚¯‚Ü‚µ‚½B"
+    IDS_FMT_ATTACK          "[%s]‚É(%d)‚Ìƒ_ƒ[ƒW‚ð—^‚¦‚Ü‚µ‚½B"
+    IDS_FMT_DEFENDA         "[%s]‚É‚æ‚è[%s]‚ª(%d)‚Ìƒ_ƒ[ƒW‚ðŽó‚¯‚Ü‚µ‚½B"
+    IDS_FMT_DEFEND          "[%s]‚ª(%d)‚Ìƒ_ƒ[ƒW‚ðŽó‚¯‚Ü‚µ‚½B"
+    IDS_FMT_ATTACKA         "[%s]‚ª[%s]‚É(%d)‚Ìƒ_ƒ[ƒW‚ð—^‚¦‚Ü‚µ‚½B"
+    IDS_FMT_LEVELUPM        "‚¨‚ß‚Å‚Æ‚¤‚²‚´‚¢‚Ü‚·IƒŒƒxƒ‹(%d)‚É‚È‚è‚Ü‚µ‚½I"
+    IDS_FMT_LEVELUP         "[%s]‚ª(%d)ƒŒƒxƒ‹‚É‚È‚è‚Ü‚µ‚½I"
+    IDS_FMT_DIE             "[%s]‚Ì°‚Í¢Š«‚³‚ê‚Ü‚µ‚½BŒ»ÝA°‚Ìó‘Ô‚Å‚·B"
+    IDS_ERROR_ACTIONLOCK    "‘¼‚ÌƒXƒLƒ‹‚ª”­“®’†‚Å‚·B‘O‰ñ‚ÌƒXƒLƒ‹“®ì‚ªŠ®—¹‚µ‚½ŒãAŽŸ‚ÌƒXƒLƒ‹‚ð“WŠJ‚µ‚Ü‚·B"
+    IDS_FILE_TDYNAMICHELP   ".\\Tcd\\TDynamicH.tcd"
+    IDS_ITEM_NOT_FOUND      "ŠY“–ƒAƒCƒeƒ€‚ð’T‚·‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB"
+    IDS_ITEM_NO_MONEY       "ŠŽ‹à‚ª‘«‚è‚Ü‚¹‚ñB"
+    IDS_ITEM_NO_SLOT        "ƒoƒbƒO‚É‹ó‚«ƒXƒy[ƒX‚ª‚ ‚è‚Ü‚¹‚ñB"
+    IDS_ITEM_DEALING        "Žg—pŽÒ‚Æ‚ÌƒgƒŒ[ƒh’†‚É‚ÍƒVƒ‡ƒbƒv‚ð—˜—p‚Å‚«‚Ü‚¹‚ñB"
+    IDS_FMT_TIMMER          "(%02d:%02d)"
+    IDS_QRESULT_TIMEOUT     "(ŽžŠÔ’´‰ß)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FMT_NPCNAME         "[%s] %s"
+    IDS_ITEM_CANNOT_SELL    "ŠY“–ƒAƒCƒeƒ€‚Í”Ì”„‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB"
+    IDS_ITEM_CANNOT_TRADE   "ŠY“–ƒAƒCƒeƒ€‚ÍƒgƒŒ[ƒh‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB"
+    IDS_FMT_FLOAT_NUMBER    "%.2f"
+    IDS_TEXT_PRMWEAPON      "ƒƒCƒ“ƒEƒFƒ|ƒ“"
+    IDS_TEXT_SNDWEAPON      "ƒTƒuƒEƒFƒ|ƒ“"
+    IDS_TEXT_LONGWEAPON     "ƒŒƒ“ƒWƒEƒFƒ|ƒ“"
+    IDS_TEXT_HEAD           "“ª‘•”õ"
+    IDS_TEXT_BACK           "”w’†‘•”õ"
+    IDS_TEXT_BODY           "“·‘•”õ"
+    IDS_TEXT_PANTS          "‹r‘•”õ"
+    IDS_TEXT_FOOT           "‘«‘•”õ"
+    IDS_TEXT_HAND           "Žè‘•”õ"
+    IDS_TEXT_NECK           "Žñü‚è"
+    IDS_TEXT_RING           "Žw—Ö"
+    IDS_TEXT_EARING         "Ž¨ü‚è"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TEXT_FACE           "Šç"
+    IDS_MENU_CHAR           "ƒLƒƒƒ‰ƒNƒ^[î•ñ"
+    IDS_MENU_SKILL          "ƒXƒLƒ‹î•ñ"
+    IDS_MENU_COMMUNITY      "ƒMƒ‹ƒhî•ñ"
+    IDS_MENU_QUEST          "ƒNƒGƒXƒgî•ñ"
+    IDS_MENU_HELP           "ƒwƒ‹ƒv"
+    IDS_MENU_SYSTEM         "ƒƒCƒ“ƒƒjƒ…["
+    IDS_MENU_MESSENGER      "ƒƒbƒZƒ“ƒWƒƒ["
+    IDS_MENU_MAIL           "ƒ[ƒ‹"
+    IDS_MENU_ACTLIST        "“®ìƒŠƒXƒg"
+    IDS_CHAT_TAB_ALL        "‘S‘Ì"
+    IDS_CHAT_TAB_NORMAL     "ˆê”Ê"
+    IDS_CHAT_TAB_WHISPER    "‚³‚³‚â‚«"
+    IDS_CHAT_TAB_PARTY      "ƒp[ƒeƒB"
+    IDS_CHAT_TAB_GUILD      "ƒMƒ‹ƒh"
+    IDS_CHAT_TAB_FORCE      "ƒtƒH[ƒX"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CHAT_TAB_RESULT     "Œ‹‰Ê"
+    IDS_CHAT_FORCE          "ƒtƒH[ƒX"
+    IDS_KEYWORD_CHAT_FORCE  "/c /C /f /F /ƒtƒH[ƒX /‚» /‚Í"
+    IDS_REPRESENTATION_WHISPER "‚³‚³‚â‚«"
+    IDS_REPRESENTATION_FORCE "ƒtƒH[ƒX"
+    IDS_REPRESENTATION_GUILD "ƒMƒ‹ƒh"
+    IDS_REPRESENTATION_NATION "‘S‘Ì"
+    IDS_REPRESENTATION_NORMAL "ˆê”Ê"
+    IDS_REPRESENTATION_PARTY "ƒp[ƒeƒB"
+    IDS_MBOX_GUILD_BUILD_LOWLEVEL 
+                            "ƒMƒ‹ƒhŠJÝ‚É•K—v‚ÈƒŒƒxƒ‹‚É“ž’B‚µ‚Ä‚¢‚Ü‚¹‚ñB\nƒMƒ‹ƒh‚ðŠJÝ‚·‚é‚½‚ß‚É‚ÍA\n(%u)ˆÈã‚ÌƒŒƒxƒ‹‚ª•K—v‚É‚È‚è‚Ü‚·B"
+    IDS_TITLE_CLOSE         "•Â‚¶‚é"
+    IDS_ITEMUP_WARN_UP      "‹­‰»‚É‚ÍA %s‚Ì”ï—p‚ª•K—v‚Å‚·BŽ¸”s‚·‚é‚ÆƒAƒCƒeƒ€‚ª–³‚­‚È‚éê‡‚à‚ ‚è‚Ü‚·BŽ¸”s‚µ‚Ä‚à‹­‰»‚É‚©‚©‚Á‚½”ï—p‚Í–ß‚è‚Ü‚¹‚ñB‘±‚¯‚Ü‚·‚©H"
+    IDS_ITEMUP_WARN_DOWN    "Œ»Ý•Ší‚Ì“™‹‰‚ð 1’iŠK‰º‚°‚Ü‚·B\n‘±‚¯‚Ü‚·‚©H"
+    IDS_ITEMUP_WARN_NOITEM  "‹­‰»‚·‚é•Ší‚ðƒXƒƒbƒg‚É’u‚¢‚Ä‚­‚¾‚³‚¢B"
+    IDS_ITEMUP_WARN_NOMAT   "‹­‰»‚ÉŽg—p‚·‚éŽô•¶‘‚ðƒXƒƒbƒg‚É’u‚¢‚Ä‚­‚¾‚³‚¢B"
+    IDS_ITEMUP_SUCCESS      "‚¨‚ß‚Å‚Æ‚¤‚²‚´‚¢‚Ü‚·IƒAƒCƒeƒ€‚Ì»ì‚É¬Œ÷‚µ‚Ü‚µ‚½I"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ITEMUP_FAIL         "Žc”O‚È‚ª‚çAƒAƒCƒeƒ€»ì‚ÉŽ¸”s‚µ‚Ü‚µ‚½B"
+    IDS_FILE_ITEMMAGIC      ".\\Tcd\\TItemMagic.tcd"
+    IDS_FMT_ITEMMAGIC       "%c%u"
+    IDS_CANNOT_REVIVALPOS   "Œ»Ý‚ÌˆÊ’u‚Å‚Í•œŠˆ‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB\n­‚µˆÚ“®‚µ‚Ä‚©‚ç‚à‚¤ˆê“x‚¨ŽŽ‚µ‚­‚¾‚³‚¢B"
+    IDS_ERROR_FILE          "ƒQ[ƒ€‚ðŽÀs‚·‚é‚½‚ß‚Ìƒtƒ@ƒCƒ‹%s‚ð’T‚·‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB"
+    IDS_ERROR_MEMORY        "ƒVƒXƒeƒ€ƒƒ‚ƒŠ[•s‘«‚Å‚·B‚±‚êˆÈãƒQ[ƒ€‚ðis‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB"
+    IDS_CHATFLAG_WHISPER    "‚³‚³‚â‚«"
+    IDS_CHATFLAG_NEAR       "ˆê”Ê"
+    IDS_CHATFLAG_MAP        "‘S‘Ì"
+    IDS_CHATFLAG_WORLD      "‘S‘Ì"
+    IDS_CHATFLAG_PARTY      "ƒp[ƒeƒB"
+    IDS_CHATFLAG_GUILD      "ƒMƒ‹ƒh"
+    IDS_CHATFLAG_INFO       "Œ‹‰Ê"
+    IDS_CHATFLAG_FORCE      "ƒtƒH[ƒX"
+    IDS_FMT_CAPTURE         ".\\Img\\IMG%08X.jpg"
+    IDS_FMT_CAPTUREMSG      "%s‚Ìƒtƒ@ƒCƒ‹‚ÅƒXƒNƒŠ[ƒ“ƒVƒ‡ƒbƒg‚ð•Û‘¶‚µ‚Ü‚µ‚½B"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MBOX_GUILD_BUILD_FAIL "ƒMƒ‹ƒhŠJÝ‚ÉŽ¸”s‚µ‚Ü‚µ‚½B\nƒMƒ‹ƒh‚ðŠJÝ‚·‚é‚½‚ß‚É•K—v‚ÈðŒ‚ð–ž‚½‚µ‚Ä‚¢‚Ü‚¹‚ñB"
+    IDS_MBOX_GUILD_BUILD_SUCC "[%s]ƒMƒ‹ƒh‚ªŠJÝ‚³‚ê‚Ü‚µ‚½B"
+    IDS_CMD_GUILD_INVITE    "ƒMƒ‹ƒhµ‘Ò"
+    IDS_CMD_GUILD_ALLINFO   "ƒMƒ‹ƒh‘S‘Ì"
+    IDS_CMD_GUILD_OUT       "ƒMƒ‹ƒh’E‘Þ"
+    IDS_CMD_GUILD_KICK      "ƒMƒ‹ƒhœ–¼"
+    IDS_CMD_GUILD_DISORG    "ƒMƒ‹ƒh‰ðŽU\¿"
+    IDS_CMD_GUILD_DISORGCANCEL "ƒMƒ‹ƒh‰ðŽUŽæÁ"
+    IDS_CMD_GUILD_MASTER    "ƒMƒ‹ƒhƒ}ƒXƒ^[”C–½"
+    IDS_CMD_GUILD_SUBMASTER "ƒTƒuƒMƒ‹ƒhƒ}ƒXƒ^[”C–½"
+    IDS_MBOX_GUILD_ALREADYGUILDNAME "Šù‚É‘¶Ý‚·‚éƒMƒ‹ƒh–¼‚Å‚·B"
+    IDS_MBOX_GUILD_DISORG_SUCC "ƒMƒ‹ƒh‰ðŽU\¿‚ÌŽó•t‚ª¬Œ÷‚µ‚Ü‚µ‚½B"
+    IDS_MBOX_GUILD_INVITE   "[%s]‚ª [%s]ƒMƒ‹ƒh‚Ö‚Ì‰Á“ü‚ð—v¿‚µ‚Ü‚µ‚½B\nƒMƒ‹ƒh‚Ö‚Ì‰Á“ü—v¿‚ðŽó‘ø‚µ‚Ü‚·‚©H"
+    IDS_MBOX_GUILD_DISORGCANCLE_SUCC "ƒMƒ‹ƒh‰ðŽU‚ðŽæÁ‚µ‚Ü‚µ‚½B"
+    IDS_MBOX_GUILD_NEWMEMBER "[%s]‚ªƒMƒ‹ƒh‚É‰Á“ü‚µ‚Ü‚µ‚½B"
+    IDS_MBOX_GUILD_JOIN_DENY "[%s]‚ÍƒMƒ‹ƒh‚Ö‚ÌŽQ‰Á‚ð’f‚è‚Ü‚µ‚½B"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MBOX_GUILD_JOIN_SUCC "[%s] ƒMƒ‹ƒh‚É‰Á“ü‚µ‚Ü‚µ‚½B"
+    IDS_MBOX_GUILD_LEAVE_SELF "ƒMƒ‹ƒh‚ð’E‘Þ‚µ‚Ü‚µ‚½B"
+    IDS_MBOX_GUILD_LEAVE_DISORG "ƒMƒ‹ƒh‚ª‰ðŽU‚³‚ê‚Ü‚µ‚½B"
+    IDS_MBOX_GUILD_LEAVE_KICK "ƒMƒ‹ƒh‚©‚ç’Ç•ú‚³‚ê‚Ü‚µ‚½B"
+    IDS_MBOX_GUILD_KICK_SUCC "[%s]‚ðƒMƒ‹ƒh‚©‚ç’Ç•ú‚µ‚Ü‚µ‚½B"
+    IDS_GUILD_DUTY_NONE     "ƒMƒ‹ƒhƒƒ“ƒo["
+    IDS_GUILD_DUTY_VICECHIEF "ƒTƒuƒMƒ‹ƒhƒ}ƒXƒ^["
+    IDS_GUILD_DUTY_CHIEF    "ƒMƒ‹ƒhƒ}ƒXƒ^["
+    IDS_GUILD_PEER_NONE     "ˆê”Ê"
+    IDS_GUILD_PEER_BARON    "‘‚Š¯"
+    IDS_GUILD_PEER_VISCOUNT "ŽmŠ¯"
+    IDS_GUILD_PEER_COUNT    "ˆÑŠ¯"
+    IDS_GUILD_PEER_MARQUIS  "²Š¯"
+    IDS_GUILD_PEER_DUKE     "«Š¯"
+    IDS_MBOX_GUILD_DUTY     "‚ ‚È‚½‚Í[%s]‚É”C–½‚³‚ê‚Ü‚µ‚½B"
+    IDS_MBOX_GUILD_DUTY_ACK "‚ ‚È‚½‚Í[%s]‚©‚ç[%s]‚É•ÏX‚³‚ê‚Ü‚µ‚½B"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MBOX_GUILD_PEER     "ƒMƒ‹ƒhƒ‰ƒ“ƒN‚ª[%s]‚©‚ç[%s]‚É•ÏX‚³‚ê‚Ü‚µ‚½B"
+    IDS_DELCHAR_ERR_INGUILD "ƒMƒ‹ƒh‚ÉŠ‘®‚µ‚Ä‚¢‚éƒLƒƒƒ‰ƒNƒ^[‚Íœ‹Ž‚Å‚«‚Ü‚¹‚ñB"
+    IDS_CMD_GUILD_BARON     "‘‚Š¯"
+    IDS_CMD_GUILD_PEER_CANCEL "ƒMƒ‹ƒhƒ‰ƒ“ƒNŽæÁ"
+    IDS_CMD_GUILD_VISCOUNT  "ŽmŠ¯"
+    IDS_CMD_GUILD_COUNT     "ˆÑŠ¯"
+    IDS_CMD_GUILD_MARQUIS   "²Š¯"
+    IDS_CMD_GUILD_DUKE      "«Š¯"
+    IDS_MBOX_GUILD_PEER_ACK "[%s]‚ÌƒMƒ‹ƒhƒ‰ƒ“ƒN‚ð[%s]‚©‚ç[%s]‚É•ÏX‚µ‚Ü‚µ‚½B"
+    IDS_CMSG_FRIEND_CONNECT "[%s]‚ªÚ‘±‚µ‚Ü‚µ‚½B"
+    IDS_COMMMSG_NOGUILD     "Œ»Ý‰Á“ü‚µ‚Ä‚¢‚éƒMƒ‹ƒh‚ª‚ ‚è‚Ü‚¹‚ñB"
+    IDS_ITEMUP_WARN_MAGIC   "Œ»Ý‚Ì•Ší‚É–‚–@‘®«‚ð•t—^‚µ‚Ü‚·B\n‘±‚¯‚Ü‚·‚©H"
+    IDS_ITEMUP_WARN_RARE    "Œ»Ý‚Ì•Ší‚É’¿‚µ‚¢‘®«‚ð•t—^‚µ‚Ü‚·B\nŽ¸”s‚µ‚½ê‡ƒAƒCƒeƒ€‚ª‚È‚­‚È‚é‚±‚Æ‚ª‚ ‚è‚Ü‚·B\n‘±‚¯‚Ü‚·‚©H"
+    IDS_PRIVATE_SHOP_START  "”Ì”„ŠJŽn"
+    IDS_PRIVATE_SHOP_END    "”Ì”„’†Ž~"
+    IDS_PRIVATE_SHOP_BUY    "w“ü"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MENU_PRIVSHOP_FOR_SELL "ŒÂlƒVƒ‡ƒbƒv"
+    IDS_MENU_PRIVSHOP_FOR_BUY "ƒVƒ‡ƒbƒv—˜—p"
+    IDS_PRVSHOP_BUY_SUCC    "ƒAƒCƒeƒ€%uŒÂ‚ðw“ü‚µ‚Ü‚µ‚½B"
+    IDS_PRVSHOP_BUY_NOITEM  "ƒAƒCƒeƒ€‚ª‘¶Ý‚µ‚Ü‚¹‚ñB"
+    IDS_PRVSHOP_BUY_NEEDMONEY "ƒAƒCƒeƒ€w“ü‚É•K—v‚È‹àŠz‚ª‘«‚è‚Ü‚¹‚ñB"
+    IDS_PRVSHOP_BUY_NOITEMCOUNT "ƒAƒCƒeƒ€‚Ì”—Ê‚ª‘«‚è‚Ü‚¹‚ñB"
+    IDS_PRVSHOP_BUY_INVENFULL "ƒoƒbƒO‚ª‚¢‚Á‚Ï‚¢‚Å‚·B"
+    IDS_PRVSHOP_SELL_NOSHOPNAME "ƒVƒ‡ƒbƒv–¼‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B"
+    IDS_PRVSHOP_SELL_ACK    "[%s]‚ª %uŒÂ”„‚ê‚Ü‚µ‚½B"
+    IDS_PRVSHOP_REQBUY_MSG  "‚±‚ÌƒAƒCƒeƒ€‚ðw“ü‚µ‚Ü‚·‚©H"
+    IDS_PRVSHOP_REQBUY_EDIT "”—Ê"
+    IDS_STATE_CONNECT       "ƒIƒ“ƒ‰ƒCƒ“"
+    IDS_FMT_PRVSHOP_TITLE   "[%s]‚ÌƒVƒ‡ƒbƒv"
+    IDS_STATE_DISCONNECT    "ƒIƒtƒ‰ƒCƒ“"
+    IDS_MBOX_ADD_FRIEND     "ƒtƒŒƒ“ƒh‚É’Ç‰Á‚·‚éƒLƒƒƒ‰ƒNƒ^[–¼‚ð\n“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B"
+    IDS_MBOX_FRIEND_INVITE  "[%s]‚ªƒtƒŒƒ“ƒh“o˜^‚ð—v¿‚µ‚Ü‚µ‚½B\nŽó‚¯‚Ü‚·‚©H"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MBOX_FRIENDREPLY_YES "[%s]‚ðƒtƒŒƒ“ƒhƒŠƒXƒg‚É’Ç‰Á‚µ‚Ü‚µ‚½B"
+    IDS_MBOX_FRIENDREPLY_NO "[%s]‚ÍƒtƒŒƒ“ƒh“o˜^‚ð’f‚è‚Ü‚µ‚½B"
+    IDS_CMSG_ERASEFRIEND    "[%s]‚ðƒtƒŒƒ“ƒhƒŠƒXƒg‚©‚çíœ‚µ‚Ü‚µ‚½B"
+    IDS_CMSG_ALEADYFRIEND   "[%s]‚ÍŠù‚ÉƒtƒŒƒ“ƒhƒŠƒXƒg‚É“o˜^‚³‚ê‚Ä‚¢‚Ü‚·B"
+    IDS_CMD_MSG_ADD_FRIEND  "ƒtƒŒƒ“ƒh“o˜^"
+    IDS_CMD_MSG_DEL_FRIEND  "ƒtƒŒƒ“ƒh‰ðœ"
+    IDS_CMSG_MAKEGROUP_SUCC "ƒƒbƒZƒ“ƒWƒƒ[‚É[%s]ƒOƒ‹[ƒv‚ð¶¬‚µ‚Ü‚µ‚½B"
+    IDS_CMD_MSG_MAKE_GROUP  "ƒOƒ‹[ƒv’Ç‰Á"
+    IDS_CMSG_MAKEGROUP_MAX  "‚±‚êˆÈãƒOƒ‹[ƒv‚ð¶¬‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB"
+    IDS_CMSG_ALEADYGROUP    "ƒOƒ‹[ƒv–¼‚ªd•¡‚µ‚Ü‚·B"
+    IDS_CMD_MSG_CHANGE_GROUP "ƒOƒ‹[ƒvˆÚ“®"
+    IDS_CMD_MSG_DEL_GROUP   "ƒOƒ‹[ƒvœ‹Ž"
+    IDS_CMSG_ERASEFRIENDGROUP "ƒtƒŒƒ“ƒhƒOƒ‹[ƒv[%s]‚ðíœ‚µ‚Ü‚µ‚½B"
+    IDS_CMSG_FRIEND_DISCONNECT "[%s]‚ªÚ‘±‚ðI—¹‚µ‚Ü‚µ‚½B"
+    IDS_CMD_MSG_NAME_GROUP  "ƒOƒ‹[ƒv–¼"
+    IDS_FMT_MSGHAT_TITLE    "%sŠO %ul"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MPOPUP_CHAT         "ƒ_ƒCƒŒƒNƒgƒ`ƒƒƒbƒg"
+    IDS_MPOPUP_SENDMAIL     "ƒ[ƒ‹‚ð‘—‚é"
+    IDS_MBOX_ADDTOBLOCKLIST "ƒuƒ‰ƒbƒNƒŠƒXƒg‚É“o˜^‚·‚éƒ†[ƒU[‚Ì–¼‘O‚ð\n“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B"
+    IDS_CMD_MSG_ADD_BLOCK   "“o˜^"
+    IDS_CMD_MSG_DEL_BLOCK   "‰ðœ"
+    IDS_MAILTYPE_NORMAL     "[ˆê”Ê]"
+    IDS_MAILTYPE_PACKATE    "[¬•ï]"
+    IDS_MAILTYPE_BILLS      "[‘ã‹à¿‹]"
+    IDS_MAILTYPE_RETURN     "[•Ô‘—]"
+    IDS_MAILTYPE_PAYMENT    "[‘ã‹àŽx•¥]"
+    IDS_MAILTYPE_NPC        "[NPC]"
+    IDS_MAILTYPE_OPERATOR   "[ƒVƒXƒeƒ€]"
+    IDS_CMSG_POST_FULL      "ŽóMŽÒ‚Ìƒ[ƒ‹ƒ{ƒbƒNƒX‚ª‚¢‚Á‚Ï‚¢‚Å‚·B\n‘—M‚ÉŽ¸”s‚µ‚Ü‚µ‚½B"
+    IDS_FMT_DATE            "%02d/%02d"
+    IDS_MAILTYPE_CASH       "[ƒAƒCƒeƒ€ƒ‚[ƒ‹]"
+    IDS_CMSG_RECVMAIL       "[%s]‚©‚çƒ[ƒ‹‚ª“Í‚«‚Ü‚µ‚½B"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FMT_POST_COST       "”­‘——¿‹à : %u“º‰Ý"
+    IDS_FMT_MAIL_REPLY      "[•ÔM] %s"
+    IDS_CMSG_POST_SUCCESS   "ƒ[ƒ‹‚ð‘—M‚µ‚Ü‚µ‚½B"
+    IDS_CMSG_POST_NORECEIVER "ŽóMŽÒ‚ÌID‚ªŠÔˆá‚Á‚Ä‚¢‚Ü‚·B"
+    IDS_CMSG_POST_NEEDMONEY "ƒ[ƒ‹‚Ì‘—M‚É•K—v‚È‚¨‹à‚ª‘«‚è‚Ü‚¹‚ñB"
+    IDS_CMSG_POST_NOTITLE   "ƒ[ƒ‹‚Ìƒ^ƒCƒgƒ‹‚ªŠÔˆá‚Á‚Ä‚¢‚Ü‚·B"
+    IDS_MAIL_TITLE_BLANK    "ƒ^ƒCƒgƒ‹–³‚µ"
+    IDS_MIALERR_NORECEIVER  "ŽóMŽÒ‚Ì–¼‘O‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B"
+    IDS_FILE_PET            ".\\Tcd\\TPet.tcd"
+    IDS_PETKIND_ONE         "ƒ}ƒXƒ^[‚ðæ‚¹‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B(ˆÚ“®‘¬“x +%u%%)"
+    IDS_PETKIND_TWO         "ƒ}ƒXƒ^[‚É‰Á‚¦‚Ä‚à‚¤ˆêl‚ðæ‚¹‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B(ˆÚ“®‘¬“x +%u%%)"
+    IDS_GUILD_EXIT_WARN     "ƒMƒ‹ƒh‚©‚ç’E‘Þ‚·‚é‚ÆA%u“úŠÔ‰Á“ü‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB\n–{“–‚ÉƒMƒ‹ƒh‚©‚ç’E‘Þ‚µ‚Ü‚·‚©H"
+    IDS_PETKIND_TELE        "%uŒÂ‚Ì‹AŠÒêŠ‚ð‹L˜^‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B"
+    IDS_MBOX_GUILD_ALREADYMEMBER "Šù‚ÉƒMƒ‹ƒh‚É‰Á“ü‚µ‚Ä‚¢‚Ü‚·B"
+    IDS_PETKIND_INVEN       "%u˜g‚ÌƒoƒbƒO‚ð—˜—p‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B"
+    IDS_PETKIND_EXP         "í“¬ŒoŒ±’l‚ª %u%%’Ç‰Á‚³‚ê‚Ü‚·B"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MBOX_GUILD_LEAVE_SELF_ERR "ŠY“–‚ÌƒLƒƒƒ‰ƒNƒ^[‚ÍAƒMƒ‹ƒh‚ðŽ©‚ç’E‘Þ‚µ‚½‚½‚ßA‰Á“ü‚¨‚æ‚ÑŠJÝ‚ª‚Å‚«‚Ü‚¹‚ñB"
+    IDS_MBOX_GUILD_LEAVE_DISO_ERR "ŠY“–‚ÌƒLƒƒƒ‰ƒNƒ^[‚ÍAƒMƒ‹ƒh‚ð‰ðŽU‚µ‚½‚½‚ßA‰Á“ü‚¨‚æ‚ÑŠJÝ‚ª‚Å‚«‚Ü‚¹‚ñB"
+    IDS_GUILD_LEAVE_SELF_CHIEF_ERR "ƒMƒ‹ƒhƒ}ƒXƒ^[‚ÍƒMƒ‹ƒh‚©‚ç’E‘Þ‚Å‚«‚Ü‚¹‚ñB"
+    IDS_CAPTURE_FOLDER      ".\\Img"
+    IDS_PETCON_LEVEL        "ƒŒƒxƒ‹ %uˆÈã‚©‚ç¢Š«‚Å‚«‚Ü‚·B"
+    IDS_CMD_PARTY_INVITE    "ƒp[ƒeƒBµ‘Ò"
+    IDS_FMT_PET_ENDTIME     "Žg—pŠúŠÔ : %04d/%02d/%02d %02d:00"
+    IDS_IPBLOCK             "ƒAƒJƒEƒ“ƒg‚ÌŽg—p‚ª§ŒÀ‚³‚ê‚Ä‚¢‚Ü‚·B\nÚ‚µ‚­‚ÍŒöŽ®ƒTƒCƒg‚©‚ç‚¨–â‚¢‡‚í‚¹‚­‚¾‚³‚¢B"
+    IDS_FMT_PET_USETIME     "Žg—pŠúŠÔ : %u“ú"
+    IDS_PETMAKE_NONAME      "ƒyƒbƒg‚Ì–¼‘O‚ð“ü—Í‚µ‚Ä‚¢‚Ü‚¹‚ñB"
+    IDS_PETCON_NO           "¢Š«‚É‰½‚Ì§ŒÀ‚à‚ ‚è‚Ü‚¹‚ñB"
+    IDS_PETMAKE_ACK_FULL    "‚±‚êˆÈãƒyƒbƒg‚ðŒÄ‚Ño‚·‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB"
+    IDS_PETMAKE_ACK_SUCC    "ƒyƒbƒg‚ðŒÄ‚Ño‚µ‚Ü‚µ‚½B"
+    IDS_PETMAKE_ACK_EXPTIME "ƒyƒbƒg‚ÌŽg—pŠúŠÔ‚ª %04d/%02d/%02d ‚Ü‚Å‚É‰„’·‚³‚ê‚Ü‚µ‚½B"
+    IDS_FMT_PETLISTITEM_RECALL "¢Š«’†"
+    IDS_FMT_PETLISTITEM_READY "‘Ò‹@’†"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FMT_PETMNGBTN_DORECALL "¢Š«"
+    IDS_FMT_PETMNGBTN_CANCELRECALL "¢Š«‰ðœ"
+    IDS_PETRECALL_ACK_USETIME "Žg—pŠúŠÔ‚ªI—¹‚µ‚Ä‚¢‚é‚½‚ßA¢Š«‚Å‚«‚Ü‚¹‚ñB"
+    IDS_MENU_PC_PETTAKEDOWN "~‚è‚é"
+    IDS_FMT_PETMNGBTN_RECALLING "¢Š«’†"
+    IDS_FMT_EXPTEXT         "ŒoŒ±’l %d/%d"
+    IDS_MENU_MAIN_MENU      "ƒƒCƒ“ƒƒjƒ…[‚ðŒ©‚¹‚é/‰B‚·"
+    IDS_MENU_INVEN_SLOT     "ƒoƒbƒO"
+    IDS_MENU_FRIEND_REQ     "ƒtƒŒƒ“ƒh\¿"
+    IDS_FILE_PORTAL         ".\\Tcd\\TPortal.tcd"
+    IDS_CMSG_NOMENYPORTAL   "ŠY“–Žž“_‚ÉˆÚ“®‚·‚é‚½‚ß‚Ì‹àŠz‚ª‘«‚è‚Ü‚¹‚ñB"
+    IDS_FMT_MSGSENDER_ME    "Ž©•ª‚ÌƒƒbƒZ[ƒW :"
+    IDS_FMT_MSGSENDER       "[%s]‚ÌƒƒbƒZ[ƒW :"
+    IDS_MPOPUP_MOVEGROUP    "ƒOƒ‹[ƒvˆÚ“®"
+    IDS_MPOPUP_BLOCK        "ƒuƒƒbƒN"
+    IDS_MPOPUP_DELETE       "íœ"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MPOPUP_NEWGROUP     "VƒOƒ‹[ƒv"
+    IDS_GPOPUP_CHAT         "ƒOƒ‹[ƒv‘Î˜b"
+    IDS_GPOPUP_CHANGENAME   "–¼‘O•ÏX"
+    IDS_GPOPUP_DELETE       "íœ"
+    IDS_GPOPUP_NEWGROUP     "VƒOƒ‹[ƒv"
+    IDS_MBOX_NEWFRIENDGROUP "ƒOƒ‹[ƒv–¼‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B"
+    IDS_MBOX_CHANGEFRIENDGROUP "•ÏX‚·‚éƒOƒ‹[ƒv‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B"
+    IDS_FMT_GUILDCOUNTTXT   "%ul‚ÌƒMƒ‹ƒhƒƒ“ƒo[‚ªŠˆ–ô‚µ‚Ä‚¢‚Ü‚·B"
+    IDS_MENU_PC_PETMANAGE   "ƒyƒbƒgŠÇ—"
+    IDS_DEFAULT_MSGBOX_TITLE "‚¨’m‚ç‚¹"
+    IDS_FILE_ITEMATTR       ".\\Tcd\\TItemAttr.tcd"
+    IDS_FILE_ITEMGRADE      ".\\Tcd\\TItemGrade.tcd"
+    IDS_SHOPTITLE_PORTAL    "ƒ|[ƒ^ƒ‹"
+    IDS_SHOPBUTTON_PORTAL   "ˆÚ“®"
+    IDS_SHOPTITLE_ITEM      "ƒVƒ‡ƒbƒv"
+    IDS_SHOPBUTTON_ITEM     "w“ü"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NEED_RESTART_OPTION "‚±‚ÌƒIƒvƒVƒ‡ƒ“‚ð“K—p‚·‚é‚½‚ß‚É‚ÍƒQ[ƒ€‚ðÄ‹N“®‚µ‚Ä‚­‚¾‚³‚¢B"
+    IDS_PET_NAMEBOX_MSG     "ƒyƒbƒg‚É–¼‘O‚ð‚Â‚¯‚Ä‚­‚¾‚³‚¢B"
+    IDS_ITEMUP_ERR_GRADEMAGIC "–‚–@‘®«‚Ì•Ší‚Í‹­‰»‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB"
+    IDS_ITEMUP_ERR_DOWNGRADE "‹­‰»‚³‚ê‚½•Ší‚Ì‚Ýò‰»‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B"
+    IDS_ITEMUP_ERR_MAGICMAGIC "Šù‚É–‚–@‘®«‚ª•t—^‚³‚ê‚½•Ší‚Å‚·B"
+    IDS_ITEMUP_ERR_MAGICRARE "’¿‚µ‚¢»ìŽô•¶‘‚Í–‚–@‘®«‚Ì•Ší‚É‚Ì‚ÝŽg—p‚Å‚«‚Ü‚·B"
+    IDS_ITEMUP_ERR_MAGICGRADE "‹­‰»•Ší‚É‚Í–‚–@‘®«‚ð•t—^‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB"
+    IDS_ITEMUP_ERR_RARE     "’¿‚µ‚¢–‚–@•Ší‚Í‹­‰»‚â»ì‚ª•s‰Â”\‚Å‚·B"
+    IDS_ITEMUP_ERR_INVALIDITEM "•Ší‹­‰»‚â»ìƒAƒCƒeƒ€‚Å‚Í‚ ‚è‚Ü‚¹‚ñB"
+    IDS_PET_NAMEBOX_EDIT    "ƒyƒbƒg‚Ì–¼‘O :"
+    IDS_PETMAKE_BTN_MAKE    "ƒyƒbƒgŒÄ‚Ño‚µ"
+    IDS_PETMAKE_BTN_EXT     "ŠúŠÔ‰„’·"
+    IDS_PETMAKE_KINDNAME    "%s (%s)"
+    IDS_CMD_PARTY_KICK      "ƒp[ƒeƒB’Ç•ú"
+    IDS_CMD_PARTY_OUT       "ƒp[ƒeƒB’E‘Þ"
+    IDS_FMT_SELLITEMS       "‰½ŒÂ‚ÌƒAƒCƒeƒ€‚ð”Ì”„‚µ‚Ü‚·‚©H"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_NAME                "–¼‘O"
+    IDS_FMT_SERVERNAME      "%s %s"
+    IDS_FMT_PARTY_ITEM_FREE "ƒtƒŠ["
+    IDS_FMT_PARTY_ITEM_HUNTER "“¾“_"
+    IDS_FMT_PARTY_ITEM_LOTTERY "’Š‘I"
+    IDS_FMT_PARTY_ITEM_CHIEF "ƒp[ƒeƒBƒŠ[ƒ_["
+    IDS_FMT_TPARTYITEMTAKE  "[%s]‚ª %s‚ðŠl“¾‚µ‚Ü‚µ‚½B"
+    IDS_FMT_ADDITEM         "%s‚ðŠl“¾‚µ‚Ü‚µ‚½B"
+    IDS_FMT_TIME_HOUR       "%uH"
+    IDS_FMT_TIME_MINUTE     "%u:%02u"
+    IDS_CMSG_CHGPARTYTYPE_FREE "í—˜•i‚ÌŽæ“¾•û–@‚ª[ƒtƒŠ[]‚É•ÏX‚³‚ê‚Ü‚µ‚½B"
+    IDS_CMSG_CHGPARTYTYPE_HUNTER "í—˜•i‚ÌŽæ“¾•û–@‚ª[“¾“_]‚É•ÏX‚³‚ê‚Ü‚µ‚½B"
+    IDS_CMSG_CHGPARTYTYPE_LOTTERY "í—˜•i‚ÌŽæ“¾•û–@‚ª[’Š‘I]‚É•ÏX‚³‚ê‚Ü‚µ‚½B"
+    IDS_CMSG_CHGPARTYTYPE_CHIEF "í—˜•i‚ÌŽæ“¾•û–@‚ª[ƒp[ƒeƒBƒŠ[ƒ_[]‚É•ÏX‚³‚ê‚Ü‚µ‚½B"
+    IDS_FMT_TIME_SECOND     "%u"
+    IDS_FMT_LEVELCLASS      "%d / %s"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_AUTOCHANNEL         "ƒ`ƒƒƒ“ƒlƒ‹Ž©“®‘I‘ð"
+    IDS_FMT_CHANNELBUTTON   "%s (%s)"
+    IDS_SERVER_SLEEP        "“_ŒŸ’†"
+    IDS_ERR_SERVER_BUSY     "\‚µ–ó‚ ‚è‚Ü‚¹‚ñB‚±‚ÌƒT[ƒo[‚É‚ÍÚ‘±‚Å‚«‚Ü‚¹‚ñB‘¼‚ÌƒT[ƒo[‚ð‘I‘ð‚µ‚Ä‚­‚¾‚³‚¢B"
+    IDS_ERR_CHANNEL_BUSY    "\‚µ–ó‚ ‚è‚Ü‚¹‚ñB‚±‚Ìƒ`ƒƒƒ“ƒlƒ‹‚É‚ÍÚ‘±‚Å‚«‚Ü‚¹‚ñB‘¼‚Ìƒ`ƒƒƒ“ƒlƒ‹‚ð‘I‘ð‚µ‚Ä‚­‚¾‚³‚¢B"
+    IDS_FMT_PARTY_ITEM_SEQ  "‡”Ô"
+    IDS_CMSG_CHGPARTYTYPE_SEQ "ƒp[ƒeƒBƒAƒCƒeƒ€‚ÌŠl“¾•ûŽ®‚ª[‡”Ô]‚É•ÏX‚³‚ê‚Ü‚µ‚½B"
+    IDS_ERR_MAIL_REGION     "‚±‚Ì’nˆæ‚Å‚Íƒ[ƒ‹ŠÖ˜A‚Ì‹@”\‚ð\nŽg—p‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB"
+    IDS_NEEDCREATECARD      "ƒLƒƒƒ‰ƒNƒ^[ì¬‚Ì‚½‚ß‚ÌƒJ[ƒh‚ª•K—v‚Å‚·B"
+    IDS_FMT_CHARTYPE        "%c TYPE"
+    IDS_MPOPUP_BLOCKLIST    "ƒuƒ‰ƒbƒNƒŠƒXƒg"
+    IDS_NPOPUP_INVITE       "ƒtƒŒƒ“ƒh\¿"
+    IDS_MBOX_GUILD_MEMBER_FULL "‚±‚êˆÈãƒMƒ‹ƒhƒƒ“ƒo[‚ð“ü‚ê‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB‚±‚ÌƒMƒ‹ƒh‚ÌÅ‘ål”‚Í %dl‚Å‚·B"
+    IDS_FMT_PETLISTITEM_TIME "%04d/%02d/%02d ‚Ü‚Å"
+    IDS_FMT_PC_COMMANDER    "ƒtƒH[ƒXƒŠ[ƒ_["
+    IDS_FMT_PC_CHIEF        "ƒp[ƒeƒBƒŠ[ƒ_["
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STARTCMD_FORCECON   "/f"
+    IDS_NOTIFY_CHANGE_CHANNEL "ƒ`ƒƒƒ“ƒlƒ‹•ÏX‚Ü‚Å‚ÌŽc‚è‚ÌŽžŠÔ : %d•b"
+    IDS_NOTIFY_SELECT_CHARACTER "Ú‘±I—¹‚Ü‚Å‚ÌŽc‚è‚ÌŽžŠÔ : %d•b"
+    IDS_MBOX_DUPLICATEDID   "d•¡‚µ‚½ID‚Å‚·B‚à‚¤ˆê“xƒQ[ƒ€‚ÉÚ‘±‚µ‚Ü‚·‚©H"
+    IDS_MBOX_CANCELQUIT     "Ú‘±I—¹’†‚Å‚·B"
+    IDS_MBOX_CANCELCH       "ƒ`ƒƒƒ“ƒlƒ‹•ÏX’†‚Å‚·B"
+    IDS_ERR_FAILINITDEVICE  "Žx‰‡‚µ‚Ä‚¢‚È‚¢ƒOƒ‰ƒtƒBƒbƒNƒJ[ƒh‚©AƒOƒ‰ƒtƒBƒbƒNƒJ[ƒh‚Ìƒhƒ‰ƒCƒo[‚ªÅVƒo[ƒWƒ‡ƒ“‚Å‚Í‚ ‚è‚Ü‚¹‚ñB\n\nƒhƒ‰ƒCƒo[‚ðÅVƒo[ƒWƒ‡ƒ“‚ÉƒAƒbƒvƒOƒŒ[ƒh‚µ‚Ä‚­‚¾‚³‚¢B"
+    IDS_LOADMSG_WAITFORSTART "ƒQ[ƒ€ŠJŽn‚Ì€”õ’†‚Å‚·B"
+    IDS_CHAT_OPERATOR       "ˆÄ“à"
+    IDS_LOADMSG_WAITFORCON  "ƒQ[ƒ€ƒT[ƒo[‚ÉÚ‘±’†‚Å‚·B"
+    IDS_LOADMSG_SUCCESSCON  "ƒQ[ƒ€ƒT[ƒo[‚ÉÚ‘±‚µ‚Ü‚µ‚½B"
+    IDS_LOADMSG_LOADDATA    "ƒQ[ƒ€‚ÅŽg—p‚·‚éƒf[ƒ^‚ð“Ç‚Ýž‚ñ‚Å‚¢‚Ü‚·B"
+    IDS_REPRESENTATION_GM   "ƒVƒXƒeƒ€"
+    IDS_GM_NAME             "ƒVƒXƒeƒ€"
+    IDS_MOVEITEM_COUNT      "ƒAƒCƒeƒ€ŒÂ”‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B"
+    IDS_FMT_UPGRADE_SUCCESS "%s‚Ì[%s]‚ª[+%d]“™‹‰‚ÉƒAƒCƒeƒ€ƒAƒbƒvƒOƒŒ[ƒh‚É¬Œ÷‚µ‚Ü‚µ‚½I"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING704           "IDS_MIALERR_TRADING"
+    IDS_MIALERR_TRADING     "ƒgƒŒ[ƒh’†‚Éƒ[ƒ‹‚ð‘—‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB\nƒgƒŒ[ƒhŠ®—¹Œã‚É‚à‚¤ˆê“x‚¨ŽŽ‚µ‚­‚¾‚³‚¢B"
+    IDS_CABINET_OPEN_WARN   "‚±‚Ì•ÛŠÇ” ‚ÌŠJÝ”ï—p‚Í %s‚Å‚·B\n•ÛŠÇ” ‚ðŠJÝ‚µ‚Ü‚·‚©H"
+    IDS_CABINET_NAME        "[%u•ÛŠÇ” ]"
+    IDS_CABINET_COST        "Žæ‚è–ß‚µ”ï—p : %s"
+    IDS_ERR_CABINET         "•ÛŠÇ” ‚ÌŽg—p’†‚ÉƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½B"
+    IDS_ERR_CABINET_NO_SLOT "‚±‚Ì•ÛŠÇ” ‚É‚Í‚à‚¤ƒXƒy[ƒX‚ª‚ ‚è‚Ü‚¹‚ñB"
+    IDS_ERR_MAX_CABINET     "‚±‚êˆÈã•ÛŠÇ” ‚ðŠJÝ‚·‚é‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB"
+    IDS_CABINET_BTN_OPEN    "%u•ÛŠÇ” ‚ðŠJ‚­"
+    IDS_CABINET_BTN_USE     "%u•ÛŠÇ” "
+    IDS_FMT_QUESTLEVEL      "%u"
+    IDS_FMT_QUESTLEVEL_LIM  "%u~%u"
+    IDS_QUEST_CANNOTPERF    "‚Ü‚¾ƒNƒGƒXƒg‚ð‹s‚Å‚«‚éðŒ‚ð–ž‚½‚µ‚Ä‚¢‚Ü‚¹‚ñB"
+    IDS_ERR_CURSE_STR       "Žg—p‚Å‚«‚È‚¢•¶Žš‚ªŠÜ‚Ü‚ê‚Ä‚¢‚Ü‚·B"
+    IDS_ITEMUP_ERR_CANNOTGRADE "‚±‚ÌƒAƒCƒeƒ€‚Í‹­‰»‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB"
+    IDS_ITEMUP_ERR_CANNOTMAGIC "‚±‚ÌƒAƒCƒeƒ€‚É‚Í–‚–@‘®«‚ð“K—p‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ITEMUP_ERR_CANNOTRARE "‚±‚ÌƒAƒCƒeƒ€‚É‚Í’¿‚µ‚¢–‚–@‘®«‚ð“K—p‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB"
+    IDS_FOLLOW_TARGET       "‚Â‚¢‚Äs‚­"
+    IDS_TKEY_FORWARD        "‘Oi‚·‚é"
+    IDS_REGIONINFO_D        "(ƒfƒtƒWƒFƒ‹—Ì)"
+    IDS_REGIONINFO_C        "(ƒNƒ‰ƒNƒVƒIƒ“—Ì)"
+    IDS_REGIONINFO_B        "(ƒuƒƒA—Ì)"
+    IDS_REGIONINFO_BATTLE   "(í‘ˆ’nˆæ)"
+    IDS_REGIONINFO_NORMAL   "(’†—§’nˆæ)"
+    IDS_TKEY_BACK           "Œã‘Þ‚·‚é"
+    IDS_TKEY_LEFT           "¶‚É‰ñ‚é"
+    IDS_TKEY_RIGHT          "‰E‚É‰ñ‚é"
+    IDS_TKEY_LSIDEE         "¶‚ÉˆÚ“®‚·‚é"
+    IDS_TKEY_RSIDE          "‰E‚ÉˆÚ“®‚·‚é"
+    IDS_TKEY_JUMP           "ƒWƒƒƒ“ƒv‚·‚é"
+    IDS_TKEY_AUTORUN        "ƒI[ƒgˆÚ“®"
+    IDS_TKEY_RUN            "•às/‘–s‚ðØ‚è‘Ö‚¦‚é"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TKEY_CAM_LEFT       "ƒJƒƒ‰¶‰ñ“]"
+    IDS_TKEY_CAM_RIGHT      "ƒJƒƒ‰‰E‰ñ“]"
+    IDS_TKEY_CAM_UP         "ƒJƒƒ‰Šp“xƒAƒbƒv"
+    IDS_TKEY_CAM_DOWN       "ƒJƒƒ‰Šp“xƒ_ƒEƒ“"
+    IDS_TKEY_ZOOM_IN        "ƒJƒƒ‰ƒY[ƒ€ƒCƒ“"
+    IDS_TKEY_ZOOM_OUT       "ƒJƒƒ‰ƒY[ƒ€ƒAƒEƒg"
+    IDS_TKEY_PICK_NEXT      "ƒ^[ƒQƒbƒgØ‚è‘Ö‚¦"
+    IDS_TKEY_SKILL_1        "‰º’iƒVƒ‡[ƒgƒJƒbƒgƒL[‚P"
+    IDS_TKEY_SKILL_2        "‰º’iƒVƒ‡[ƒgƒJƒbƒgƒL[‚Q"
+    IDS_TKEY_SKILL_3        "‰º’iƒVƒ‡[ƒgƒJƒbƒgƒL[‚R"
+    IDS_TKEY_SKILL_4        "‰º’iƒVƒ‡[ƒgƒJƒbƒgƒL[‚S"
+    IDS_TKEY_SKILL_5        "‰º’iƒVƒ‡[ƒgƒJƒbƒgƒL[‚T"
+    IDS_TKEY_SKILL_6        "‰º’iƒVƒ‡[ƒgƒJƒbƒgƒL[‚U"
+    IDS_TKEY_SKILL_7        "‰º’iƒVƒ‡[ƒgƒJƒbƒgƒL[‚V"
+    IDS_TKEY_SKILL_8        "‰º’iƒVƒ‡[ƒgƒJƒbƒgƒL[‚W"
+    IDS_TKEY_SKILL_9        "‰º’iƒVƒ‡[ƒgƒJƒbƒgƒL[‚X"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TKEY_SKILL_10       "‰º’iƒVƒ‡[ƒgƒJƒbƒgƒL[‚P‚O"
+    IDS_TKEY_SKILL_11       "‰º’iƒVƒ‡[ƒgƒJƒbƒgƒL[‚P‚P"
+    IDS_TKEY_SKILL_12       "‰º’iƒVƒ‡[ƒgƒJƒbƒgƒL[‚P‚Q"
+    IDS_TKEY_CHAT           "ƒ`ƒƒƒbƒgƒƒbƒZ[ƒW“ü—Í/“`‘—"
+    IDS_TKEY_INVEN          "ƒoƒbƒO‚ÌŠJ•Â‚ðØ‚è‘Ö‚¦‚é"
+    IDS_TKEY_CHAR_INFO      "ƒLƒƒƒ‰ƒNƒ^[î•ñ‚ðŠJ‚­/•Â‚¶‚é"
+    IDS_TKEY_MODE           "À‚é/—§‚Â"
+    IDS_TKEY_RECALL_BACK    "¢Š«b ƒ}ƒXƒ^[’Ç]"
+    IDS_TKEY_RECALL_STAY    "¢Š«b ‘Ò‹@"
+    IDS_TKEY_RECALL_SKILL_1 "¢Š«b ƒXƒLƒ‹ ‚P"
+    IDS_TKEY_RECALL_SKILL_2 "¢Š«b ƒXƒLƒ‹ ‚Q"
+    IDS_TKEY_RECALL_SKILL_3 "¢Š«b ƒXƒLƒ‹ ‚R"
+    IDS_TKEY_RECALL_SKILL_4 "¢Š«b ƒXƒLƒ‹ ‚S"
+    IDS_TKEY_RECALL_ACTIVE  "¢Š«b UŒ‚dŽ‹"
+    IDS_TKEY_RECALL_PASSIVE "¢Š«b –hŒädŽ‹"
+    IDS_TKEY_RECALL_MANUAL  "¢Š«b –½—ßdŽ‹"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TKEY_TRSCS_ME       "Ž©•ª‘I‘ð"
+    IDS_TKEY_TRSCS_F1       "ƒp[ƒeƒBƒƒ“ƒo[‘I‘ð ‚P"
+    IDS_TKEY_TRSCS_F2       "ƒp[ƒeƒBƒƒ“ƒo[‘I‘ð ‚Q"
+    IDS_TKEY_TRSCS_F3       "ƒp[ƒeƒBƒƒ“ƒo[‘I‘ð ‚R"
+    IDS_TKEY_TRSCS_F4       "ƒp[ƒeƒBƒƒ“ƒo[‘I‘ð ‚S"
+    IDS_TKEY_TRSCS_F5       "ƒp[ƒeƒBƒƒ“ƒo[‘I‘ð ‚T"
+    IDS_TKEY_TRSCS_F6       "ƒp[ƒeƒBƒƒ“ƒo[‘I‘ð ‚U"
+    IDS_TKEY_TRSCS_F7       "ƒp[ƒeƒBƒƒ“ƒo[‘I‘ð ‚V"
+    IDS_TKEY_HOTKEY_F1      "‰º’iƒVƒ‡[ƒgƒJƒbƒgƒL[ƒXƒƒbƒg•ÏX ‚P"
+    IDS_TKEY_HOTKEY_F2      "‰º’iƒVƒ‡[ƒgƒJƒbƒgƒL[ƒXƒƒbƒg•ÏX ‚Q"
+    IDS_TKEY_HOTKEY_F3      "‰º’iƒVƒ‡[ƒgƒJƒbƒgƒL[ƒXƒƒbƒg•ÏX ‚R"
+    IDS_TKEY_HOTKEY_F4      "‰º’iƒVƒ‡[ƒgƒJƒbƒgƒL[ƒXƒƒbƒg•ÏX ‚S"
+    IDS_TKEY_HOTKEY_F5      "‰º’iƒVƒ‡[ƒgƒJƒbƒgƒL[ƒXƒƒbƒg•ÏX ‚T"
+    IDS_TKEY_HOTKEY_F6      "‰º’iƒVƒ‡[ƒgƒJƒbƒgƒL[ƒXƒƒbƒg•ÏX ‚U"
+    IDS_TKEY_HOTKEY_F7      "‰º’iƒVƒ‡[ƒgƒJƒbƒgƒL[ƒXƒƒbƒg•ÏX ‚V"
+    IDS_TKEY_HOTKEY_F8      "‰º’iƒVƒ‡[ƒgƒJƒbƒgƒL[ƒXƒƒbƒg•ÏX ‚W"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TKEY_HOTKEY_F9      "‰º’iƒVƒ‡[ƒgƒJƒbƒgƒL[ƒXƒƒbƒg•ÏX ‚X"
+    IDS_TKEY_HOTKEY_F10     "‰º’iƒVƒ‡[ƒgƒJƒbƒgƒL[ƒXƒƒbƒg•ÏX ‚P‚O"
+    IDS_TKEY_HOTKEY_PREV    "‘O‚Ì‰º’iƒVƒ‡[ƒgƒJƒbƒgƒL[ƒXƒƒbƒg‚Ö"
+    IDS_TKEY_HOTKEY_NEXT    "ŽŸ‚Ì‰º’iƒVƒ‡[ƒgƒJƒbƒgƒL[ƒXƒƒbƒg‚Ö"
+    IDS_TKEY_HOTKEY_ACTION  "‘ÎÛ‚É‚æ‚éŽ©“®s“®"
+    IDS_TKEY_CLOSE_UI       "ŽæÁ"
+    IDS_TKEY_WORLDMAP       "’n}‚ðŠJ‚­/•Â‚¶‚é"
+    IDS_TKEY_SKILL_INFO     "ƒXƒLƒ‹î•ñ‚ðŠJ‚­/•Â‚¶‚é"
+    IDS_TKEY_QUEST_INFO     "ƒNƒGƒXƒgî•ñ‚ðŠJ‚­/•Â‚¶‚é"
+    IDS_TKEY_GET_ALL        "ƒAƒCƒeƒ€Ž©“®ƒ‹[ƒeƒBƒ“ƒO"
+    IDS_TKEY_SHOW_UI        "UI‚ðŒ©‚¹‚é/‰B‚·"
+    IDS_TKEY_SCRCAP         "ƒXƒNƒŠ[ƒ“ƒVƒ‡ƒbƒg‚ðŽB‰e‚·‚éB"
+    IDS_TKEY_HUD            "HUD‚Ì•\Ž¦‚ðØ‚è‘Ö‚¦‚é"
+    IDS_TKEY_FOLLOW         "ƒ^[ƒQƒbƒg‚ð’Ç”ö‚·‚é"
+    IDS_VK_LBUTTON          "LBtn"
+    IDS_VK_RBUTTON          "RBtn"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VK_CANCEL           "Cancel"
+    IDS_VK_MBUTTON          "MBtn"
+    IDS_VK_BACK             "Back"
+    IDS_VK_TAB              "Tab"
+    IDS_VK_CLEAR            "Clr"
+    IDS_VK_RETURN           "Enter"
+    IDS_VK_SHIFT            "Shift"
+    IDS_VK_MENU             "Alt"
+    IDS_VK_PAUSE            "Pause"
+    IDS_VK_ESCAPE           "Esc"
+    IDS_VK_SPACE            "Space"
+    IDS_VK_END              "End"
+    IDS_VK_HOME             "Home"
+    IDS_VK_LEFT             "©"
+    IDS_VK_UP               "ª"
+    IDS_VK_RIGHT            "¨"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VK_DOWN             "«"
+    IDS_VK_INSERT           "Ins."
+    IDS_VK_DELETE           "Del."
+    IDS_VK_NUMPAD0          "NUM0"
+    IDS_VK_NUMPAD1          "NUM1"
+    IDS_VK_NUMPAD2          "NUM2"
+    IDS_VK_NUMPAD3          "NUM3"
+    IDS_VK_NUMPAD4          "NUM4"
+    IDS_VK_NUMPAD5          "NUM5"
+    IDS_VK_NUMPAD6          "NUM6"
+    IDS_VK_NUMPAD7          "NUM7"
+    IDS_VK_NUMPAD8          "NUM8"
+    IDS_VK_NUMPAD9          "NUM9"
+    IDS_VK_MULTIPLY         "*"
+    IDS_VK_ADD              "+"
+    IDS_VK_SEPARATOR        "|"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VK_SUBTRACT         "-"
+    IDS_VK_DECIMAL          "%"
+    IDS_VK_DIVIDE           "/"
+    IDS_VK_F1               "F1"
+    IDS_VK_F2               "F2"
+    IDS_VK_F3               "F3"
+    IDS_VK_F4               "F4"
+    IDS_VK_F5               "F5"
+    IDS_VK_F6               "F6"
+    IDS_VK_F7               "F7"
+    IDS_VK_F8               "F8"
+    IDS_VK_F9               "F9"
+    IDS_VK_F10              "F10"
+    IDS_VK_F11              "F11"
+    IDS_VK_F12              "F12"
+    IDS_VK_NUMLOCK          "NumLock"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VK_SCROLL           "Scroll"
+    IDS_VK_LSHIFT           "LShift"
+    IDS_VK_RSHIFT           "RShift"
+    IDS_VK_A                "A"
+    IDS_VK_B                "B"
+    IDS_VK_C                "C"
+    IDS_VK_D                "D"
+    IDS_VK_E                "E"
+    IDS_VK_F                "F"
+    IDS_VK_G                "G"
+    IDS_VK_H                "H"
+    IDS_VK_I                "I"
+    IDS_VK_J                "J"
+    IDS_VK_K                "K"
+    IDS_VK_L                "L"
+    IDS_VK_M                "M"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VK_N                "N"
+    IDS_VK_O                "O"
+    IDS_VK_P                "P"
+    IDS_VK_Q                "Q"
+    IDS_VK_R                "R"
+    IDS_VK_S                "S"
+    IDS_VK_T                "T"
+    IDS_VK_U                "U"
+    IDS_VK_V                "V"
+    IDS_VK_W                "W"
+    IDS_VK_X                "X"
+    IDS_VK_Y                "Y"
+    IDS_VK_Z                "Z"
+    IDS_VK_0                "0"
+    IDS_VK_1                "1"
+    IDS_VK_2                "2"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VK_3                "3"
+    IDS_VK_4                "4"
+    IDS_VK_5                "5"
+    IDS_VK_6                "6"
+    IDS_VK_7                "7"
+    IDS_VK_8                "8"
+    IDS_VK_9                "9"
+    IDS_VK_CONTROL          "Ctrl"
+    IDS_KEY_CANNOTUSE       "—^‚¦‚ç‚ê‚½ƒL[‚ÍŽg—p‚Å‚«‚Ü‚¹‚ñB"
+    IDS_MENU_DUEL           "ƒfƒ…ƒGƒ‹\¿"
+    IDS_VK_OEM_1            ";"
+    IDS_VK_OEM_2            "/"
+    IDS_VK_OEM_3            "`"
+    IDS_VK_OEM_4            "["
+    IDS_VK_OEM_5            "\\"
+    IDS_VK_OEM_6            "]"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_VK_OEM_PLUS         "="
+    IDS_VK_OEM_COMMA        ","
+    IDS_VK_OEM_MINUS        "-"
+    IDS_VK_OEM_PERIOD       "~"
+    IDS_KEYRT_NONE          "Ý’è‚·‚éƒL[‚ð‘I‘ð‚µ‚Ä‚­‚¾‚³‚¢B"
+    IDS_KEYRT_SUCCESS       "ƒL[‚ª“K—p‚³‚ê‚Ü‚µ‚½B"
+    IDS_KEYRT_WAITINPUT     "Šó–]‚·‚éƒL[‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B"
+    IDS_KEYRT_CANNOTUSE     "—^‚¦‚ç‚ê‚½ƒL[‚ÍŽg—p‚Å‚«‚Ü‚¹‚ñB"
+    IDS_KEYRT_REPLACE       "[%s] <-> [%s]"
+    IDS_DUELINVITE_MSG      "[%s]‚Éƒfƒ…ƒGƒ‹‚ð\‚µž‚Ü‚ê‚Ü‚µ‚½B\nŽó‚¯‚Ä‚½‚¿‚Ü‚·‚©H"
+    IDS_DUEL_START          "[%s]‚Æ‚Ìƒfƒ…ƒGƒ‹ŠJŽnI"
+    IDS_DUEL_REFUSE         "[%s]‚ªƒfƒ…ƒGƒ‹‚ð’f‚è‚Ü‚µ‚½B"
+    IDS_DUEL_ERROR          "Œˆ“¬¬—§‚ÉŽ¸”s‚µ‚Ü‚µ‚½B"
+    IDS_DUEL_WIN            "[%s]‚Æ‚Ìƒfƒ…ƒGƒ‹‚ÉŸ—˜‚µ‚Ü‚µ‚½B"
+    IDS_DUEL_LOSE           "[%s]‚Æ‚Ìƒfƒ…ƒGƒ‹‚É”s–k‚µ‚Ü‚µ‚½B"
+    IDS_DUEL_AREAOUT        "ƒfƒ…ƒGƒ‹”ÍˆÍ‚©‚çŠO‚ê‚Ä‚¢‚Ü‚·B %u•bŒã‚É”s–k‚Æ‚È‚è‚Ü‚·B"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_DUEL_DRAW           "[%s]‚Æ‚Ìƒfƒ…ƒGƒ‹‚Íˆø‚«•ª‚¯‚Æ‚È‚è‚Ü‚µ‚½B"
+    IDS_CMD_GUILD_DISUBMASTER "ƒMƒ‹ƒh‰ð”C•”"
+    IDS_DUEL_WAIT           "%u•bŒã‚Éƒfƒ…ƒGƒ‹‚ðŠJŽn‚µ‚Ü‚·B"
+    IDS_DUEL_TIMEOUT_MIN    "ƒfƒ…ƒGƒ‹I—¹‚Ü‚ÅŽc‚è %u•ª‚Å‚·B"
+    IDS_DUEL_TIMEOUT_SEC    "ƒfƒ…ƒGƒ‹I—¹‚Ü‚ÅŽc‚è %u•b‚Å‚·B"
+    IDS_TKEY_PICK_NEXT_DEAD "í—˜•iƒ^[ƒQƒbƒgØ‚è‘Ö‚¦"
+    IDS_ERR_ITEM_INTERNAL   "“à•”ƒAƒCƒeƒ€ƒGƒ‰[‚ª”­¶‚µ‚Ü‚µ‚½Bì‹Æ‚ð‚à‚¤ˆê“x‚¨ŽŽ‚µ‚­‚¾‚³‚¢B"
+    IDS_ERR_SND_TARGET      "”­‘—‘ÎÛ‚ª—LŒø‚µ‚Ü‚¹‚ñB"
+    IDS_SMS_SUCCESS         "SMS‚ª”­‘—‚³‚ê‚Ü‚µ‚½B"
+    IDS_SMS_TXTLEN          "Œ»Ý•¶Žš” : %u / %u"
+    IDS_SMS_SEND            "SMSƒƒbƒZ[ƒW‚ð”­‘—‚µ‚Ü‚·‚©H"
+    IDS_ERR_NO_GUILD        "ƒMƒ‹ƒh‚ª‘¶Ý‚µ‚Ü‚¹‚ñB"
+    IDS_ERR_TARGET_BUSY     "Œ»Ý[%s]‚Í‰ž“š‚Å‚«‚Ü‚¹‚ñB"
+    IDS_TKEY_WHISPER_REPLY  "Å‹ß‚³‚³‚â‚«‚Ì‰ž“š"
+    IDS_FMT_SMSTITLE        "[4S]%s:"
+    IDS_FMT_SMSWARN         "SMS‚Ì•¶Žš”‚Í‘SŠp %d•¶ŽšA‰p•¶ %d•¶Žš‚Ü‚Å‚É§ŒÀ‚³‚ê‚Ü‚·B"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CHATCMD_ERROR       "‘¶Ý‚µ‚È‚¢–½—ßŒê‚Å‚·B"
+    IDS_FMT_NUMPERCENT      "%d%%"
+    IDS_TACKIND_FREELANCE   "ƒtƒŠ[ƒ‰ƒ“ƒT["
+    IDS_FMT_TACTICSCOUNTTXT "%ul‚Ì—b•º‚ªŠˆ–ô‚µ‚Ä‚¢‚Ü‚·B"
+    IDS_ERR_NOTENOUGHDNEXP  "Šñ•t‚Å‚«‚é‚Ù‚ÇŒoŒ±’l‚ª\•ª‚Å‚Í‚ ‚è‚Ü‚¹‚ñB"
+    IDS_FMT_NUMPERNUM       "%u / %u"
+    IDS_WRAN_DONATE_EXP     "ƒMƒ‹ƒh‚ÉŽŸ‚ÌŒoŒ±’l‚ðŠñ•t‚µ‚Ü‚·B\nŠñ•tŒoŒ±’l : %u\n‘±‚¯‚Ü‚·‚©H"
+    IDS_WRAN_DONATE_MONEY   "ƒMƒ‹ƒh‚ÉŽŸ‚ÌŽ‘‹à‚ðŠñ•t‚µ‚Ü‚·B\n‹àŠz : %u‹à‰Ý %u‹â‰Ý %u“º‰Ý\n‘±‚¯‚Ü‚·‚©H"
+    IDS_DONERR_NOTENOUGH_EXP 
+                            "ƒMƒ‹ƒh‚Ö‚ÌŠñ•t‚ÉŽ¸”s‚µ‚Ü‚µ‚½BŠñ•t‚·‚é‘O‚ÉŒ»ÝŠŽ‚µ‚Ä‚¢‚éŒoŒ±’l‚ðŠm”F‚µ‚½ŒãA‚à‚¤ˆê“x‚¨ŽŽ‚µ‚­‚¾‚³‚¢B"
+    IDS_DONERR_MAXGUILDLEVEL "Å‚ƒŒƒxƒ‹‚ÌƒMƒ‹ƒh‚É‚ÍŒoŒ±’l‚ðŠñ•t‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB"
+    IDS_DONERR_UNKNOWN      "ƒMƒ‹ƒh‚Ö‚ÌŠñ•t‚ÉŽ¸”s‚µ‚Ü‚µ‚½B‚à‚¤ˆê“x‚¨ŽŽ‚µ‚­‚¾‚³‚¢B"
+    IDS_DONATION_SUCCESS    "ƒMƒ‹ƒh‚Ö‚ÌŠñ•t‚ª¬Œ÷‚µ‚Ü‚µ‚½B"
+    IDS_DONERR_NOTENOUGH_MONEY 
+                            "ƒMƒ‹ƒh‚Ö‚ÌŠñ•t‚ÉŽ¸”s‚µ‚Ü‚µ‚½BŠñ•t‚·‚é‘O‚ÉŒ»ÝŠŽ‚µ‚Ä‚¢‚éŽ‘‹à‚ðŠm”F‚µ‚½Œã‚ÅA‚à‚¤ˆê“x‚¨ŽŽ‚µ‚­‚¾‚³‚¢B"
+    IDS_NEW_NOTIFY          "V‚µ‚¢’mì¬"
+    IDS_MODIFY              "C³"
+    IDS_FMT_TIME_ONEHOUR    "%dh"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FMT_PCROOM          "[ƒlƒbƒgƒJƒtƒF]\n"
+    IDS_FMT_TIME_ONEMINUTE  "%dm"
+    IDS_FMT_PCROOM_1        "Žw’è‚ÌƒlƒbƒgƒJƒtƒF‚ÅLost Eden‚ðƒvƒŒƒC‚·‚é‚Æ‘½Ê‚È“Á“T‚ª“¾‚ç‚ê‚Ü‚·B"
+    IDS_FMT_PCROOM_2        "ƒlƒbƒgƒJƒtƒF“Á“T‚Ìæ‚è•¨‚ª’ñ‹Ÿ‚³‚ê‚Ü‚µ‚½B"
+    IDS_FMT_PCROOM_3        "í“¬ŒoŒ±’l‚ª‚P‚Q‚O“A‹­‰»¬Œ÷—¦‚ª‚Q‚O‚O“Aƒ}ƒWƒbƒNƒAƒCƒeƒ€ƒhƒƒbƒv—¦‚ª‚R‚O‚O“‚ÉÝ’è‚³‚ê‚Ü‚µ‚½B"
+    IDS_FMT_PCROOM_4        "‹Ræ“®•¨iˆÚ“®‘¬“x‚P‚R‚T“ƒAƒbƒvj‚ª’ñ‹Ÿ‚³‚ê‚Ü‚µ‚½BC—”ï—p‚ª‚Q‚O“Š„ˆø‚ÉÝ’è‚³‚ê‚Ü‚µ‚½B"
+    IDS_ERROR_ITEM_CANTDROP "‚»‚ÌƒAƒCƒeƒ€‚ÍŽÌ‚Ä‚ç‚ê‚Ü‚¹‚ñB"
+    IDS_FMT_GUILDMARKREG_SUCC "ƒMƒ‹ƒh–äÍ‚Ì“o˜^‚ª¬Œ÷‚µ‚Ü‚µ‚½B"
+    IDS_FMT_GUILDMARKREG_FAIL "ƒMƒ‹ƒh–äÍ‚Ì“o˜^‚ªŽ¸”s‚µ‚Ü‚µ‚½B‚à‚¤ˆê“x‚¨ŽŽ‚µ‚­‚¾‚³‚¢B"
+    IDS_FMT_TYPE            "TYPE %u"
+    IDS_GINV_APP            "‰Á“ü\¿"
+    IDS_FMT_GUILDMEMBER     "ƒMƒ‹ƒhƒƒ“ƒo["
+    IDS_FMT_TACTICS         "—b•º"
+    IDS_GINV_EDIT           "•åWC³"
+    IDS_GINV_NEW            "•åWì¬"
+    IDS_GINV_DEL            "•åWŠ®—¹"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GERR_GUILDWANTEDWORK "ƒMƒ‹ƒh•åW“à—e‚Ìì¬‚ÉŽ¸”s‚µ‚Ü‚µ‚½B"
+    IDS_GSEEK_INV           "‰Á“ü’ñˆÄ"
+    IDS_ERR_GUILDAPPLICATIONADD "ƒMƒ‹ƒhŽx‰‡“à—e‚Ìì¬‚ÉŽ¸”s‚µ‚Ü‚µ‚½B"
+    IDS_GSEEK_EDIT          "“o˜^C³"
+    IDS_GSEEK_NEW           "V‹K“o˜^"
+    IDS_GSEEK_DEL           "“o˜^œ‹Ž"
+    IDS_FMT_GUILDSEEKER     "Lv %u / %s / %s"
+    IDS_ERR_GUILDWANTEDADD  "•åW“à—e‚Ì“o˜^‚ÉŽ¸”s‚µ‚Ü‚µ‚½B"
+    IDS_CMDESC_GUILD_INVITE "‘ŠŽè‚ðƒMƒ‹ƒh‚Éµ‘Ò‚µ‚Ü‚·B"
+    IDS_CMDESC_GUILD_OUT    "ƒMƒ‹ƒh‚©‚ç’E‘Þ‚µ‚Ü‚·B"
+    IDS_CMDESC_GUILD_KICK   "ƒMƒ‹ƒhƒƒ“ƒo[‚ð’Ç•ú‚µ‚Ü‚·B"
+    IDS_CMDESC_GUILD_DISORG "ƒMƒ‹ƒh‰ðœ‚ð\¿‚µ‚Ü‚·B"
+    IDS_CMDESC_GUILD_DISORGCANCEL "ƒMƒ‹ƒh‰ðœ\¿‚ðŽæÁ‚µ‚Ü‚·B"
+    IDS_CMDESC_GUILD_MASTER "ƒMƒ‹ƒhƒ}ƒXƒ^[‚ð‘¼‚ÌƒMƒ‹ƒhƒƒ“ƒo[‚ÉˆÏ”C‚µ‚Ü‚·B"
+    IDS_CMDESC_GUILD_SUBMASTER "ƒTƒuƒMƒ‹ƒhƒ}ƒXƒ^[‚ð”C–½‚µ‚Ü‚·B"
+    IDS_CMDESC_GUILD_PEER_CANCEL "ƒMƒ‹ƒhƒ‰ƒ“ƒN‚ðŽæÁ‚µ‚Ü‚·B"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CMDESC_GUILD_BARON  "ƒMƒ‹ƒhƒ‰ƒ“ƒN‚ð‘‚Š¯‚ÉÝ’è‚µ‚Ü‚·B"
+    IDS_CMDESC_GUILD_VISCOUNT "ƒMƒ‹ƒhƒ‰ƒ“ƒN‚ðŽmŠ¯‚ÉÝ’è‚µ‚Ü‚·B"
+    IDS_CMDESC_GUILD_COUNT  "ƒMƒ‹ƒhƒ‰ƒ“ƒN‚ðˆÑŠ¯‚ÉÝ’è‚µ‚Ü‚·B"
+    IDS_CMDESC_GUILD_MARQUIS "ƒMƒ‹ƒhƒ‰ƒ“ƒN‚ð²Š¯‚ÉÝ’è‚µ‚Ü‚·B"
+    IDS_CMDESC_GUILD_DUKE   "ƒMƒ‹ƒhƒ‰ƒ“ƒN‚ð«Š¯‚ÉÝ’è‚µ‚Ü‚·B"
+    IDS_CMDESC_GUILD_DISUBMASTER "ƒTƒuƒMƒ‹ƒhƒ}ƒXƒ^[‚ð‰ð”C‚µ‚Ü‚·B"
+    IDS_FMT_GUILDCMD        "/%s:"
+    IDS_FMT_GUILDCMDESC     "  ? %s"
+    IDS_GERR_GUILDOFFERDUPL "Šù‚É“¯‚¶•ª–ì‚Å“o˜^‚³‚ê‚½•åW“à—e‚ª‘¶Ý‚µ‚Ü‚·BŠù‘¶‚Ì•åW“à—e‚ð‚±‚Ì“à—e‚ÉØ‘Ö‚¦‚Ü‚·‚©H"
+    IDS_GERR_GUILDSEEKDUPL  "Šù‚É“¯‚¶•ª–ì‚Å“o˜^‚³‚ê‚½Žx‰‡“à—e‚ª‘¶Ý‚µ‚Ü‚·BŠù‘¶‚ÌŽx‰‡“à—e‚ð‚±‚Ì“à—e‚ÉØ‘Ö‚¦‚Ü‚·‚©H"
+    IDS_DELETE              "íœ"
+    IDS_GMP_WHISPER         "‚³‚³‚â‚«"
+    IDS_GMP_MAIL            "ƒ[ƒ‹"
+    IDS_GMP_KICK            "’Ç•ú"
+    IDS_GMP_ET_GM           "ƒMƒ‹ƒhƒ}ƒXƒ^[ˆÏ”C"
+    IDS_GMP_SET_GSM         "ƒTƒuƒMƒ‹ƒhƒ}ƒXƒ^[”C–½"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GMP_CANCEL_GSM      "ƒTƒuƒMƒ‹ƒhƒ}ƒXƒ^[‰ð”C"
+    IDS_GMP_PEER_BARON      "‘‚Š¯”C–½"
+    IDS_GMP_PEER_VISCOUNT   "ŽmŠ¯”C–½"
+    IDS_GMP_PEER_COUNT      "ˆÑŠ¯”C–½"
+    IDS_GMP_PEER_MARQUIS    "²Š¯”C–½"
+    IDS_GMP_PEER_DUKE       "«Š¯”C–½"
+    IDS_GMP_CANCEL_PEER     "ƒMƒ‹ƒhƒ‰ƒ“ƒNŽæÁ"
+    IDS_GMP_CANCEL          "•Â‚¶‚é"
+    IDS_GMP_DISORG_TACTICS  "—b•º‰ðŽU"
+    IDS_GUILD_CABINET_FULL  "ƒXƒy[ƒX‚ª•s‘«‚µ‚Ä‚¢‚é‚½‚ßA•ÛŠÇ” ‚É‚±‚êˆÈãƒAƒCƒeƒ€‚ð“ü‚ê‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB"
+    IDS_GUILD_CABINET_PUTINFAIL "•ÛŠÇ” ‚ÉƒAƒCƒeƒ€‚ð“ü‚ê‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñ‚Å‚µ‚½B"
+    IDS_GUILD_CABINET_ITEMNOTFOUND "ŠY“–ƒAƒCƒeƒ€‚ª•ÛŠÇ” ‚É‘¶Ý‚µ‚Ü‚¹‚ñB"
+    IDS_GUILD_CABINET_INVENFULL "ƒoƒbƒO‚Ì‹ó‚«ƒXƒy[ƒX‚ª•s‘«‚µ‚Ä‚¢‚é‚½‚ßA•ÛŠÇ” ‚©‚çƒAƒCƒeƒ€‚ðˆÚ“®‚Å‚«‚Ü‚¹‚ñB"
+    IDS_GUILD_CABINET_TAKEOUTFAIL "•ÛŠÇ” ‚©‚çƒAƒCƒeƒ€‚ðˆÚ“®‚Å‚«‚Ü‚¹‚ñ‚Å‚µ‚½B"
+    IDS_GUILD_CABINET_LEVEL "Œ»Ý‚ÌƒMƒ‹ƒhƒŒƒxƒ‹‚Å‚Í•ÛŠÇ” ‚ðŽg—p‚Å‚«‚Ü‚¹‚ñB"
+    IDS_GUILD_CABINET_TITLE "%sƒMƒ‹ƒh‚Ì %u˜g‚Ì•ÛŠÇ” "
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GUILD_CABINET_NOTDUTY "ƒMƒ‹ƒh•ÛŠÇ” ‚ÍƒTƒuƒMƒ‹ƒhƒ}ƒXƒ^[ˆÈã‚ÅŽg—p‚Å‚«‚Ü‚·B"
+    IDS_ITEMUP_MONEYFAIL    "‚¨‹à‚ª‘«‚è‚È‚¢‚½‚ßAƒAƒCƒeƒ€‚ð‹­‰»‚Å‚«‚Ü‚¹‚ñB"
+    IDS_SKILLINITERR_TRADING "ƒXƒLƒ‹‚ðŠo‚¦‚é“r’†‚Å‚ÍAƒXƒLƒ‹‚ð‰Šú‰»‚Å‚«‚Ü‚¹‚ñB"
+    IDS_WARN_SKILLINIT_ALL  "¡‚Ü‚ÅŠo‚¦‚½‘S‚Ä‚ÌƒXƒLƒ‹‚ð‰Šú‰»‚µ‚Ü‚·B\n‘±‚¯‚Ü‚·‚©H"
+    IDS_WARN_SKILLINIT_ONE  "[%s]ƒXƒLƒ‹‚ð‰Šú‰»‚µ‚Ü‚·B\n‘±‚¯‚Ü‚·‚©H"
+    IDS_SKILLINIT_ONE_SUCCESS "[%s]ƒXƒLƒ‹‚ª‰Šú‰»‚³‚ê‚Ü‚µ‚½B"
+    IDS_SKILLINIT_FAIL      "ƒXƒLƒ‹‰Šú‰»‚ÉŽ¸”s‚µ‚Ü‚µ‚½B‚à‚¤ˆê“xŽŽ‚µ‚Ä‚­‚¾‚³‚¢B"
+    IDS_SKILLINIT_ALL_SUCCESS "‘S‘ÌƒXƒLƒ‹‚ª‰Šú‰»‚³‚ê‚Ü‚µ‚½B"
+    IDS_GUILDVOLUNTEERING_SUCC "\¿‚ªŽó•t‚³‚ê‚Ü‚µ‚½B"
+    IDS_GUILDVOLUNTEERING_HAVEGUILD "Šù‚É‘¼‚ÌƒMƒ‹ƒh‚ÉŠ‘®‚µ‚Ä‚¢‚Ü‚·B"
+    IDS_GUILDVOLUNTEERING_FAIL "\¿‚ÉŽ¸”s‚µ‚Ü‚µ‚½B"
+    IDS_FILE_QUESTITEM      ".\\Tcd\\TQuestItem.tcd"
+    IDS_GVP_WHISPER         "‚³‚³‚â‚«"
+    IDS_GVP_MAIL            "ƒ[ƒ‹"
+    IDS_GVP_INVITE_YES      "‰Á“ü³”F"
+    IDS_GVP_INVITE_NO       "‰Á“ü‹‘”Û"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GVP_CANCEL          "•Â‚¶‚é"
+    IDS_WARN_GUILDKICKOUT   "[%s]‚ðƒMƒ‹ƒh‚©‚ç’Ç•ú‚µ‚Ü‚·B\n‘±‚¯‚Ü‚·‚©H"
+    IDS_FMT_LUCKNUMBER      "ƒ‰ƒbƒL[ƒiƒ“ƒo[ : %u"
+    IDS_CMD_SHOW_GUILDAPPDLG "ƒMƒ‹ƒhƒƒ“ƒo[•åW"
+    IDS_CMDESC_SHOW_GUILDAPPDLG "ƒMƒ‹ƒh•åWƒEƒBƒ“ƒhƒE‚ð‰æ–Ê‚ÉŠJ‚«‚Ü‚·B"
+    IDS_TKEY_TOGGLE_GUILD_UI "ƒMƒ‹ƒhî•ñ‚ðŠJ‚­/•Â‚¶‚é"
+    IDS_TKEY_TOGGLE_MENU_UI "ƒƒjƒ…[‚ðŠJ‚­/•Â‚¶‚é"
+    IDS_MBOX_GUILD_PEERMAX  "Œ»Ý‚ÌƒMƒ‹ƒhƒŒƒxƒ‹‚Å‚Í %s‚±‚êˆÈã‚»‚ÌƒMƒ‹ƒhƒ‰ƒ“ƒN‚ð”C–½‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB"
+    IDS_EXE_PRMPC_URL       "[InternetShortcut]\nURL=http://losteden.jp"
+    IDS_FMT_NOTITLE         "ƒ^ƒCƒgƒ‹–³‚µ"
+    IDS_GET_ITEM            "Žæ‚èo‚·"
+    IDS_FMT_CASH            "%u LEƒ|ƒCƒ“ƒg"
+    IDS_FMT_CASHNBONUS      "LEƒ|ƒCƒ“ƒg : %u@ƒ{[ƒiƒX : %u"
+    IDS_MENU_PARTYMEMBERRECALL "ƒp[ƒeƒBƒƒ“ƒo[¢Š«"
+    IDS_IU_SUCCESS          "[%s]‚ð¢Š«‚µ‚Ü‚µ‚½B"
+    IDS_ERR_IU_RIDING       "[%s]‚Í‹Ræ’†‚Ì‚½‚ßA¢Š«‚Å‚«‚Ü‚¹‚ñB"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERR_IU_DEALING      "[%s]‚ÍƒgƒŒ[ƒh’†‚Ì‚½‚ßA¢Š«‚Å‚«‚Ü‚¹‚ñB"
+    IDS_ERR_IU_NOTFOUND     "¢Š«‚É•K—v‚ÈƒAƒCƒeƒ€‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñB"
+    IDS_ERR_IU_BUSY         "Œ»Ý[%s]‚Í¢Š«‚Å‚«‚È‚¢ó‘Ô‚Å‚·B"
+    IDS_URL_CASHCHARGE      "http://losteden.jp"
+    IDS_CASHITEMBUY_SUCCESS "ƒAƒCƒeƒ€ƒ‚[ƒ‹‚ÅƒAƒCƒeƒ€”ƒ‚¢‚Ü‚µ‚½B\n”ƒ‚Á‚½ƒAƒCƒeƒ€‚ÍƒAƒCƒeƒ€•ÛŠÇ” ‚ÅŠm”F‚Å‚«‚Ü‚·B"
+    IDS_ERR_DOSKILLDISGUISE "•Ï‘•’†‚ÍƒXƒLƒ‹‚ðŽg—p‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB"
+    IDS_ERR_NEED_CASH       "LEƒ|ƒCƒ“ƒg‚ª‘«‚è‚Ü‚¹‚ñB"
+    IDS_MENU_END_MAINTAIN   "Œø‰Ê‰ðœ"
+    IDS_SOULMATEBOX_SELREG  "‚ ‚È‚½‚Ì°‚ª’N‚©‚ð—ö‚µ‚ª‚Á‚Ä‚¢‚é‚æ‚¤‚Å‚·Bƒ\ƒEƒ‹ƒƒCƒg‚Æ‚µ‚ÄS‚É•ø‚¢‚Ä‚¢‚é•û‚ª‚¢‚é‚Ì‚Å‚µ‚å‚¤‚©H"
+    IDS_SOULMATEBOX_NAME    "‚»‚Ì–¼‘O‚ð‚±‚ÌŽ„‚É‚¨•·‚©‚¹‚­‚¾‚³‚¢B"
+    IDS_SOULMATEBOX_SEARCH  "—·l‚æA‚±‚ÌŽ„‚É %s‚ÌŽ{‚µ‚ð‚­‚ê‚é‚È‚çA‚ ‚È‚½‚Ìƒ\ƒEƒ‹ƒƒCƒg‚ª’N‚È‚Ì‚©‹³‚¦‚Ä‚ ‚°‚ç‚ê‚Ü‚·B"
+    IDS_SOULMATEBOX_NO      "—_‚Ìj•Ÿ‚ðŽó‚¯“ü‚ê‚é‚½‚ß‚ÌS‚Ì€”õ‚ª‚Ü‚¾‚Å‚«‚Ä‚¢‚È‚¢‚æ‚¤‚Å‚·‚ËB‘¸‚¢•û‚æB‚±‚ÌŽ„‚ª•K—v‚Å‚ ‚ê‚Î‚¢‚Â‚Å‚à‚±‚±‚É—ˆ‚Ä‚­‚¾‚³‚¢B‚ ‚È‚½‚Ì‚½‚ß‚É‚¢‚Â‚Å‚à‚¨‹F‚è‚ð‚µ‚Ü‚µ‚å‚¤B"
+    IDS_SOULMATEBOX_REG     "‚¨‚Ó‚½‚è‚Ì°‚Í—_‚Ìj•Ÿ‚ðŽó‚¯“ü‚ê‚é€”õ‚ª\•ª‚Å‚«‚Ä‚¢‚é‚æ‚¤‚Å‚·B‚±‚ÌŽ„‚É %s ‚ÌŽ{‚µ‚ð‚­‚ê‚é‚È‚çA‚ ‚È‚½‚Ì°‚É—_‚Ìj•Ÿ‚ªh‚é‚æ‚¤‚¨‹F‚è‚µ‚Ä‚ ‚°‚ç‚ê‚Ü‚·B"
+    IDS_ERR_SOULMATE_SILENCE 
+                            "‚ ‚È‚½‚Ì°‚ÍAƒ\ƒEƒ‹ƒƒCƒg‚©‚ç—£‚ê‚Ä’¾–ÙŠú‚É“ü‚Á‚Ä‚¢‚é‚æ‚¤‚Å‚·BŽc”O‚È‚ª‚ç¡‚Í‚±‚êˆÈã‚±‚ÌŽ„‚ªŽè‚ð‘Ý‚·‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñB‚P“ú‘Ò‚Á‚Ä‚©‚ç‚Ü‚½‚¨‰z‚µ‚­‚¾‚³‚¢B"
+    IDS_ERR_SOULMATE_NEEDMONEY 
+                            "Žc”O‚Å‚·B‚±‚ÌŽ„‚Ö‚ÌŽ{‚µ‚ª‚Å‚«‚È‚¢‚æ‚¤‚Å‚·‚ËB\•ª‚È—]—T‚ª‚Å‚«‚½‚ç‚Ü‚½‚¨‰z‚µ‚­‚¾‚³‚¢B"
+    IDS_ERR_SOULMATE_FAIL   "—_‚Ìº‚ª•·‚±‚¦‚Ü‚·Bc‚ñc‚»‚Ì•û‚Æ‚Í‚Ü‚¾‚²‰‚ª‚È‚¢‚æ‚¤‚Å‚·B‚Å‚à”ß‚µ‚Þ•K—v‚Í‚ ‚è‚Ü‚¹‚ñB‚¢‚Â‚©‚«‚Á‚Æ—_‚ª‚¨‹–‚µ‚É‚È‚é‚Æ‚«‚ª‚­‚é‚Å‚µ‚å‚¤B"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERR_SOULMATE_NOTFOUND 
+                            "—_‚Ì‚²ˆÓŽv‚ªŠ´‚¶‚ç‚ê‚Ü‚¹‚ñ‚Å‚µ‚½B‚Ü‚¾‚»‚Ì•û‚Éˆ§‚¤Žž‚Å‚Í‚È‚¢‚Ì‚©‚à‚µ‚ê‚Ü‚¹‚ñBŽc”O‚È‚ª‚ç¡‚Í‚±‚êˆÈã‚±‚ÌŽ„‚ªŽè‚ð‘Ý‚·‚±‚Æ‚Í‚Å‚«‚Ü‚¹‚ñBŽ{‚µ‚ð‚Ç‚¤‚à‚ ‚è‚ª‚Æ‚¤‚²‚´‚¢‚Ü‚µ‚½B"
+    IDS_SOULMATE_REG_SUCCESS 
+                            "—_‚Ì‚²ˆÓŽv‚ðŠ´‚¶‚Ü‚·B‘¸‚¢•û‚æA‚±‚ê‚©‚ç‚¨‚Ó‚½‚è‚ª‰^–½‚ð‹¤‚É‚·‚ê‚ÎA‚·‚Î‚ç‚µ‚¢—_‚Ìj•Ÿ‚ª‚ ‚é‚±‚Æ‚Å‚µ‚å‚¤B"
+    IDS_SOULMATE_SEARCH_SUCCESS 
+                            "—_‚Ì‚²ˆÓŽv‚ðŠ´‚¶‚Ü‚·B‘¸‚¢•û‚æA‚ ‚È‚½‚Ìƒ\ƒEƒ‹ƒƒCƒg‚Æ‚µ‚ÄA¡%s‚É‚¢‚é%s‚Æ‰^–½‚ð‹¤‚É‚·‚ê‚ÎA‚·‚Î‚ç‚µ‚¢—_‚Ìj•Ÿ‚ª‚ ‚é‚±‚Æ‚Å‚µ‚å‚¤B"
+    IDS_ITRF_ERR_DUPLICATE  "Šù‚ÉÝ’u‚µ‚½ƒAƒCƒeƒ€‚Å‚·B"
+    IDS_DETMSG_SEALEDITEM   "‚±‚ÌƒAƒCƒeƒ€‚Í••ˆó‚³‚ê‚Ä‚¢‚Ü‚·BƒGƒ‹ƒtŽôpŽt‚ÉŒ©‚¹‚ê‚ÎA‚»‚Ì³‘Ì‚ª•ª‚©‚é‚Å‚µ‚å‚¤B"
+    IDS_SOULMATEEND_SUCCESS "%s‚Æ‚Í‚à‚¤ƒ\ƒEƒ‹ƒƒCƒg‚ÌŠÖŒW‚Å‚Í‚È‚¢‚æ‚¤‚Å‚·B‚Ü‚½A¡‚©‚ç‚P“ú‚ÌŠÔ‚ÍV‚½‚Éƒ\ƒEƒ‹ƒƒCƒg‚ðŽ‚Â‚±‚Æ‚Í‚Å‚«‚È‚¢‚Å‚µ‚å‚¤B"
+    IDS_SOULMATE_MARK       "?"
+    IDS_GAMBLE_NO           "’¿‚µ‚¢‚à‚Ì‚ð“¾‚é‚½‚ß‚ÉAŽž‚É‚Í‘åŽ–‚È‚à‚Ì‚ðŽÌ‚Ä‚½‚èA–`Œ¯‚ª•K—v‚¾‚Á‚½‚è‚·‚é‚±‚Æ‚à‚ ‚é‚Å‚µ‚å‚¤B‚à‚µ‚±‚ÌŽ„‚ª•K—v‚È‚ç‚Î‚¢‚Â‚Å‚à‚Ü‚½—ˆ‚Ä‚­‚¾‚³‚¢B"
+    IDS_GAMBLE_ASK          "‚Ó‚¤‚Þc‚±‚ÌƒAƒCƒeƒ€‚ÌŒ³‚ÌŽp‚ªŒ©‚½‚¢‚È‚ç %s‚­‚ç‚¢‚Í‚à‚ç‚í‚È‚«‚áB‚¢‚âAŒã‰÷‚Í‚µ‚È‚¢‚Í‚¸‚¾‚æBŽ„‚ÌŽôp‚ðM‚¶‚Æ‚­‚ê‚æB‚½‚¾AŽôp‚ªŽ¸”s‚µ‚½‚çƒAƒCƒeƒ€‚ªÁ‚¦‚é‚Æ‚¢‚¤‚±‚Æ‚ð’m‚Á‚½‚¤‚¦‚Å‚¾‚¯‚Ç‚ËB"
+    IDS_GAMBLE_SUCC         "‚Ù‚§‚çc‚Â‚¢‚É‚±‚ÌƒAƒCƒeƒ€‚ªŒ³‚ÌŽp‚ðŽæ‚è–ß‚µ‚½‚æB\n‹C‚É“ü‚Á‚½‚©‚¢H"
+    IDS_GAMBLE_FAIL_NEEDMONEY "‚¨‹à‚Ì‚È‚¢l‚ªŠ½Œ}‚³‚ê‚é‚Á‚Ä‚Ì‚Í“ï‚µ‚¢‚æ‚¤‚¾‚ËB"
+    IDS_GAMBLE_FAIL_REP     "‚ÈA‰½‚¾‚±‚ê‚ÍcBÅ‘P‚ðs‚­‚µ‚Ä‚Ý‚½‚¯‚ÇA‚±‚ÌƒAƒCƒeƒ€‚ÍŒ³X‚±‚Ì‚æ‚¤‚ÈŽp‚¾‚Á‚½‚ñ‚¾‚ËB‚³‚ŸAƒAƒCƒeƒ€‚ð•Ô‚·‚æB"
+    IDS_GAMBLE_FAIL_OCC     "‚Ó‚¤‚Þc‚±‚ê‚ÍcŽc”O‚¾‚¯‚Ç‚±‚ÌƒAƒCƒeƒ€‚ÉŒ³‚ÌŽp‚È‚ñ‚Ä‚ ‚è‚á‚µ‚È‚¢‚æB’·‚¢l¶‚½‚Ü‚É‚Í‚±‚ñ‚È“ú‚à‚ ‚é‚ñ‚¾‚æB‚¨‚Á‚ÆAŽ„‚Ì‚¹‚¢‚µ‚È‚¢‚Å‚¨‚­‚ê‚æBŽŸ‚Í‚«‚Á‚Æ‚¢‚¢‚±‚Æ‚ ‚é‚æB"
+    IDS_GAMBLE_FAIL         "¡‚ÍŽôp‚ðs‚¤‚±‚Æ‚ª‚Å‚«‚È‚¢‚ñ‚¾‚æB‚µ‚Î‚ç‚­‚µ‚Ä‚©‚çA‚Ü‚½—ˆ‚Ä‚¨‚­‚ê‚æB"
+    IDS_GAMBLE_CHECK_FAIL   "‚±‚ÌƒAƒCƒeƒ€‚ÍŽôp‚ªs‚¦‚éƒAƒCƒeƒ€‚Å‚Í‚ ‚è‚Ü‚¹‚ñB"
+    IDS_FMT_ITEMMAGIC_TITLE "[’Ç‰ÁƒIƒvƒVƒ‡ƒ“]"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FMT_ITEMATTRLEVEL_0 "ŒÃ‚¢—ÊŽY•i"
+    IDS_FMT_ITEMATTRLEVEL_1 "‚æ‚­Žè“ü‚ê‚³‚ê‚½—ÊŽY•i"
+    IDS_FMT_ITEMATTRLEVEL_2 "Œ˜ŒÅ‚È—ÊŽY•i"
+    IDS_FMT_ITEMATTRLEVEL_3 "‹P‚­—ÊŽY•i"
+    IDS_FMT_ITEMATTRLEVEL_4 "ŒÃ‚¢–¼•i"
+    IDS_FMT_ITEMATTRLEVEL_5 "‚æ‚­Žè“ü‚ê‚³‚ê‚½–¼•i"
+    IDS_FMT_ITEMATTRLEVEL_6 "Œ˜ŒÅ‚È–¼•i"
+    IDS_FMT_ITEMATTRLEVEL_7 "‹P‚­–¼•i"
+    IDS_FMT_ITEMATTRLEVEL_8 "’·‚¢ˆâ•¨"
+    IDS_FMT_ITEMATTRLEVEL_9 "‚æ‚­Žè“ü‚ê‚³‚ê‚½ˆâ•¨"
+    IDS_FMT_ITEMATTRLEVEL_10 "Œ˜ŒÅ‚Èˆâ•¨"
+    IDS_FMT_ITEMATTRLEVEL_11 "‹P‚­ˆâ•¨"
+    IDS_FMT_ITEMATTRLEVEL_12 "“`à‚Ìˆâ•¨"
+    IDS_FMT_HEIGHTFILE      ".\\Tmh\\MH%08x.tmh"
+    IDS_MBOX_TACTICS_INVITE "[%s]‚ª[%s]ƒMƒ‹ƒh‚Ì—b•º‚ÉŽQ‰Á\¿‚ð‚µ‚Ä‚¢‚Ü‚·B\n—b•º‚ÌŽQ‰Á\¿‚ðŽó‚¯‚Ü‚·‚©H"
+    IDS_MBOX_TACTICS_MONEY_INVITE 
+                            "[%s]‚ª[%s]ƒMƒ‹ƒh‚Ì—b•º‚ÉŽQ‰Á\¿‚µ‚Ä‚¢‚Ü‚·B\nŒ_–ñ‹à : %s\n—b•º‚ÌŽQ‰Á\¿‚ðŽó‚¯‚Ü‚·‚©H"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_USEITEM_REVIVAL     "•sŽv‹c‚È—Í‚ª‚ ‚È‚½‚Ì°‚ð¢Š«‚µ‚Ü‚·B\n•œŠˆŽô•¶‘‚ðŽg—p‚µ‚Ü‚·‚©H"
+    IDS_IU_ERR_OVERLAPPREMIUM "ƒvƒŒƒ~ƒAƒ€‚ÌŠúŠÔ‚ª‚Ü‚¾Žc‚Á‚Ä‚¢‚Ü‚·BŠúŠÔI—¹ŒãA‚Ü‚½Žg—p‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B"
+    IDS_CASHITEMPRESENT_SUCCESS "ƒvƒŒƒ[ƒ“ƒg‚ª‘—•t‚³‚ê‚Ü‚µ‚½B"
+    IDS_ERR_IU_TARGETNOTFOUND "‘ÎÛ‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñB"
+    IDS_ERR_MOVETO          "[%s]‚ÌêŠ‚ÉˆÚ“®‚Å‚«‚Ü‚¹‚ñ‚Å‚µ‚½B"
+    IDS_WORLDUNIFY_URL      "[InternetShortcut]\nURL=http://losteden.jp"
+    IDS_USEITEM_MEMBERRECALL "[%s]‚ð¢Š«‚µ‚Ü‚·B‘±‚¯‚Ü‚·‚©H"
+    IDS_MEMBERRECALL_INVALIDTARGET 
+                            "¢Š«ƒAƒCƒeƒ€‚ðŽg—p‚·‚é‚½‚ß‚É‚Í¢Š«‚·‚éƒp[ƒeƒBƒƒ“ƒo[‚ð‘I‘ð‚µ‚Ä‚­‚¾‚³‚¢B"
+    IDS_USEITEM_MOVETOCHAR  "ˆÚ“®‚·‚é‘ÎÛƒLƒƒƒ‰ƒNƒ^[‚Ì–¼‘O‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B"
+    IDS_CHAR_NAME           "ƒLƒƒƒ‰ƒNƒ^[–¼"
+    IDS_FMT_TIME_ONEDAY     "%dd"
+    IDS_FMT_PRESENTITEM     "[%s]ƒAƒCƒeƒ€‚ðƒvƒŒƒ[ƒ“ƒg‚·‚éƒLƒƒƒ‰ƒNƒ^[–¼‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B"
+    IDS_NEEDWORLDUNIFY      "ƒT[ƒo[“‡ì‹Æ‚Ì‚½‚ßƒQ[ƒ€‚ðI—¹‚µƒT[ƒo[“‡‚ÌƒEƒFƒuƒy[ƒW‚ÉˆÚ“®‚µ‚Ü‚·B"
+    IDS_FILE_AGREEMENT      ".\\agreement.txt"
+    IDS_ERR_NOTARGET_CASH   "ƒvƒŒƒ[ƒ“ƒg‚·‚é‘ÎÛ‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñB"
+    IDS_FMT_PARTYMEMBERRECALLANS 
+                            "[%s]‚ÌˆÊ’u‚É[%s]‚ð¢Š«‚µ‚æ‚¤‚Æ‚µ‚Ä‚¢‚Ü‚·B\n‚±‚Ì¢Š«‚ðŽó‚¯‚Ü‚·‚©H"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FMT_DURATIONEND     "[%s]‚Ì‘Ï‹v’l‚ª–³‚­‚È‚è«”\‚ªŽ¸‚í‚ê‚Ü‚µ‚½B"
+    IDS_DURATIONREP_COST    "%s‚­‚ç‚¢‚È‚çV•i“¯—l‚É’¼‚¹‚é‚¼B"
+    IDS_SOULMATESEARCH_TITLE "‚¨‹F‚è’†"
+    IDS_SOULMATESEARCH_MSG  "—_‚æB‚±‚ÌŽ„‚ÌŒõ‚Æˆø‚«Š·‚¦‚É‘¸‚¢•û‚Éj•Ÿ‚ðcB"
+    IDS_DURATIONREP_SUCC    "‚æ[‚µAI‚í‚Á‚½B‚Ç‚¤‚¾I‚¢‚¢Š´‚¶‚¾‚ëH"
+    IDS_ERR_DURATIONREP_FAIL "ƒAƒCƒeƒ€‚ÌC—‚ÉŽ¸”s‚µ‚Ü‚µ‚½B"
+    IDS_ERR_DURATIONREP_NOTNEED "‚ñHC—‚·‚é‚à‚Ì‚ª‚È‚¢‚æ‚¤‚¾‚ÈB‚Ü‚½—ˆ‚é‚Æ‚¢‚¢B"
+    IDS_ERR_DURATIONREP_NOMONEY "‚½‚¾‚Å’¼‚·‚í‚¯‚É‚Í‚¢‚©‚È‚¢‚ÈB‚¨‹à‚ÍŽ‚Á‚Ä‚È‚¢‚Ì‚©H"
+    IDS_REFINE_COST         "%s‚­‚ç‚¢‚È‚ç‚Å‚«‚»‚¤‚¾B‚â‚Á‚Ä‚Ý‚æ‚¤‚©H"
+    IDS_DURATIONREPAIRING_TITLE "C—’†"
+    IDS_DURATIONREPAIRING_MSG "‚æ‚µ‚ÁIÅ‚‚ÌŽÀ—Í‚ðŒ©‚¹‚Ä‚â‚ë‚¤B"
+    IDS_REFINING_TITLE      "¸—û’†"
+    IDS_REFINING_MSG        "‚»‚¤‚¾I‚¢‚¢”»’f‚¾‚¼A—F‚æIl¶‚ÍƒMƒƒƒ“ƒuƒ‹‚¾I"
+    IDS_REFINE_SUCC         "ƒnƒnƒnI¬Œ÷‚µ‚½‚¼I‚Ç‚¤‚¾A‹C‚É“ü‚Á‚½‚ëH"
+    IDS_REFINE_FAIL         "ƒAƒCƒeƒ€¸—û‚ÉŽ¸”s‚µ‚Ü‚µ‚½B"
+    IDS_ERR_DURATIONREP_DISALLOW "C—‚Å‚«‚È‚¢ƒAƒCƒeƒ€‚Å‚·B"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERR_REFINE_NOMONEY  "‚ [A‚¤‚ñcB‚¦‚Á‚ÆA‚½‚¾‚Å‚Í‚Å‚«‚È‚¢‚©‚È‚ŸB‚¨‹à‚ª‚ ‚é‚Æ‚¢‚¢‚ñ‚¾‚ªB"
+    IDS_ERR_REFINE_MAXREFINE "‚¤‚Þc‚±‚ê‚Í‚à‚¤¸—û‚Å‚«‚È‚¢‚ñ‚¾B‘¼‚Ì‚à‚Ì‚Í‚È‚¢‚©H"
+    IDS_ERR_REFINE_LEVELDIFF "¸—û‚ÉŽg‚Á‚½ƒAƒCƒeƒ€ŠÔ‚Ì«”\‚Ì·‚ªŒƒ‚µ‚­‚Ä»˜B‚Å‚«‚Ü‚¹‚ñB"
+    IDS_ERR_REFINE_FAIL     "‚¤‚§A‚µ‚Ü‚Á‚½AŽ¸”s‚¾cB‚Å‚à‚ª‚Á‚©‚è‚µ‚È‚¢‚ÅBŽŸ‚±‚»¬Œ÷‚·‚é‚©‚çB"
+    IDS_FILE_ITEMVISUALCHART ".\\Tcd\\TItemVisual.tcd"
+    IDS_FILE_ITEMGRADESFXCHART ".\\Tcd\\TItemGradeSfx.tcd"
+    IDS_FILE_ITEMMAGICSFXCHART ".\\Tcd\\TItemMagicSfx.tcd"
+    IDS_ITEMREP_ERR_NOTNEED "C—‚·‚é•K—v‚Ì‚È‚¢ƒAƒCƒeƒ€‚Å‚·B"
+    IDS_ITEMREP_ERR_CANNOT  "C—‚Å‚«‚È‚¢ƒAƒCƒeƒ€‚Å‚·B"
+    IDS_ITRF_ERR_CANNOTREFINE "¸—û‚Å‚«‚È‚¢ƒAƒCƒeƒ€‚Å‚·B"
+    IDS_ITRF_ERR_MAXREFINE  "‚±‚ÌƒAƒCƒeƒ€‚Í‚±‚êˆÈã¸—û‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚¹‚ñB"
+    IDS_FILE_SKILLPOINT     ".\\Tcd\\TSkillPoint.tcd"
+    IDS_FILE_TFORMULA       ".\\Tcd\\TFormula.tcd"
+    IDS_FORMAT_HOUR         "%dŽžŠÔ"
+    IDS_FORMAT_MIN          "%d•ª"
+    IDS_FORMAT_FSEC         "%.2f•b"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FMT_LEVELB          "%dƒŒƒxƒ‹"
+    IDS_ITEMGAMBLE_ERR      "Žôp‚ªs‚¦‚È‚¢ƒAƒCƒeƒ€‚Å‚·B"
+    IDS_TKEY_SKILL2_1       "ã’iƒVƒ‡[ƒgƒJƒbƒgƒL[‚P"
+    IDS_TKEY_SKILL2_2       "ã’iƒVƒ‡[ƒgƒJƒbƒgƒL[‚Q"
+    IDS_TKEY_SKILL2_3       "ã’iƒVƒ‡[ƒgƒJƒbƒgƒL[‚R"
+    IDS_TKEY_SKILL2_4       "ã’iƒVƒ‡[ƒgƒJƒbƒgƒL[‚S"
+    IDS_TKEY_SKILL2_5       "ã’iƒVƒ‡[ƒgƒJƒbƒgƒL[‚T"
+    IDS_TKEY_SKILL2_6       "ã’iƒVƒ‡[ƒgƒJƒbƒgƒL[‚U"
+    IDS_TKEY_SKILL2_7       "ã’iƒVƒ‡[ƒgƒJƒbƒgƒL[‚V"
+    IDS_TKEY_SKILL2_8       "ã’iƒVƒ‡[ƒgƒJƒbƒgƒL[‚W"
+    IDS_TKEY_SKILL2_9       "ã’iƒVƒ‡[ƒgƒJƒbƒgƒL[‚X"
+    IDS_TKEY_SKILL2_10      "ã’iƒVƒ‡[ƒgƒJƒbƒgƒL[‚P‚O"
+    IDS_TKEY_SKILL2_11      "ã’iƒVƒ‡[ƒgƒJƒbƒgƒL[‚P‚P"
+    IDS_TKEY_SKILL2_12      "ã’iƒVƒ‡[ƒgƒJƒbƒgƒL[‚P‚Q"
+    IDS_TKEY_VERSION        "TKEY_VERSION"
+    IDS_MENU_CHAT_LOCK      "ƒƒbƒN/ƒI[ƒvƒ“"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FCEVENT_D           "‚à‚¤‰½\”N‚à‘±‚¢‚Ä‚¢‚éƒNƒ‰ƒNƒVƒIƒ“‚Æ‚Ìí‘ˆ‚ÍA”‘½‚­‚ÌlX‚ðŠª‚«ž‚ÝA¡‚à[‚È”íŠQ‚ð‚à‚½‚ç‚µ‚Ä‚¢‚éB\n‚±‚Ì‚Ü‚Ü‚Å‚¢‚¢‚Í‚¸‚Í‚È‚¢Bˆ«–‚‚Ì‘º‚ÆŒÄ‚Î‚ê‚é‚±‚Ì‘º‚ðo‚é‚½‚ß‚É‚àAƒfƒtƒWƒFƒ‹‚ÌˆÌ‘å‚È‚éƒŒƒMƒIƒ“‚ÉŽuŠè‚µ‚æ‚¤B\n‰Ê‚Ä‚µ‚È‚¢í‘ˆ‚ð‚±‚ÌŽè‚ÅI‚í‚ç‚¹‚½ŒãA¶‚«‚é‚±‚Æ‚Ì–{“–‚ÌˆÓ–¡‚ðŒ©‚Â‚¯‚é‚½‚ß‚É‚àcB"
+    IDS_FCEVENT_C           "ƒlƒoƒ“ƒ}ƒn—¦‚¢‚éƒfƒtƒWƒFƒ‹ŒR‚Í—‰¤‚Ì¹ˆæ‚É‚Ü‚Å’B‚µAƒ‰ƒtƒ‹‘°‚ÌNU‚à‚Ü‚¾‘±‚¢‚Ä‚éB‚³‚ç‚É‹ß ‚ß‚Á‚«‚è•Ï‚í‚Á‚Ä‚µ‚Ü‚Á‚½ƒ‹ƒAƒhc’é‚Ì•s‰Â‰ð‚Ès“®cB\n‚±‚Ì‚Ü‚ÜŒ©Žç‚Á‚Ä‚¢‚é–ó‚É‚Í‚¢‚©‚È‚¢B‚±‚Ì–³ˆÓ–¡‚Èí‘ˆ‚Å‹]µ‚É‚È‚Á‚½–‚–@ŠwZ‚Ì’‡ŠÔ‚Ì‚½‚ß‚É‚àA‰B‚³‚ê‚½—ðŽj‚Ì’f•Ð‚©‚ç^ŽÀ‚ðŒ©‚Â‚¯o‚µA‘S‚Ä‚ðŒ³‚É–ß‚³‚È‚¯‚ê‚Î‚È‚ç‚È‚¢B\n‚»‚Ì‚½‚ß‚É‚ÍA‚±‚Ì—ðŽj‚Ì‰Q’†‚É”ò‚Ñž‚Þ‚µ‚©‚È‚¢cB"
+    IDS_ERR_CASHSHOP_NOTARGET "Žw’è‚³‚ê‚½‘ÎÛ‚ª‘¶Ý‚µ‚Ü‚¹‚ñB"
+    IDS_ERR_CASHSHOP_NOCASHINFO "Žg—pŽÒ‚ÌLEƒ|ƒCƒ“ƒg‚Ìî•ñ‚ªŒ©‚Â‚©‚è‚Ü‚¹‚ñ‚Å‚µ‚½B"
+    IDS_ITEM_CANNOT_CABINET "•ÛŠÇ‚Å‚«‚È‚¢ƒAƒCƒeƒ€‚Å‚·B"
+    IDS_FILE_JOINTCHART     ".\\Tcd\\TJoint.tcd"
+    IDS_FILE_GRADEVISUALCHART ".\\Tcd\\TItemGradeVisual.tcd"
+    IDS_FMT_BUYITEM_AS_PRICE "[%s]ƒAƒCƒeƒ€‚ð(%s)‚Ì’l’i‚Å\n”ƒ‚¢‚Ü‚·B"
+    IDS_REFINE_COST_SALE    "%d%%Š„‚èˆø‚±‚¤‚©I‚»‚ê‚Å %s‚¾‚¯‚Çc‚â‚Á‚Ä‚Ý‚éH"
+    IDS_TKEY_CHAR_ROT180    "ƒLƒƒƒ‰ƒNƒ^[‚P‚W‚O“x“]‰ñ"
+    IDS_DURATIONREP_COST_SALE "%s‚­‚ç‚¢‚ÅV•i‚Ý‚½‚¢‚É’¼‚µ‚Ä‚â‚ë‚¤B\n%d%%Š„ˆø‚¾‚æI"
+    IDS_GAMBLE_ASK_SALE     "‚Ù‚¤c‚±‚ÌƒAƒCƒeƒ€‚ÌŒ³‚ÌŽp‚ðŒ©‚é‚½‚ß‚É‚Í %s‚­‚ç‚¢‚Í‚à‚ç‚í‚È‚¢‚Æ‚ËB %d%%Š„‚èˆø‚¢‚Ä‚é‚ñ‚¾‚©‚çŒã‰÷‚Í‚µ‚È‚¢‚æ‚ËBŽôp—Í‚ðM‚¶‚Ä‚æB‚ ‚ÆA‚à‚µŽôp‚ªŽ¸”s‚µ‚½‚çƒAƒCƒeƒ€‚ªÁ‚¦‚é‚±‚Æ‚à’m‚Á‚Ä‚¨‚¢‚Ä‚æB"
+    IDS_SHOPTITLE_ITEM_SALE "%d%%Š„ˆø¤“X"
+    IDS_SHOPTITLE_PORTAL_SALE "%d%%Š„ˆøƒ|[ƒ^ƒ‹"
+    IDS_SKILLNEXTPRICE_SALE " (%d%%Š„ˆø‰¿Ši)"
+    IDS_CHANGE_NAME         "‚¨–]‚Ý‚Ì–¼‘O‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PERIOD_EXTENSION    "ŠúŠÔ‚Ì‰„’·"
+    IDS_PRESENT             "ƒvƒŒƒ[ƒ“ƒg"
+    IDS_FMT_EXTEND_PERIOD   "[%s]‚Ì\nŽg—pŠúŠÔ‚ð %d“ú‰„’·‚³‚¹‚Ü‚·‚©H"
+    IDS_FMT_EXTPERIOD       "Žc‚èŠúŒÀ : %d“ú"
+    IDS_FMT_DAYS            "%d“ú"
+    IDS_ISNT_EXTPERIOD_ITEM "ŠúŠÔ‚ª‰„’·‚Å‚«‚éƒAƒCƒeƒ€‚Å‚Í‚ ‚è‚Ü‚¹‚ñB"
+    IDS_ITEM_NAME_PERIOD    "%s %d“ú"
+    IDS_EXTENDED_PERIOD     "ŠúŒÀ‚ª‰„’·‚³‚ê‚Ü‚µ‚½B"
+    IDS_ERR_EXTEND_PERIOD_FAIL "‰„’·‚ÉŽ¸”s‚µ‚Ü‚µ‚½B"
+    TERR_CHANGECHARBASE_FAIL "•ÏX‚ÉŽ¸”s‚µ‚Ü‚µ‚½B"
+    IDS_TKEY_CAM_ROT180     "ƒJƒƒ‰‚P‚W‚O“x“]‰ñ"
+    IDS_SM_BATTLE_NORMAL    "è—Ìí’nˆæ‚ªˆê”Êó‘Ô‚ÉˆÚs‚µ‚Ü‚µ‚½B"
+    IDS_SM_BATTLE_START     "’nˆæè—Ìí‚ªŠJŽn‚³‚ê‚Ü‚µ‚½B"
+    IDS_SM_BATTLE_START_ALARM "’nˆæè—Ìí‚ª %d•ªŒã‚ÉŠJŽn‚³‚ê‚Ü‚·B"
+    IDS_SM_BATTLE_END_ALARM "’nˆæè—Ìí‚ª %d•ªŒã‚ÉI—¹‚µ‚Ü‚·B"
+    IDS_SM_BATTLE_PEACE     "’nˆæè—Ìí‚ªI—¹‚µA•½˜aó‘Ô‚ÉˆÚs‚µ‚Ü‚µ‚½Bè—Ìí’nˆæ‚Å‚Í‚T•ªŠÔí“¬‚ª‚Å‚«‚Ü‚¹‚ñB"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SM_BATTLE_OPENGATE  "Œ»Ý‚Ì’nˆæ‚Ìé–å‚ªŠJ‚©‚ê‚Ü‚µ‚½B"
+    IDS_SM_BATTLE_BOSSDIE   "Œ»Ý‚Ì’nˆæ‚ÌŽçŒì_‚ª•ß‚Ü‚èAè—Ì‘‚ª•ÏX‚³‚ê‚Ü‚µ‚½B"
+    IDS_SM_DUAL_WIN         "[%s]‚ª[%s]‚Æ‚Ìƒfƒ…ƒGƒ‹‚ÉŸ—˜‚µ‚Ü‚µ‚½B"
+    IDS_SM_EVENT_QUARTER    "%02d:%02d ƒ‰ƒbƒL[ƒiƒ“ƒo[‚Ì’Š‘I‚ðs‚¢‚Ü‚·B¡‰ñ‚ÌƒvƒŒƒ[ƒ“ƒg‚Í[%s]‚Å‚·B\nƒgƒDƒ‹ƒ‹ƒ‹ƒ‹ƒ‹ƒ‹cƒWƒƒƒ“I\n‚¨‚ß‚Å‚Æ‚¤‚²‚´‚¢‚Ü‚·II@ƒ‰ƒbƒL[ƒiƒ“ƒo[ : [%d]”Ô‚Ì•û‚ª“–‘I‚³‚ê‚Ü‚µ‚½BƒvƒŒƒ[ƒ“ƒg‚Í‚µ‚Î‚ç‚­‚½‚Á‚Ä‚©‚çƒ[ƒ‹‚Å‚¨“Í‚¯‚µ‚Ü‚·B‚Ç‚¤‚¼‚¨Šy‚µ‚Ý‚ÉI\n‚»‚ê‚Å‚ÍŽŸ‰ñ’Š‘I‚Ü‚Å‚²‚«‚°‚ñ‚æ‚¤I"
+    IDS_SM_CHAT_BAN         "‚ ‚È‚½‚Í %d•ªŠÔƒ`ƒƒƒbƒg‚ª‹Ö‚¶‚ç‚ê‚Ü‚µ‚½B"
+    IDS_SM_BATTLE_END_ALARM_SEC "’nˆæè—Ìí‚ª %d•bŒã‚ÉI—¹‚µ‚Ü‚·B"
+    IDS_SM_BATTLE_START_ALARM_SEC "’nˆæè—Ìí‚ª %d•bŒã‚ÉŠJŽn‚³‚ê‚Ü‚·B"
+    IDS_SM_CHAT_BAN_SEC     "‚ ‚È‚½‚Í %d•bŠÔƒ`ƒƒƒbƒg‚ª‹Ö‚¶‚ç‚ê‚Ü‚µ‚½B"
+    IDS_PETKIND_ONE_CONTRACT "[ˆÚ“®‘¬“x %u%%]"
+    IDS_PETKIND_TWO_CONTRACT "[ˆê‚Éæ‚é %u%%]"
+    IDS_PETKIND_TELE_CONTRACT "[‹AŠÒêŠ %uŒÂ]"
+    IDS_PETKIND_INVEN_CONTRACT "[%d˜g‚ÌƒoƒbƒO]"
+    IDS_PETKIND_EXP_CONTRACT "[%u%%’Ç‰ÁŒoŒ±’l]"
+    IDS_PETCON_LEVEL_CONTRACT "[ƒŒƒxƒ‹ %uˆÈã]"
+    IDS_FMT_PET_EXTPERIOD   "ŠúŒÀI—¹‚Ü‚Å %u“úŽc‚Á‚Ä‚Ü‚·B"
+    IDS_FMT_PET_PERIOD_FIRED "ŠúŒÀ‚ªI—¹‚µ‚Ü‚µ‚½B"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MENU_PET            "ƒyƒbƒgŠÇ—"
+    IDS_TKEY_PET_INFO       "ƒyƒbƒgŠÇ—î•ñ‚ðŠJ‚­/•Â‚¶‚é"
+    IDS_OPENMONEY           "Œ®‚ª‚©‚©‚Á‚Ä‚¢‚½•ó•¨” ‚ðŠJ‚¯‚Ä %s‚ðŠl“¾‚µ‚Ü‚µ‚½B"
+    IDS_GUILD_JOB           "E‹Æ"
+    IDS_GUILD_LEVEL         "ƒŒƒxƒ‹"
+    IDS_GUILD_CONTRIBUTION  "vŒ£“x"
+    IDS_CASHCABINET_PUTIN_PR "’Ç‰Á‚Ì•ÛŠÇ—¿‚Í‚PŒÂ‚²‚Æ‚É25LEƒ|ƒCƒ“ƒg‚Å‚·B—a‚¯‚Ü‚·‚©H"
+    IDS_CASHCABINET_PUTIN   "’Ç‰Á‚Ì•ÛŠÇ—¿‚Í‚PŒÂ‚²‚Æ‚É50LEƒ|ƒCƒ“ƒg‚Å‚·B—a‚¯‚Ü‚·‚©H"
+    IDS_CASHCABINET_REMAIN_COUNT "Žc‚èŠúŒÀ : %d“ú •ÛŠÇŒÂ” : %d/‚P0"
+    IDS_CASHCABINET_REMAIN_COUNT_ON_PR "Žc‚èŠúŒÀ : %d“ú •ÛŠÇŒÂ” : %d/(30+‚P0)"
+    IDS_GUILD_RANK          "ƒMƒ‹ƒhƒ‰ƒ“ƒN"
+    IDS_GUILD_PEERAGE       "ƒMƒ‹ƒhƒ‰ƒ“ƒN"
+    IDS_GUILD_NOWPOS        "Œ»ÝˆÊ’u"
+    IDS_GUILD_EARNESTMONEY  "Œ_–ñ‹à"
+    IDS_GUILD_JOININGYESORNO "ŽQ‰Á‹æ•ª"
+    IDS_GUILD_APPDAY        "Žx‰‡“ú•t"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_GUILD_APPTYPE       "Žx‰‡‹æ•ª"
+    IDS_GUILD_OCCUPATIONGUILD "è—ÌƒMƒ‹ƒh"
+    IDS_GUILD_BELONGNATION  "Š‘®‘‰Æ"
+    IDS_GUILD_CASTLE        "é"
+    IDS_GUILD_VILLAGE       "‘º"
+    IDS_FMT_LEVEL_IN_LOBY   "ƒŒƒxƒ‹ %d"
+    IDS_FMT_RESOLUTION      "%d x %d"
+    IDS_MY_POS              "Œ»Ý’nÀ•W : %.2f , %.2f"
+    IDS_CURSOR_POS          "ƒJ[ƒ\ƒ‹‚ÌÀ•W : %.2f , %.2f"
+    IDS_FMT_TERRITORYTIME   "ŽŸ‚Ìí‘ˆŽžŠÔ : %04d/%02d/%02d %02d:%02d"
+    IDS_FMT_HERO            "í‘ˆ‰p—Y : %s"
+    IDS_DONTHAVEINITSKILL   "‰Šú‰»‚Å‚«‚éƒXƒLƒ‹‚ª‚ ‚è‚Ü‚¹‚ñB"
+    IDS_TEST                "ƒXƒgƒŠƒ“ƒOƒeƒXƒg"
+    IDS_FMT_WHISPER         "(%s‚Ö) %s"
+    IDS_BUGREPORTER_TITLE   "ƒGƒ‰["
+    IDS_BUGREPORTER_MESSAGE "ƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚Ì‹N“®’†‚É—\Šú‚¹‚ÊƒGƒ‰[‚ªŒ©‚Â‚©‚è‚Ü‚µ‚½B\n‚²–À˜f‚ð‚¨‚©‚¯‚µ\‚µ–ó‚ ‚è‚Ü‚¹‚ñB"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BUGREPORTER_CONTENTS "•ñ“à—e"
+    IDS_BUGREPORTER_MESSAGE2 
+                            "•s‹ï‡‚ð•ñ‚µ‚Ä–â‘è‚Ì‰ðŒˆ‚É‹¦—Í‚·‚é‚±‚Æ‚ªo—ˆ‚Ü‚·B\n\nŽûW‚³‚ê‚½ƒf[ƒ^‚Í–â‘è‰ðŒˆ‚Ì‚½‚ß‚¾‚¯‚ÉŽg—p‚³‚êA‚»‚êˆÈŠO‚Ì–Ú“I‚Å‚ÍŽg—p‚³‚ê‚Ü‚¹‚ñBŒöŽ®ƒTƒCƒg‚©‚ç‚É•s‹ï‡‚ÌÚ×‚ð‚²•ñ‚¢‚½‚¯‚ê‚ê‚ÎA–â‘è‚ð‚æ‚è‘‚­‰ðŒˆ‚Å‚«‚é‚Å‚µ‚å‚¤B‚²—‰ð‚Æ‚²‹¦—Í‚ð‚¨Šè‚¢\‚µã‚°‚Ü‚·B"
+    IDS_BUGREPORTER_BTN_OK  "ƒGƒ‰[“à—e‚ð•ñ"
+    IDS_BUGREPORTER_BTN_CLOSE "•Â‚¶‚é"
+    IDS_DIRECT_DELCHAR_MSG  "‘I‘ð‚³‚ê‚½ƒLƒƒƒ‰ƒNƒ^[‚ðíœ‚µ‚Ü‚·B"
+    IDS_CONNET_RETRY        "ƒlƒbƒgƒ[ƒNƒGƒ‰[‚É‚æ‚èAƒT[ƒo[‚©‚çØ’f‚³‚ê‚Ü‚µ‚½B\n‚à‚¤ˆê“xÚ‘±‚µ‚È‚¨‚µ‚Ä‚­‚¾‚³‚¢B"
+    IDS_VK_OEM_7            "^"
+END
+
+#endif    // ÀÏº»¾î resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// ÇÑ±¹¾î resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+1                       RT_MANIFEST             "TClient.manifest"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\TClient.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXT
+//
+
+IDR_TEXT_CURSE          TEXT                    "res\\Curse.txt"
+#endif    // ÇÑ±¹¾î resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// ¿µ¾î(¹Ì±¹) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// SHADER
+//
+
+IDR_PS_STAGE1           SHADER                  "res\\PS_STAGE1.psh"
+IDR_VS_WMESH            SHADER                  "res\\VS_WMESH.vsh"
+IDR_VS_MESH             SHADER                  "res\\VS_MESH.vsh"
+IDR_VS_LVERTEX          SHADER                  "res\\VS_LVERTEX.vsh"
+IDR_PS_MODULATE         SHADER                  "res\\PS_MODULATE.psh"
+IDR_PS_MODULATE2X       SHADER                  "res\\PS_MODULATE2X.psh"
+IDR_PS_MODULATE4X       SHADER                  "res\\PS_MODULATE4X.psh"
+IDR_PS_ADD              SHADER                  "res\\PS_ADD.psh"
+IDR_PS_ADDSIGNED        SHADER                  "res\\PS_ADDSIGNED.psh"
+IDR_PS_ADDSIGNED2X      SHADER                  "res\\PS_ADDSIGNED2X.psh"
+IDR_PS_SUBTRACT         SHADER                  "res\\PS_SUBTRACT.psh"
+IDR_PS_ADDSMOOTH        SHADER                  "res\\PS_ADDSMOOTH.psh"
+IDR_PS_BLENDDIFFUSEALPHA SHADER                  "res\\PS_BLENDDIFFUSEALPHA.psh"
+IDR_PS_BLENDTEXTUREALPHA SHADER                  "res\\PS_BLENDTEXTUREALPHA.psh"
+IDR_PS_BLENDFACTORALPHA SHADER                  "res\\PS_BLENDFACTORALPHA.psh"
+IDR_PS_BLENDTEXTUREALPHAPM SHADER                  "res\\PS_BLENDTEXTUREALPHAPM.psh"
+IDR_PS_BLENDCURRENTALPHA SHADER                  "res\\PS_BLENDCURRENTALPHA.psh"
+IDR_PS_MODULATEALPHA_ADDCOLOR SHADER                  "res\\PS_MODULATEALPHA_ADDCOLOR.psh"
+IDR_PS_MODULATECOLOR_ADDALPHA SHADER                  "res\\PS_MODULATECOLOR_ADDALPHA.psh"
+IDR_PS_MODULATEINVALPHA_ADDCOLOR SHADER                  "res\\PS_MODULATEINVALPHA_ADDCOLOR.psh"
+IDR_PS_MODULATEINVCOLOR_ADDALPHA SHADER                  "res\\PS_MODULATEINVCOLOR_ADDALPHA.psh"
+IDR_PS_DOTPRODUCT3      SHADER                  "res\\PS_DOTPRODUCT3.psh"
+IDR_PS_MULTIPLYADD      SHADER                  "res\\PS_MULTIPLYADD.psh"
+IDR_PS_LERP             SHADER                  "res\\PS_LERP.psh"
+IDR_PS_SHADER           SHADER                  "res\\PS_SHADER.psh"
+IDR_PS_DETAILMAP        SHADER                  "res\\PS_DETAILMAP.psh"
+IDR_PS_MAP              SHADER                  "res\\PS_MAP.psh"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,0,0,1
+ PRODUCTVERSION 3,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Zemi Interactive"
+            VALUE "FileDescription", "4Story"
+            VALUE "FileVersion", "3, 0, 0, 1"
+            VALUE "InternalName", "TClient"
+            VALUE "LegalCopyright", "Copyright (C) 2006"
+            VALUE "OriginalFilename", "TClient.EXE"
+            VALUE "ProductName", "Zemi Interactive"
+            VALUE "ProductVersion", "3, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TClient.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HAND                CURSOR                  "res\\Hand.cur"
+IDC_SWORD               CURSOR                  "res\\Sword.cur"
+IDC_TALK                CURSOR                  "res\\Talk.cur"
+IDC_ROUTING             CURSOR                  "res\\ROUTING.CUR"
+#endif    // ¿µ¾î(¹Ì±¹) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\TClient.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
+
+#endif

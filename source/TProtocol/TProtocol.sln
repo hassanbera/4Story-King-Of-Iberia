@@ -1,0 +1,18 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TProtocol", "TProtocol.vcproj", "{BA3F0892-64C5-497B-A10C-DAD0CE92B5FC}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		No Build = No Build
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{BA3F0892-64C5-497B-A10C-DAD0CE92B5FC}.No Build.ActiveCfg = No Build|Win32
+		{BA3F0892-64C5-497B-A10C-DAD0CE92B5FC}.No Build.Build.0 = No Build|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
