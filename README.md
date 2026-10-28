@@ -2,6 +2,8 @@
 
 Bu depo, kaynak kodlu OldSchool 3.3 tabanından geliştirdiğimiz yerel 4Story projesinin yeni çalışma alanıdır. Kod ve değişiklik geçmişi burada tutulacak. VS Code ile bu klasörü doğrudan açabilirsiniz.
 
+Klasörlerin görevleri ve mevcut sınırlar: [depo rehberi](docs/REPOSITORY_GUIDE.md).
+
 ## Başlangıç durumu
 
 - `source/`: PhilipMorris OldSchool 3.3 C++ istemci, sunucu, protokol ve araç kaynaklarının 28 Ekim 2026 çalışma kopyası. Yesode sakinleri için geliştirdiğimiz rota kodu da bu kopyada.

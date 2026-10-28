@@ -1,4 +1,6 @@
 # Önceki yerel deney betikleri
 
-Bu betikler 3.3 sunucunun ilk derleme ve Yesode rota denemelerinde kullanıldı. Bazılarında eski çalışma klasörünün mutlak yolu, eski LocalDB adı veya önceden üretilmiş nesne dosyalarına bağımlılık var. Yeni depoda doğrudan çalıştırılmaları henüz doğrulanmadı. Taşınabilir derleme ve kurulum betikleri ayrı bir adımda yeniden hazırlanacak.
+Bu klasör, mevcut PhilipMorris oyununun geliştirme geçmişinde kullanılan betiklerin arşividir. Bazıları mevcut çalışma klasörünün mutlak yoluna veya önceden üretilmiş nesne dosyalarına bağlıdır. Buradan doğrudan çalıştırılmaları doğrulanmadı; proje giriş noktası olarak kullanılmamalıdır.
+
+Güncel kaynak derleme komutu depo kökünde `python scripts/build_server.py` komutudur. Çalışan oyun ve veritabanının yeri `docs/WORKING_BASELINE.md` içinde kayıtlıdır.
 
