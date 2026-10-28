@@ -5,6 +5,7 @@
 - OldSchool 3.3 sunucu kaynaklarından dört hizmetin yerel Windows derlemesi çalıştırıldı.
 - Ayrı LocalDB ortamında kullanıcı giriş yaptı ve Kuznez haritasına girdi.
 - Kaynakta geliştirilen Yesode rota ağıyla 30 sakin oyun içinde gözlendi; kullanıcı görünüş, hareket ve performansı kabul etti.
+- Yeni depodan Yesode rota mantığının üç C++ dosyası derlendi; rota verisi aynı CSV'yi yeniden üretti. Ayrıntı: `docs/BUILD.md`.
 
 ## Açık işler
 
