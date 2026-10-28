@@ -17,7 +17,7 @@
 
 - Çalışan sunucular ve mevcut veritabanı önceki yerel çalışma konumunda çalışıyor. Bu deponun oluşturulması çalışan oyunu başka yere taşımadı.
 - 30 sakinin kabul edilmiş durumu mevcut veritabanı ve istemci verisinde bulunuyor. Depodaki rota dosyaları bunun tamamını tek başına yeniden kurmaya yetmez; görünüş ve SQL içerik değişikliklerinin eksiksiz kurulum/migrasyon kaydı henüz hazırlanmadı.
-- Kaynak istemci derlemesi tamamlanmadı; istemci varlıkları Git'e alınmadı.
+- Kaynak istemci derlemesi 29 Ekim'de üretildi ve aday olarak aynı oyuna yüklendi; oyun içi doğrulamalar `LOCAL_CLIENT_BUILD.md` içinde izleniyor. İstemci varlıkları Git'e alınmadı.
 - `source/TClient/` altındaki `TClient` ve `TClientA` ağaçları kaynak paketinden birlikte geldi. Derleme hedefi belirlenmeden biri silinmedi.
 
 Bu sınırlar mevcut oyun üzerinde geliştirmeyi engellemez; deponun tek başına taşınabilir bir oyun dağıtımı olduğu anlamına gelmediğini gösterir. Bundan sonraki kod ve içerik değişiklikleri bu depoda küçük, açıklanmış commit'lerle kaydedilecek.

@@ -202,7 +202,7 @@ void CTClientGuildMark::LoadBakingTexture()
 {
 	CTachyonRes* pRES = CTClientGame::GetInstance()->GetResource();
 
-	static dwBACK[] =
+	static DWORD dwBACK[] =
 	{
 		GUILD_BACK_00,
 		GUILD_BACK_01,
@@ -225,7 +225,7 @@ void CTClientGuildMark::LoadBakingTexture()
 		GUILD_BACK_18
 	};
 
-	static dwMARK[] =
+	static DWORD dwMARK[] =
 	{
 		GUILD_MARK_00,
 		GUILD_MARK_01,

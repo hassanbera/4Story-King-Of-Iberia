@@ -9,7 +9,7 @@ CPoint CTNewQuestDlg::m_ptPOS = CPoint(0,0);
 
 struct binary_qclass : public binary_function< CTClientQClass *, CTClientQClass *, bool>
 {
-	bool operator () ( const CTClientQClass * &_Left, const CTClientQClass * &_Right) const
+	bool operator () ( const CTClientQClass * _Left, const CTClientQClass * _Right) const
 	{
 		return _Left->m_pTQCLASS && _Left->m_pTQCLASS->m_bMAIN ? true : false;
 	};
@@ -17,7 +17,7 @@ struct binary_qclass : public binary_function< CTClientQClass *, CTClientQClass 
 
 struct binary_tquest : public binary_function< CTClientQuest *, CTClientQuest *, bool>
 {
-	bool operator () ( const CTClientQuest * &_Left, const CTClientQuest * &_Right) const
+	bool operator () ( const CTClientQuest * _Left, const CTClientQuest * _Right) const
 	{
 		return binary_quest()( _Left->m_pTQUEST, _Right->m_pTQUEST);
 	};

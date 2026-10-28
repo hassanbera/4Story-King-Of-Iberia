@@ -2247,7 +2247,7 @@ BYTE CTClientObjBase::GetEquipModeIndex( BYTE bEquipPOS,
 
 void CTClientObjBase::ResetOBJPart( CD3DDevice *pDevice)
 {
-	static dwCOSTUME[4] =
+	static DWORD dwCOSTUME[4] =
 	{
 		ES_COSTUME_HAT,
 		ES_COSTUME_DRESS,
@@ -6369,7 +6369,7 @@ CTClientItem *CTClientObjBase::FindSkillWeapon( LPTSKILL pTSKILL)
 
 		if(pEQUIP)
 		{
-			static dwEquipID[] = {
+			static DWORD dwEquipID[] = {
 				ES_PRMWEAPON,
 				ES_SNDWEAPON,
 				ES_LONGWEAPON};

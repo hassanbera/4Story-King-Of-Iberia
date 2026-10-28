@@ -179,7 +179,7 @@ CString CTTextLinker::MakeLinkToNetText( TEdit *pEdit, BOOL bLengthSafety, INT n
 
 	for( TComponent::TextSettingSet::iterator it = pEdit->GetTextSettingItrBegin(); it != pEdit->GetTextSettingItrEnd(); it++)
 	{
-		TComponent::TextSetting& vDATA = (*it);
+		const TComponent::TextSetting& vDATA = (*it);
 
 		if( wPOS <= vDATA.iStart && wPOS <= vDATA.iEnd )
 		{
@@ -701,7 +701,7 @@ void CTTextLinker::GetTextSettings( TComponent* pTxtSettingComp,
 		const TTEXT_LINK_LINE& line = vLINES[i];
 		while( itr != end )
 		{
-			TComponent::TextSetting& data = *itr;
+			const TComponent::TextSetting& data = *itr;
 			if( data.iStart >= line.nEnd )
 				break;
 

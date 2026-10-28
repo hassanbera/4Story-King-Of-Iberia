@@ -124,7 +124,7 @@ CString CTBlockListDlg::GetName(INT nIndex)
 	{
 		return m_vBlockChars[ nIndex ].m_strCharName;
 	}
-	return 0;
+	return CString();
 }
 // -------------------------------------------------------
 BYTE CTBlockListDlg::GetBlockOption(INT nIndex)

@@ -691,7 +691,7 @@ void THttpCtrl::OnChar( UINT nChar, int nRepCnt, UINT nFlags)
 		return;
 	}
 
-	WORD wTLANG = LOWORD(GetKeyboardLayout(0));
+	WCHAR wTLANG = LOWORD(GetKeyboardLayout(0));
 	BYTE vTBUFF[7];
 
 	GetLocaleInfo(

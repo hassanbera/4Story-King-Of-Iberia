@@ -14,8 +14,13 @@ public:
 
     virtual void OnLButtonDown(UINT flags, CPoint point)
     {
+        if(!CanProcess() || !HitTest(point)) return;
+        ToggleRemember();
+    }
+    void ToggleRemember()
+    {
         BOOL wasSelected = IsStateDown();
-        TButton::OnLButtonDown(flags, point);
+        Select(!wasSelected);
         if(wasSelected && !IsStateDown() && !RememberLoginStore::Clear(LPCTSTR(m_endpoint)))
         {
             Select(TRUE);
@@ -24,4 +29,16 @@ public:
     }
     virtual void OnRButtonDown(UINT, CPoint) {}
     virtual void OnRButtonUp(UINT, CPoint) {}
+};
+
+class CRememberLoginLabel : public TComponent
+{
+    CRememberLoginButton *m_checkbox;
+public:
+    CRememberLoginLabel(TComponent *parent, CRememberLoginButton *checkbox)
+        : TComponent(parent, NULL), m_checkbox(checkbox) {}
+    virtual void OnLButtonDown(UINT, CPoint point)
+    {
+        if(CanProcess() && HitTest(point)) m_checkbox->ToggleRemember();
+    }
 };

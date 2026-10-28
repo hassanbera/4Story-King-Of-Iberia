@@ -186,7 +186,7 @@ DWORD CTClientGame::m_dwReleaseMaintainFunctionWhenGameOut[4] =
 
 struct binary_draw : public binary_function< CTClientObjBase *, CTClientObjBase *, bool>
 {
-	bool operator () ( const CTClientObjBase * &_Left, const CTClientObjBase * &_Right) const
+	bool operator () ( const CTClientObjBase * _Left, const CTClientObjBase * _Right) const
 	{
 		if( _Left->m_bLastDraw == _Right->m_bLastDraw )
 		{
@@ -204,7 +204,7 @@ struct binary_draw : public binary_function< CTClientObjBase *, CTClientObjBase 
 
 struct binary_pick : public binary_function< CTClientObjBase *, CTClientObjBase *, bool>
 {
-	bool operator () ( const CTClientObjBase * &_Left, const CTClientObjBase * &_Right) const
+	bool operator () ( const CTClientObjBase * _Left, const CTClientObjBase * _Right) const
 	{
 		return _Left->m_fPickWeight > _Right->m_fPickWeight ? true : false;
 	};
@@ -7526,7 +7526,7 @@ int CTClientGame::OnSessionMsg( CTachyonSession *pSession, CPacket *pPacket)
 	ON_TRECEIVE( CS_TOURNAMENTSELECTWINNER_ACK)
 #endif
 	ON_TRECEIVE( CS_ITEMLEVELREVISION_ACK)
-#ifndef TEST_MODE
+#if !defined(TEST_MODE) && !defined(KOI_LOCAL_CLIENT)
 	ON_TRECEIVE( CS_HACKSHIELD_ACK )
 #endif
 
@@ -21430,7 +21430,7 @@ void CTClientGame::StopMoveMainChar()
 
 void CTClientGame::StartApexClient( CTachyonSession *pSession )
 {
-#ifndef TEST_MODE
+#if !defined(TEST_MODE) && !defined(KOI_LOCAL_CLIENT)
 	long re = CHCStart( static_cast<CTClientSession*>(pSession)->SnedCS_APEXDATA_REQ, m_pApexfRec );
 
 	static_cast<CTClientSession*>(pSession)->SendCS_APEXSTART_REQ( re );

@@ -1077,15 +1077,19 @@ void TEdit::OnLoseFocus(TComponent *pSetFocus)
 
 void TEdit::MoveTextSetting(INT iFrom, INT iCount)
 {
-	TextSettingSet::iterator itr, end;
-	itr = GetTextSettingItr(iFrom);
-	end = m_TextSettingSet.end();
-
-	for( ; itr!=end; ++itr )
-	{
-		itr->iStart += iCount;
-		itr->iEnd += iCount;
-	}
+    // std::set keys must be erased before their sort fields change.
+    TextSettingSet::iterator first = GetTextSettingItr(iFrom);
+    std::vector<TextSetting> moved;
+    for(TextSettingSet::iterator it = first; it != m_TextSettingSet.end(); ++it)
+    {
+        TextSetting data = *it;
+        data.iStart += iCount;
+        data.iEnd += iCount;
+        moved.push_back(data);
+    }
+    m_TextSettingSet.erase(first, m_TextSettingSet.end());
+    m_TextSettingSet.insert(moved.begin(), moved.end());
+    m_bNeedUpdateTextSetting = TRUE;
 }
 
 INT GetAttrToType( BYTE bType )

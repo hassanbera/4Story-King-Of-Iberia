@@ -3709,7 +3709,7 @@ int CTClientGame::OnCS_ITEMUPGRADE_ACK( CTachyonSession *pSession, CPacket *pPac
 			RelaySession()->SendCS_CHAT_REQ(
 				m_pMainChar->m_strNAME,
 				CHAT_SHOW,
-				strITEM.GetLength(), NULL,
+				strITEM.GetLength(), CString(),
 				strITEM,
 				m_pMainChar->m_bContryID,
 				m_mapPLAYER);
@@ -14053,7 +14053,7 @@ int CTClientGame::OnCS_CASHSHOPSTOP_ACK( CTachyonSession *pSession, CPacket *pPa
 
 int CTClientGame::OnCS_APEXDATA_ACK( CTachyonSession *pSession, CPacket *pPacket)
 {
-#ifndef TEST_MODE
+#if !defined(TEST_MODE) && !defined(KOI_LOCAL_CLIENT)
 	char cBuf[MAX_APEXPACKET];
 
 	int nBufLen;
@@ -15890,7 +15890,7 @@ int CTClientGame::OnCS_ITEMLEVELREVISION_ACK( CTachyonSession *pSession, CPacket
 }
 #endif
 
-#ifndef TEST_MODE
+#if !defined(TEST_MODE) && !defined(KOI_LOCAL_CLIENT)
 int CTClientGame::OnCS_HACKSHIELD_ACK( CTachyonSession *pSession, CPacket *pPacket )
 {
 	AHNHS_TRANS_BUFFER stRequestBuf;
@@ -16007,7 +16007,7 @@ int CTClientGame::OnCS_RPSGAME_ACK( CTachyonSession *pSession, CPacket *pPacket 
 			RelaySession()->SendCS_CHAT_REQ(
 				m_pMainChar->m_strNAME,
 				CHAT_SHOW,
-				strText.GetLength(), NULL,
+				strText.GetLength(), CString(),
 				strText,
 				m_pMainChar->m_bContryID,
 				m_mapPLAYER);
@@ -16046,7 +16046,7 @@ int CTClientGame::OnCS_RPSGAME_ACK( CTachyonSession *pSession, CPacket *pPacket 
 			RelaySession()->SendCS_CHAT_REQ(
 				m_pMainChar->m_strNAME,
 				CHAT_SHOW,
-				strText.GetLength(), NULL,
+				strText.GetLength(), CString(),
 				strText,
 				m_pMainChar->m_bContryID,
 				m_mapPLAYER);

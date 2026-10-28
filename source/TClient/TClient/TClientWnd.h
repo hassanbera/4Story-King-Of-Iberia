@@ -19,6 +19,7 @@ public:
 	CReleaseChart m_vReleaseChart;
 	TButton *m_pRememberLogin;
 	void InitRememberLogin();
+	void RestoreRememberLogin();
 	void SaveRememberLogin();
 
 public:

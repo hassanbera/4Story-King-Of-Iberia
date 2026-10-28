@@ -1,6 +1,6 @@
 #pragma once
 
-#ifndef TEST_MODE
+#if !defined(TEST_MODE) && !defined(KOI_LOCAL_CLIENT)
 #include "ApexClient.h"
 #include <HShield.h>
 #include <HSUpChk.h>
@@ -15,7 +15,7 @@ public:
 	virtual ~CTClientGame();
 
 	void StartApexClient( CTachyonSession *pSession );
-#ifndef TEST_MODE
+#if !defined(TEST_MODE) && !defined(KOI_LOCAL_CLIENT)
 	_FUNC_C_REC		m_pApexfRec;
 #endif
 
@@ -2471,7 +2471,7 @@ public:
 
 	int OnCS_CASHSHOPSTOP_ACK( CTachyonSession *pSession, CPacket *pPacket);
 	int OnCS_APEXDATA_ACK( CTachyonSession *pSession, CPacket *pPacket);
-#ifndef TEST_MODE
+#if !defined(TEST_MODE) && !defined(KOI_LOCAL_CLIENT)
 	int OnCS_HACKSHIELD_ACK( CTachyonSession *pSession, CPacket * pPacket);
 #endif
 	int UpdateAuctionList( CPacket* pPacket );

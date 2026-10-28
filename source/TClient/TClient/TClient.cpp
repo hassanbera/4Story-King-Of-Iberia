@@ -8,7 +8,7 @@
 #include "PacketSpyAcks.h"
 #include "TMiniDump.h"
 
-#ifndef TEST_MODE
+#if !defined(TEST_MODE) && !defined(KOI_LOCAL_CLIENT)
 #include <XTrapArg.h>
 #include <HShield.h>
 #include <HSUpChk.h>
@@ -360,6 +360,7 @@ BOOL CTClientApp::InitInstance()
 
 	// 게임가드.
 	m_pNpgl = NULL;
+#ifndef KOI_LOCAL_CLIENT
 	if( CTNationOption::RUSSIA )
 	{
 		m_pNpgl = new CNPGameLib( "4StoryRU" );
@@ -435,6 +436,8 @@ BOOL CTClientApp::InitInstance()
 			return FALSE;
 		}
 	}
+
+#endif
 
 	AfxEnableControlContainer();
 	CoInitialize(NULL);
@@ -521,10 +524,14 @@ BOOL CTClientApp::InitInstance()
 
 	LoadStdProfileSettings();
 
+#ifdef KOI_LOCAL_CLIENT
+	m_pTachyonWnd->m_Device.m_option.m_bWindowedMode = TRUE;
+#endif
+
 	if(!m_pTachyonWnd->Create())
 		return FALSE;
 
-#ifndef TEST_MODE
+#if !defined(TEST_MODE) && !defined(KOI_LOCAL_CLIENT)
 	if( CTNationOption::INSTALL_XTRAP )
 		XTrap_C_KeepAlive();
 #endif
@@ -563,6 +570,7 @@ BOOL CTClientApp::InitInstance()
 	}
 
 	// 게임가드.
+#ifndef KOI_LOCAL_CLIENT
 	if( CTNationOption::RUSSIA )
 	{
 		if( CheckD3DDevice( (LPVOID)m_pTachyonWnd->m_Device.m_pDevice, "d3d9.dll" ) )
@@ -579,6 +587,8 @@ BOOL CTClientApp::InitInstance()
 			return FALSE;
 		}
 	}
+
+#endif
 
 	m_pTachyonWnd->AdjustWindowSize(
 		m_pTachyonWnd->m_Device.m_option.m_dwScreenX,
@@ -810,11 +820,14 @@ int CTClientApp::ExitInstance()
 	CTChart::ReleaseTString();
 
 	// 게임가드.
+#ifndef KOI_LOCAL_CLIENT
 	if( CTNationOption::RUSSIA && m_pNpgl )
 	{
 		delete m_pNpgl;
 		m_pNpgl = NULL;
 	}
+
+#endif
 
 	return CWinApp::ExitInstance();
 }

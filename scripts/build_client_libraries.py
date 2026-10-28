@@ -13,6 +13,9 @@ PROJECTS = {
     "TCML": ENGINE / "TCML" / "TCML.vcproj",
     "EngineLib": ENGINE / "Engine Lib" / "Engine Lib.vcproj",
     "TUIs": ENGINE / "TachyonControl" / "TachyonControl.vcproj",
+    "TComp": ENGINE / "TComp" / "TComp.vcproj",
+    "TChatFilter": ENGINE / "TChatFilter" / "TChatFilter.vcproj",
+    "TChart": ENGINE.parent / "TChart" / "TChart.vcproj",
 }
 
 
@@ -21,20 +24,22 @@ def main():
     parser.add_argument("--dx-include", required=True, type=Path)
     parser.add_argument("--library", choices=PROJECTS, action="append")
     parser.add_argument("--zlib-source", type=Path, help="Optional zlib 1.3.1 source tree to build the compression dependency")
+    parser.add_argument("--local-client", action="store_true", help="Build the loopback-only local client libraries")
     args = parser.parse_args()
     if not (args.dx_include / "dmusici.h").is_file():
         parser.error("Legacy DirectX include directory with dmusici.h required")
     env = build_server.toolchain()
     shared = Path(env["WindowsSdkDir"]) / "Include" / env["WindowsSDKVersion"].rstrip("\\/") / "shared"
     includes = [shared, args.dx_include.resolve(), ENGINE / "TachyonControl", ENGINE / "Engine Lib",
-                ENGINE / "TComp", ENGINE / "TCML", ENGINE / "Engine Lib" / "zlib"]
-    libraries = OUT / "lib"
+                ENGINE / "TComp", ENGINE / "TCML", ENGINE / "Engine Lib" / "zlib", REPO / "source" / "TProtocol"]
+    output_root = REPO / "build" / "client-libraries-local" if args.local_client else OUT
+    libraries = output_root / "lib"
     libraries.mkdir(parents=True, exist_ok=True)
     if args.zlib_source:
         zlib = args.zlib_source.resolve()
         if '#define ZLIB_VERSION "1.3.1"' not in (zlib / "zlib.h").read_text():
             raise RuntimeError("Expected zlib 1.3.1 headers")
-        out = OUT / "zlib"
+        out = output_root / "zlib"
         out.mkdir(parents=True, exist_ok=True)
         names = "adler32 compress crc32 deflate gzclose gzlib gzread gzwrite inflate infback inftrees inffast trees uncompr zutil".split()
         units = [str(zlib / (name + ".c")) for name in names]
@@ -49,7 +54,7 @@ def main():
         build_server.run("test-zlib-smoke", [str(smoke)], out, env)
     for name in args.library or PROJECTS:
         project = PROJECTS[name]
-        out = OUT / name
+        out = output_root / name
         out.mkdir(parents=True, exist_ok=True)
         text = project.read_bytes().decode("cp949", errors="replace")
         units = [str((project.parent / p).resolve()) for p in re.findall(r'RelativePath="([^"]+\.(?:cpp|c))"', text, re.I)]
@@ -60,6 +65,8 @@ def main():
                  "/DWIN32", "/DNDEBUG", "/D_WINDOWS", "/DWINVER=0x0601", "/D_WIN32_WINNT=0x0601"]
         if name == "TCML":
             flags.append("/D_LIB")
+        if args.local_client:
+            flags.append("/DKOI_LOCAL_CLIENT")
         flags += ["/I" + str(p) for p in includes]
         flags += ["/I" + str(project.parent)]
         build_server.run("compile-" + name, flags + units, out, env)

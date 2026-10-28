@@ -94,7 +94,7 @@ int CTClientWnd::OnGM_NETCABLE_DISCONNECTED()
 
 	SaveCustomCompPos();
 
-#ifndef TEST_MODE
+#if !defined(TEST_MODE) && !defined(KOI_LOCAL_CLIENT)
 	if ( CTNationOption::INSTALL_APEX )
 		CHCEnd();
 #endif
@@ -120,7 +120,7 @@ int CTClientWnd::OnGM_EXIT_GAME()
 
 	SaveCustomCompPos();
 
-#ifndef TEST_MODE
+#if !defined(TEST_MODE) && !defined(KOI_LOCAL_CLIENT)
 	if ( CTNationOption::INSTALL_APEX )
 		CHCEnd();
 #endif
@@ -147,7 +147,7 @@ int CTClientWnd::OnGM_EXIT_GAME()
 
 int CTClientWnd::OnGM_EXIT()
 {
-#ifndef TEST_MODE
+#if !defined(TEST_MODE) && !defined(KOI_LOCAL_CLIENT)
 	if ( CTNationOption::INSTALL_APEX )
 		CHCEnd();	
 #endif

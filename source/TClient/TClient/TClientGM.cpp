@@ -5453,7 +5453,7 @@ int CTClientGame::OnGM_WARN_CASH_PRESENT()
 		m_pMainWnd->MessageBox(
 			strMSG,
 			strNAME,
-			0,
+			CString(),
 			TSTR_YES,
 			TSTR_NO,
 			ID_FRAME_2BTNMSGBOX,
@@ -5488,7 +5488,7 @@ int CTClientGame::OnGM_CHECK_CASH_PRESENT()
 
 		m_pMainWnd->MessageBox(
 			strMSG,
-			0,
+			CString(),
 			strTarget,
 			TSTR_YES,
 			TSTR_NO,

@@ -283,6 +283,11 @@ void CTNationOption::SetNation( INT nNation )
 		CTNationOption::USE_WEB_CASHSHOP = FALSE;
 		break;
 	}
+#ifdef KOI_LOCAL_CLIENT
+	INSTALL_XTRAP = INSTALL_APEX = INSTALL_HACKSHIELD = INSTALL_GAMEGUARD = FALSE;
+	USE_WEB_CASHSHOP = FALSE;
+	m_strAppTitle = "4Story King Of Iberia";
+#endif
 }
 
 BOOL CTNationOption::SetNation( CString strNation )

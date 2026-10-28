@@ -402,6 +402,7 @@ void CTClientWnd::OnClose( CTachyonSession *pSession, int nErrorCode)
 			TFrame *pFRAME = m_TNet.FindFrame(ID_FRAME_LOGIN);
 			TEdit* pEditPW = (TEdit*) pFRAME->FindKid(ID_CTRLINST_PW);
 			pEditPW->ClearText();
+			RestoreRememberLogin();
 
 			if( theApp.m_bNeedWorldUnify )
 			{
@@ -1678,6 +1679,9 @@ void CTClientWnd::InitResource( CString strGroupID,
 
 	for( BYTE i=0; i<TCURSOR_COUNT; i++)
 		m_vTCURSOR[i] = LoadCursor( theApp.m_hInstance, MAKEINTRESOURCE(dwCursorID[i]));
+#ifdef KOI_LOCAL_CLIENT
+	m_vTCURSOR[TCURSOR_HAND] = CopyCursor(::LoadCursor(NULL, IDC_ARROW));
+#endif
 	::SetCursor(m_vTCURSOR[TCURSOR_HAND]);
 
 	TButton::m_dwDOWNSND = ID_SND_PUSH_BUTTON2;
@@ -1730,8 +1734,10 @@ void CTClientWnd::InitResource( CString strGroupID,
 	}
 
 	// 게임가드.
+#ifndef KOI_LOCAL_CLIENT
 	if( CTNationOption::RUSSIA && theApp.m_pNpgl )
 		theApp.m_pNpgl->SetHwnd( GetSafeHwnd() );
+#endif
 
 	ReleaseTRESIMG();
 }
@@ -4227,7 +4233,9 @@ void CTClientWnd::CloseMessageBox( BOOL bCloseAll )
 	}
 	else
 	{
-		m_MsgBoxStack.pop();
+		// Back/close may be dispatched after a previous close cleared the stack.
+		if(!m_MsgBoxStack.empty())
+			m_MsgBoxStack.pop();
 
 		if( m_MsgBoxStack.empty() == false )
 		{
@@ -6938,23 +6946,60 @@ void CTClientWnd::InitRememberLogin()
     DWORD controlID = 0x7FFE1001;
     while(login->FindKid(controlID)) ++controlID;
     m_pRememberLogin->m_id = controlID;
-    m_pRememberLogin->m_strText = "Beni hatirla";
-    m_pRememberLogin->SetFont(id->GetFont(), id->GetTipFont());
-    m_pRememberLogin->SetTextAlign(ALIGN_LEFT);
-    m_pRememberLogin->m_nHMargine = 24;
-    CPoint position;
-    CSize size;
-    id->GetComponentPos(&position);
-    login->GetComponentSize(&size);
-    m_pRememberLogin->MoveComponent(CPoint(position.x, size.cy + 4));
-    m_pRememberLogin->SetComponentSize(CSize(170, 22));
-    login->SetComponentSize(CSize(size.cx, size.cy + 30));
+    m_pRememberLogin->m_strText.Empty();
+    // The login frame can cover the entire screen. Anchor to its controls,
+    // not to the frame's bottom edge, which would place this off-screen.
+    CRect passwordRect;
+    pw->GetComponentRect(&passwordRect);
+    LONG bottom = passwordRect.bottom;
+    TComponent *loginButton = login->FindKid(ID_CTRLINST_LOGIN);
+    if(loginButton)
+    {
+        CRect buttonRect;
+        loginButton->GetComponentRect(&buttonRect);
+        if(buttonRect.bottom > bottom) bottom = buttonRect.bottom;
+    }
+    m_pRememberLogin->MoveComponent(CPoint(passwordRect.left, bottom + 6));
+    // Keep the checkbox's native image/hitbox size; render text separately.
     login->AddKid(m_pRememberLogin);
+    m_pRememberLogin->ShowComponent(TRUE);
+    m_pRememberLogin->EnableComponent(TRUE);
+    CSize checkboxSize;
+    m_pRememberLogin->GetComponentSize(&checkboxSize);
+    CRememberLoginLabel *label = new CRememberLoginLabel(login,
+        static_cast<CRememberLoginButton *>(m_pRememberLogin));
+    label->m_id = controlID + 1;
+    while(login->FindKid(label->m_id)) ++label->m_id;
+    label->m_strText = "Beni hatirla";
+    label->SetFont(id->GetFont(), id->GetTipFont());
+    label->SetTextAlign(ALIGN_LEFT);
+    label->MoveComponent(CPoint(passwordRect.left + checkboxSize.cx + 6,
+        bottom + 6 - (20 - checkboxSize.cy) / 2));
+    label->SetComponentSize(CSize(150, 20));
+    label->m_bHitTestType = HITTEST_TYPE_RECT;
+    login->AddKid(label);
+    label->ShowComponent(TRUE);
+    label->EnableComponent(TRUE);
+    RestoreRememberLogin();
+}
+
+void CTClientWnd::RestoreRememberLogin()
+{
+    if(!m_pRememberLogin) return;
+    TFrame *login = m_TNet.FindFrame(ID_FRAME_LOGIN);
+    if(!login) return;
+    TEdit *id = static_cast<TEdit *>(login->FindKid(ID_CTRLINST_ID));
+    TEdit *pw = static_cast<TEdit *>(login->FindKid(ID_CTRLINST_PW));
+    if(!id || !pw) return;
+    CString endpoint;
+    endpoint.Format("%s:%lu", LPCTSTR(m_strIPAddr), m_dwPort);
     std::string user, password;
     if(RememberLoginStore::Load(LPCTSTR(endpoint), user, password))
     {
-        id->m_strText = user.c_str();
-        pw->m_strText = password.c_str();
+        id->ClearText();
+        id->InsertString(user.c_str());
+        pw->ClearText();
+        pw->InsertString(password.c_str());
         m_pRememberLogin->Select(TRUE);
         SecureZeroMemory(&password[0], password.size());
     }

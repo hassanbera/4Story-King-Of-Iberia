@@ -1,6 +1,6 @@
 # Beni hatırla — uygulama durumu
 
-Durum: kaynak kodu hazır ve değişen dosyalar derlendi; çalışan oyun istemcisine henüz yüklenmedi.
+Durum: kaynak EXE üretildi ve aynı oyun klasöründe aday olarak açıldı. Kullanıcı giriş ekranını gördü; ilk adayda kutucuk görünmedi. Yerleşim düzeltmesi üretildi, görsel ve gerçek hesapla yeniden açma testi bekliyor.
 
 ## Hazırlanan davranış
 
@@ -18,6 +18,6 @@ Durum: kaynak kodu hazır ve değişen dosyalar derlendi; çalışan oyun istemc
 
 ## Oyuna yüklemeyi engelleyen durum
 
-İlk tam istemci denemesinde boş `EngineLib.lib`, `TUIs.lib` ve `TCML.lib` dosyaları tespit edildi. 29 Ekim'de bu üç kütüphane kaynaklarından yeniden üretildi; zlib bağımlılığı da derlenip sınandı. Güncel durum `docs/CLIENT_LIBRARIES_BUILD.md` içindedir. Tam EXE üretimi hâlâ dış SDK kütüphaneleri ve önceki istemci kaynak/arayüz uyarlamaları nedeniyle tamamlanmadı.
+İlk tam istemci denemesinde boş SDK ve motor kütüphaneleri tespit edildi. Motor ve arayüz kütüphaneleri yeniden derlendi; eksik ticari SDK'ları kullanmayan ve yalnız yerel sunucuya bağlanan profil ile tam EXE üretildi. Güncel derleme ve kurulum adımları `docs/LOCAL_CLIENT_BUILD.md` içindedir.
 
-Çalışan istemci EXE'si değiştirilmedi. Kullanıcı mevcut oyunda kutucuğu henüz göremez. Oyun içinde görünüm ve yeniden başlatma testi bekliyor; özellik tamamlanmış olarak işaretlenmedi.
+Özgün istemcinin yedeği saklanıyor. Oyun içinde görünüm ve yeniden başlatma testi geçmeden özellik tamamlanmış olarak işaretlenmeyecek.

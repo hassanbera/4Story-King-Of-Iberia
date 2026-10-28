@@ -1723,68 +1723,31 @@ void TComponent::AddTextSetting(INT iStart, INT iEnd, DWORD dwColor, DWORD dwUse
 }
 void TComponent::RemoveTextSetting(INT iStart, INT iEnd)
 {
-	std::vector<TextSetting> vInsertData;
-
-	if( iStart > iEnd )
-		iEnd = iStart;
-
-	TextSettingSet::iterator itr = m_TextSettingSet.begin();
-	while( itr != m_TextSettingSet.end() )
-	{
-		TextSetting& data = *itr;
-
-		if( (data.iStart > iEnd) || (data.iEnd < iStart) )
-		{
-			++itr;
-			continue;
-		}
-
-		if( iStart > data.iStart )
-		{
-			if( iEnd < data.iEnd )
-			{
-				vInsertData.push_back(data);
-				itr = m_TextSettingSet.erase(itr);
-				continue;
-			}
-			else
-			{
-				data.iEnd = iStart - 1;
-			}
-		}
-		else 
-		{
-			if( iEnd < data.iEnd )
-			{
-				data.iStart = iEnd + 1;
-			}
-			else
-			{
-				itr = m_TextSettingSet.erase(itr);
-				continue;
-			}
-		}
-
-		++itr;
-	}
-
-	TextSetting inData;
-	for( size_t i=0; i<vInsertData.size(); ++i )
-	{
-		const TextSetting& data = vInsertData[i];
-		inData.dwColor = data.dwColor;
-		inData.dwUser = data.dwUser;
-
-		inData.iStart = data.iStart;
-		inData.iEnd = iStart - 1;
-		m_TextSettingSet.insert( inData );
-
-		inData.iStart = iEnd + 1;
-		inData.iEnd = data.iEnd;
-		m_TextSettingSet.insert( inData );
-	}
-
-	m_bNeedUpdateTextSetting = TRUE;
+    if(iStart > iEnd) iEnd = iStart;
+    TextSettingSet retained;
+    for(TextSettingSet::const_iterator it = m_TextSettingSet.begin(); it != m_TextSettingSet.end(); ++it)
+    {
+        const TextSetting &data = *it;
+        if(data.iStart > iEnd || data.iEnd < iStart)
+        {
+            retained.insert(data);
+            continue;
+        }
+        if(data.iStart < iStart)
+        {
+            TextSetting left = data;
+            left.iEnd = iStart - 1;
+            retained.insert(left);
+        }
+        if(data.iEnd > iEnd)
+        {
+            TextSetting right = data;
+            right.iStart = iEnd + 1;
+            retained.insert(right);
+        }
+    }
+    m_TextSettingSet.swap(retained);
+    m_bNeedUpdateTextSetting = TRUE;
 }
 void TComponent::RemoveTextSetting(const TextSetting& data)
 {

@@ -150,6 +150,24 @@ BYTE CTachyonSession::Start( LPCTSTR strAddr, DWORD dwPort, BYTE bType)
 	m_target.sin_family = AF_INET;
 	m_target.sin_addr.s_addr = inet_addr(strIP);
 	m_target.sin_port = htons((u_short) dwPort);
+#ifdef KOI_LOCAL_CLIENT
+    // This development build may only connect to local IPv4 servers.
+    if((ntohl(m_target.sin_addr.s_addr) & 0xFF000000) != 0x7F000000)
+    {
+        End();
+        return FALSE;
+    }
+    SOCKADDR_IN local;
+    ZeroMemory(&local, sizeof(local));
+    local.sin_family = AF_INET;
+    local.sin_addr.s_addr = inet_addr("127.0.0.4");
+    if(bind(m_sock, reinterpret_cast<SOCKADDR *>(&local), sizeof(local)) == SOCKET_ERROR)
+    {
+        End();
+        return FALSE;
+    }
+#endif
+
 
 	if( WSAAsyncSelect( m_sock, m_pOwner->GetSafeHwnd(), WM_SESSION_MSG, FD_CONNECT|FD_READ|FD_CLOSE) == SOCKET_ERROR || (
 		connect( m_sock, (SOCKADDR *) &m_target, sizeof(SOCKADDR_IN)) && GetLastError() != WSAEWOULDBLOCK ))

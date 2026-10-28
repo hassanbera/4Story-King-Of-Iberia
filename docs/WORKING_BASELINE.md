@@ -10,5 +10,6 @@ Mevcut çalışma konumu:
 - Mevcut LocalDB örneği: `PM33Probe20261027`.
 - Mevcut yerel portlar: Control 17442, World 14422, Login 15336, Map 11225.
 - Takip edilen kaynaklar: bu deponun `source/` ve `world/yesode/` klasörleri.
+- Kaynak istemci adayı aynı oyun klasöründeki TClient.exe'ye yedekli yüklenmiştir. Masaüstündeki `4Story King Of Iberia.cmd`, bu deponun `scripts/Start-LocalGame.ps1` betiğini çalıştırır; mevcut sunucu/veritabanı aynıdır. Yerel yollar ve doğrulanmış yedek bilgileri Git dışında `runtime/` içinde tutulur.
 
 Gereksiz paralel ortam hazırlığı durduruldu. `KOIDev20261028` kopyası kapalıdır; bu kopyada oyun oturumu başlatılmadı. Kopya ve yedek dosyaları mevcut oyun verisinin yerine kullanılmayacak. Kesilen derlemenin `build/server/` çıktıları karışık servis adları içerebileceğinden yeniden derlenmeden çalıştırılmamalıdır.

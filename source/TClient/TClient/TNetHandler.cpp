@@ -51,7 +51,7 @@ int CTClientWnd::OnCS_LOGIN_ACK( CTachyonSession *pSession, CPacket *pPacket)
 		TFrame* pFRAME = m_TNet.FindFrame(ID_FRAME_LOGIN);
 		TComponent* pEditID = pFRAME->FindKid(ID_CTRLINST_ID);
 
-#ifndef TEST_MODE
+#if !defined(TEST_MODE) && !defined(KOI_LOCAL_CLIENT)
 		if( CTNationOption::INSTALL_XTRAP )
 		{
 			XTrap_C_SetUserInfo(

@@ -111,7 +111,7 @@ BOOL CALLBACK ErrorDlgProc(HWND hDlg,UINT iMessage,WPARAM wParam,LPARAM lParam)
 	return FALSE;
 }
 
-BOOL CALLBACK EnumerateLoadedModulesProc(PSTR ModuleName, ULONG ModuleBase, ULONG ModuleSize, PVOID UserContext)
+BOOL CALLBACK EnumerateLoadedModulesProc(PCSTR ModuleName, ULONG ModuleBase, ULONG ModuleSize, PVOID UserContext)
 {
 	DWORD offset = *((DWORD*)UserContext);
 
