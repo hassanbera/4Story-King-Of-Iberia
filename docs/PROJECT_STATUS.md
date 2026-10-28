@@ -6,10 +6,11 @@
 - Ayrı LocalDB ortamında kullanıcı giriş yaptı ve Kuznez haritasına girdi.
 - Kaynakta geliştirilen Yesode rota ağıyla 30 sakin oyun içinde gözlendi; kullanıcı görünüş, hareket ve performansı kabul etti.
 - Yeni depodan Yesode rota mantığının üç C++ dosyası derlendi; rota verisi aynı CSV'yi yeniden üretti. Ayrıntı: `docs/BUILD.md`.
+- Yeni depodan ağ kütüphanesi ve dört 32 bit sunucu EXE'si temiz `build/server/` klasöründe derlenip bağlandı. Yeni çıktılarla oyun oturumu henüz sınanmadı.
 
 ## Açık işler
 
-1. Derleme betiklerini bu deponun göreli yollarına ve temiz çıktı klasörlerine taşımak. Eski betikler `scripts/legacy-prototype/` altında yalnız kayıt amaçlı duruyor.
+1. Yeni derlenen dört hizmeti ayrı LocalDB ortamında oyun oturumuyla sınamak; eski betikleri `scripts/legacy-prototype/` altında yalnız kayıt amaçlı tutmak.
 2. Yerel veritabanını ve içerik değişikliklerini şemasal, tekrarlanabilir bir kurulum/migrasyon haline getirmek. Oyuncu verisi içeren yedekleri Git'e eklememek.
 3. Eski Visual Studio proje biçimini güncel Windows araç zinciriyle derlemek ve **kaynak istemciyi** yerel sunucuya bağlayarak doğrulamak. Bugün kullanılan Classic4Story ikilisi bunun yerine geçmez.
 4. Yeni adı, derlenen istemcinin başlığına/arayüzüne ve yeni başlatıcıya uygulayıp oyun içinde sınamak.

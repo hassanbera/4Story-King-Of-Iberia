@@ -13,5 +13,5 @@ Bu depo, kaynak kodlu OldSchool 3.3 tabanından geliştirdiğimiz yerel 4Story p
 
 Öncelik, bu depodan tekrarlanabilir sunucu ve istemci derlemesi ile yerel kurulum üretmek; ardından yaşayan dünya davranışlarını burada geliştirmektir. Kaynak geçmişi ve sınırlar için [proje durumu](docs/PROJECT_STATUS.md) ile [kaynak kökeni](docs/SOURCE_PROVENANCE.md) belgelerine bakın.
 
-İlk bağımsız kaynak kontrolü: `scripts\Build-MapRouteSmoke.cmd`. Derleme kanıtı ve kalan adımlar [derleme durumunda](docs/BUILD.md).
+İlk bağımsız kaynak kontrolü: `scripts\Build-MapRouteSmoke.cmd`. Dört sunucunun kaynak derlemesi: `python scripts\build_server.py`. Derleme kanıtı ve kalan adımlar [derleme durumunda](docs/BUILD.md).
 

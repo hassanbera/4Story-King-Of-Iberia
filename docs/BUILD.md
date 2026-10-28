@@ -10,7 +10,13 @@ Windows ve Visual Studio C++ Build Tools olan makinede `scripts\Build-MapRouteSm
 
 28 Ekim 2026 denemesi: 1 harita, 26 düğüm ve 30 kenar doğrulandı; üretilen CSV'nin SHA-256 değeri kayıtlı dosyayla aynı kaldı.
 
-## Henüz taşınmayan tam derleme
+## Tam sunucu derlemesi
 
-Önceki 3.3 derlemesinde üretilen nesne dosyaları ve yerel çalışma ayarları eski klasörde duruyor. `scripts/legacy-prototype/` betikleri eski mutlak yollara ve bu çıktılara bağlı. Bunlar yeni depoda tekrarlanabilir tam sunucu derlemesi sayılmaz. Sonraki iş temiz ağaçtan dört hizmeti üretmek ve kaynak istemciyi derlemektir.
+`python scripts\build_server.py` yeni depodaki C++ kaynaklarından 32 bit `TNetLib.localdb.lib` ile Control, World, Login ve Map EXE'lerini `build/server/` altında üretir. Derleme, Windows üzerindeki Visual Studio 2019 Build Tools `14.16.27023` ve Windows 10 SDK `10.0.19041.0` ile doğrulandı. Yerel test için kaynak kopyalarına yapılan loopback, LocalDB ve Map sözdizimi uyarlamaları yalnız `build/server/` alanında hazırlanır; `source/` değişmez.
+
+28 Ekim 2026'da dört EXE de temiz `build/server/` alanından derlenip bağlandı ve PE başlıklarında `0x14c` (x86) doğrulandı. Bu sonuç **derleme kanıtıdır**. Bu yeni EXE'ler henüz oyun oturumunda çalıştırılmadı; önceki çalışan 3.3 derlemesiyle runtime eşdeğerliği ayrıca sınanacak.
+
+## Kalan işler
+
+`scripts/legacy-prototype/` betikleri eski mutlak yollara ve çıktılara bağlı; yeni derleme için `scripts/build_server.py` kullanılmalı. Veritabanı ve içerik kurulumunu taşınabilir hale getirmek, yeni EXE'lerle izole oyun oturumunu sınamak ve kaynak istemciyi derlemek gerekiyor.
 
