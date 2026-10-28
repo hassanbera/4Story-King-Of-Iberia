@@ -11,7 +11,7 @@ Bu depo, kaynak kodlu OldSchool 3.3 tabanından geliştirdiğimiz yerel 4Story p
 - İstemci kaynakları mevcut, fakat bu kaynaklardan yeni bir istemci derlemesi henüz tamamlanmadı. Şu an oyuna girilen Classic4Story istemcisi ayrı bir ikilidir. Kaynak istemciyle birebir eşleşme doğrulanmadı.
 - Veritabanı yedekleri, istemci varlıkları, hesaplar ve çalıştırılabilir dosyalar Git deposuna alınmadı. Mevcut yerel oyun kurulumu bu depo oluşturulurken değiştirilmedi.
 
-Öncelik, bu depodan tekrarlanabilir sunucu ve istemci derlemesi ile yerel kurulum üretmek; ardından yaşayan dünya davranışlarını burada geliştirmektir. Kaynak geçmişi ve sınırlar için [proje durumu](docs/PROJECT_STATUS.md) ile [kaynak kökeni](docs/SOURCE_PROVENANCE.md) belgelerine bakın.
+Geliştirme, mevcut PhilipMorris 3.3 oyunu ve veritabanındaki 30 Yesode sakini üzerinden sürer. Bu depo aynı çalışmanın kod geçmişidir. [Tek çalışma temeli](docs/WORKING_BASELINE.md), [proje durumu](docs/PROJECT_STATUS.md) ve [kaynak kökeni](docs/SOURCE_PROVENANCE.md) belgelerine bakın.
 
 İlk bağımsız kaynak kontrolü: `scripts\Build-MapRouteSmoke.cmd`. Dört sunucunun kaynak derlemesi: `python scripts\build_server.py`. Derleme kanıtı ve kalan adımlar [derleme durumunda](docs/BUILD.md).
 

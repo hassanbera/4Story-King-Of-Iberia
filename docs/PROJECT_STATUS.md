@@ -10,8 +10,8 @@
 
 ## Açık işler
 
-1. Yeni derlenen dört hizmeti ayrı LocalDB ortamında oyun oturumuyla sınamak; eski betikleri `scripts/legacy-prototype/` altında yalnız kayıt amaçlı tutmak.
-2. Yerel veritabanını ve içerik değişikliklerini şemasal, tekrarlanabilir bir kurulum/migrasyon haline getirmek. Oyuncu verisi içeren yedekleri Git'e eklememek.
+1. Geliştirmeye, kullanıcının onayladığı mevcut PhilipMorris 3.3 oyunu ve mevcut veritabanı üzerinden devam etmek. Yesode'deki 30 sakin ve kabul edilmiş rota ağı korunacak. Yeni paralel oyun/veritabanı açmak çalışma planının parçası değildir.
+2. Bundan sonraki veritabanı ve içerik değişikliklerini mevcut ortama uygulanabilir, yedekli değişiklikler olarak kaydetmek. Oyuncu verisi içeren yedekleri Git'e eklememek.
 3. Eski Visual Studio proje biçimini güncel Windows araç zinciriyle derlemek ve **kaynak istemciyi** yerel sunucuya bağlayarak doğrulamak. Bugün kullanılan Classic4Story ikilisi bunun yerine geçmez.
 4. Yeni adı, derlenen istemcinin başlığına/arayüzüne ve yeni başlatıcıya uygulayıp oyun içinde sınamak.
 5. Bundan sonraki yaşayan dünya değişikliklerini bu depoda küçük commit'lerle izlemek.

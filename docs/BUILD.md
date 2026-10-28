@@ -18,5 +18,5 @@ Windows ve Visual Studio C++ Build Tools olan makinede `scripts\Build-MapRouteSm
 
 ## Kalan işler
 
-`scripts/legacy-prototype/` betikleri eski mutlak yollara ve çıktılara bağlı; yeni derleme için `scripts/build_server.py` kullanılmalı. Veritabanı ve içerik kurulumunu taşınabilir hale getirmek, yeni EXE'lerle izole oyun oturumunu sınamak ve kaynak istemciyi derlemek gerekiyor.
+`scripts/legacy-prototype/` betikleri mevcut çalışan ortamın mutlak yollarını içerir. Kaynak derlemesi için `scripts/build_server.py` kullanılabilir. Geliştirme mevcut PhilipMorris oyunu, veritabanı ve 30 sakin üzerinden sürecek; yeni paralel ortam planlanmıyor. Çalışma kararı `docs/WORKING_BASELINE.md` içinde kayıtlıdır.
 
