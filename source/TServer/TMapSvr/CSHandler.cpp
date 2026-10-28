@@ -1,6 +1,7 @@
 // CSHandler.cpp : C/S Protocol Handler 함수의 구현입니다.
 
 #include "stdafx.h"
+#include "RouteSurvey.h"
 #include "TMapSvr.h"
 #include "TMapSvrModule.h"
 
@@ -476,6 +477,9 @@ DWORD CTMapSvrModule::OnCS_MOVE_REQ( LPPACKETBUF pBUF)
 		pPlayer,
 		fPosX,
 		fPosZ);
+
+	if(pPlayer->m_bMain)
+		RecordRouteSurvey(pPlayer->m_wMapID, pPlayer->m_fPosX, pPlayer->m_fPosY, pPlayer->m_fPosZ);
 
 //	CheckLocalEnv(pPlayer);
 

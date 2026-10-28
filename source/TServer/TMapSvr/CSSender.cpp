@@ -1,4 +1,5 @@
 #include "StdAfx.h"
+#include "SoldierTrace.h"
 #include "TMapSvr.h"
 #include "TMapSvrModule.h"
 
@@ -674,6 +675,8 @@ void CTPlayer::SendCS_ADDMON_ACK( CTMonster *pMON,
 								  BYTE bNewMember,
 								  DWORD dwTick)
 {
+	if(pMON->m_pMON && pMON->m_pMON->m_wID == 32700)
+		SoldierTrace("send-add monster=%u channel=%u playerXYZ=%.2f,%.2f,%.2f monsterXYZ=%.2f,%.2f,%.2f", pMON->m_pMON->m_wID, m_bChannel, m_fPosX, m_fPosY, m_fPosZ, pMON->m_fPosX, pMON->m_fPosY, pMON->m_fPosZ);
 	CPacket *pMSG = new CPacket();
 
 	pMSG->SetID(CS_ADDMON_ACK)

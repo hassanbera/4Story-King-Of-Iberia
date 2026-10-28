@@ -14,7 +14,9 @@ Caelen insan erkek Warrior, Derion üyesi ve seviye 1. Unvanı `Yesode Acemisi`.
 - Sunucu/varlık yeniden doğduğunda yürüyüş başlangıçtan başlar. Bu ilk prototip kalıcı görev ilerlemesi tutmaz.
 - Mevcut oyun motorunda hareket, yakındaki oyuncunun varlık simülasyonuna bağlıdır. İlk kontrol sırasında Caelen'e eşlik edilmelidir; uzaklaşınca simülasyon duraklayabilir.
 
-Yol ara noktaları mevcut haritadaki spawn koordinatlarından seçildi. Bu, aradaki engellerin geçilebilirliğini kanıtlamaz. Marad–Remings yürüyüşünün ve ekipman çiziminin oyuncu tarafından görsel kabulü henüz bekleniyor.
+İlk aday yol, uzak spawn koordinatlarını doğrudan bağladığı için kullanıcı kontrolünde yanlış güzergâha gitti ve takıldı. Sunucu kaydı, otomatik eklenen ara noktada gerçek zeminin yaklaşık 77, hedef yüksekliğinin yaklaşık 90 olduğunu gösterdi. Bu yüzden yatay konuma ulaşsa da dikey varış kontrolü geçilemiyordu.
+
+Yeni yol, kullanıcının açıkça başlatıp Remings'e vardığında bitirdiği Marad–Remings yürüyüşünden alınan 34 zemin noktasından oluşur. Önceki, kullanıcının kullanılmamasını istediği kayıt dışarıda tutuldu. Noktalar arasında en fazla 9,15 birim yatay aralık vardır; zemin yüksekliği en düşük 75,52'ye iner. Type 6 için sunucunun eski otomatik ara nokta ekleme davranışı devre dışı bırakıldı. Askerin yeni yolu tekrar etmesi ayrıca oyun içinde doğrulanmalıdır.
 
 ## Dosyalar ve geri alma
 
@@ -23,7 +25,12 @@ Yol ara noktaları mevcut haritadaki spawn koordinatlarından seçildi. Bu, arad
 - `scripts/Install-YesodeSoldier.ps1`: kapalı istemciyi şart koşar; dört mevcut sunucuyu durdurur; COPY_ONLY/CHECKSUM yedeği ve RESTORE VERIFYONLY kontrolü alır; işlemi mevcut LocalDB üzerinde uygular.
 - Aynı betiğin `-Rollback` seçeneği yalnız askerin 32700 kimlikli kayıtlarını kaldırır, önceki TMon ve Map EXE'sini hash kontrollü geri getirir. Oyun kapalı olmalıdır.
 - Yedekler, aday dosyalar, kurulum manifesti ve SQL yedeği Git dışında `runtime/soldier-caelen/` altında tutulur.
+- `scripts/import_soldier_walk.py`: tamamlanmış yürüyüşü kırpar; kopuk kayıtları reddeder, gerçek yükseklikleri korur ve aday JSON üretir.
+- `scripts/Update-YesodeSoldierRoute.ps1`: yalnız mevcut Caelen'in başlangıcını ve yol noktalarını değiştirir; Map EXE'sini yedekli yükler. Login/World süreçlerini durdurmaz. `-Rollback` son rota güncellemesini geri alır.
+- `RouteSurvey.enabled` yalnız açıkça istenen kayıt sırasında Map EXE'sinin yanında bulunur. Bu dosya yokken koordinat kaydı yapılmaz. Tamamlanan CSV ve tanılama günlükleri Git'e alınmaz.
 
 ## Doğrulama
 
 Kaynak Map derlemesi başarıyla bağlandı. Kurulum sonrası SQL kontrolü: 1 asker, 9 yol noktası, önceki 30 sakin korunmuş. TMon adayı tekrar ayrıştırıldı, önceki tüm kayıtlar birebir karşılaştırıldı. İlk Map açılışında Windows C++ exception (0xe06d7363) kaydetti; yeniden başlatmada dört yerel port açıldı. İlk açılış hatasının kök nedeni belirlenmiş değildir; tekrar ederse ayrıca incelenmelidir. Oyun içi görsel yürüyüş kabulü bu kontrollerden ayrı tutulur.
+
+Tanılama, Caelen'in Marad yanında 289 HP ile doğduğunu, doğru hücreye eklendiğini ve yakındaki istemciye gönderildiğini doğruladı. Kullanıcı daha sonra hareketini gördü ve rota hatasını bildirdi. Yürüyüş dönüştürücüsünün vadi yüksekliğini koruma, eksik bitişi reddetme ve ışınlanma/kayıt boşluğunu bağlamama testleri geçti. 34 noktalı düzeltmenin oyun içi kabulü bekleniyor. Ayrı olarak bildirilen sunucu seçimi mesajı Login süreci yenilendikten sonra kullanıcı denemesinde tekrarlamadı; bu durumun kök nedeni kanıtlanmış sayılmıyor.

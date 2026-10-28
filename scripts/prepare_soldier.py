@@ -1,6 +1,7 @@
 """Prepare one soldier chart/SQL candidate; never modifies the running game."""
 import hashlib
 import json
+import math
 from pathlib import Path
 import struct
 
@@ -15,6 +16,12 @@ def sha(data):
 
 def main():
     config = json.loads((ROOT / 'world/yesode/soldiers/caelen.json').read_text())
+    points = config['waypoints']
+    if not 5 <= len(points) <= 190:
+        raise ValueError('Expected a bounded recorded soldier walk')
+    for a, b in zip(points, points[1:]):
+        if math.hypot(a[0]-b[0], a[2]-b[2]) > 10 or abs(a[1]-b[1]) > 5:
+            raise ValueError('Do not bridge missing ground samples with guessed waypoints')
     local = json.loads((ROOT / 'runtime/local-game.json').read_text(encoding='utf-8-sig'))
     chart = Path(local['GameDirectory']) / 'Tcd/TMon.tcd'
     original = chart.read_bytes()

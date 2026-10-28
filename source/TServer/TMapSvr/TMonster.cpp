@@ -1,4 +1,5 @@
 #include "StdAfx.h"
+#include "SoldierTrace.h"
 #include "TMapSvr.h"
 #include "TMapSvrModule.h"
 #include "AmbientRoutes.h"
@@ -1646,6 +1647,13 @@ BYTE CTMonster::MoveNext(FLOAT &fPosX, FLOAT &fPosY, FLOAT &fPosZ, BYTE &bAction
 	// Ordered soldier routes never wrap: the final waypoint is a holding post.
 	if(m_pSPAWN->m_pSPAWN->m_bRoamType == 6 && m_bMode == MT_NORMAL)
 	{
+		static DWORD lastTrace = 0;
+		DWORD traceNow = GetTickCount();
+		if(traceNow - lastTrace >= 10000)
+		{
+			lastTrace = traceNow;
+			SoldierTrace("move spawn=%u id=%lu channel=%u point=%u status=%u xyz=%.2f,%.2f,%.2f", m_pSPAWN->m_pSPAWN->m_wID, m_dwID, m_bChannel, m_bCurPathID, m_bStatus, m_fPosX, m_fPosY, m_fPosZ);
+		}
 		VPATHPOINT &path = m_pSPAWN->m_pSPAWN->m_vPathPoint;
 		if(path.empty() || path.size() > 200)
 			return FALSE;

@@ -1,4 +1,5 @@
 #include "StdAfx.h"
+#include "SoldierTrace.h"
 #include "TMapSvr.h"
 #include "TMapSvrModule.h"
 
@@ -554,6 +555,8 @@ void CTMap::InitMonster( CTMonSpawn *pMonSpawn,
 						 BYTE bCountry,
 						 BYTE bRegenType)
 {
+	if(pSPAWN->m_bRoamType == 6)
+		SoldierTrace("InitMonster spawn=%u map=%u channel=%u entries=%u", pSPAWN->m_wID, m_wMapID, bChannel, unsigned(pSPAWN->m_vMAPMON.size()));
 	if( pSPAWN->m_vMAPMON.empty() )
 		return;
 
@@ -625,6 +628,8 @@ void CTMap::InitMonster( CTMonSpawn *pMonSpawn,
 				pMON->m_pTRACE = _AtlModule.FindTRace(pMON->m_pMON->m_bRace);
 				pMON->m_pATTR = _AtlModule.FindMonAttr(MAKELONG(pMON->m_pMON->m_wMonAttr, pTEMP->m_bLevel));
 
+				if(pSPAWN->m_bRoamType == 6)
+					SoldierTrace("essential monster=%u level=%u attr=%u found=%u", pTEMP->m_wID, pTEMP->m_bLevel, pTEMP->m_wMonAttr, pMON->m_pATTR ? 1 : 0);
 				if(!pMON->m_pATTR)
 				{
 					ATLTRACE(_T("INITMONSTER ATTR NULL ID:%d ATTR ID:%d\n"), pMON->m_pMON->m_wID, MAKELONG(pMON->m_pMON->m_wMonAttr, pTEMP->m_bLevel));
@@ -945,6 +950,8 @@ void CTMap::EnterMAP( CTMonster *pMON)
 	WORD wPosZ = WORD(pMON->m_fPosZ) / CELL_SIZE;
 
 	MAPTCELL::iterator finder = m_mapTCELL.find(MAKELONG( wPosX, wPosZ));
+	if(pMON->m_pSPAWN && pMON->m_pSPAWN->m_pSPAWN->m_bRoamType == 6)
+		SoldierTrace("cell spawn=%u x=%u z=%u found=%u", pMON->m_pSPAWN->m_pSPAWN->m_wID, wPosX, wPosZ, finder != m_mapTCELL.end());
 	if( pMON->m_bType == OT_RECALL )
 		((CTRecallMon *) pMON)->m_bMain = FALSE;
 

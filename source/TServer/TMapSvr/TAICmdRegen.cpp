@@ -1,4 +1,5 @@
 #include "StdAfx.h"
+#include "SoldierTrace.h"
 #include "TMapSvr.h"
 #include "TMapSvrModule.h"
 
@@ -193,6 +194,8 @@ BYTE CTAICmdRegen::ExecAI( CTMonster *pMON, DWORD dwEventHost, DWORD dwRHId, BYT
 		pMON->m_dwMP = pMON->GetMaxMP();
 
 		pMON->m_pMAP->EnterMAP(pMON);
+		if(pMON->m_pSPAWN->m_pSPAWN->m_bRoamType == 6)
+			SoldierTrace("enter spawn=%u id=%lu channel=%u hp=%lu status=%u xyz=%.2f,%.2f,%.2f", pMON->m_pSPAWN->m_pSPAWN->m_wID, pMON->m_dwID, pMON->m_bChannel, pMON->m_dwHP, pMON->m_bStatus, pMON->m_fPosX, pMON->m_fPosY, pMON->m_fPosZ);
 	}
 
 	return !bRegen && CTAICommand::ExecAI( pMON, dwEventHost, dwRHId, bRHType) ? TRUE : FALSE;

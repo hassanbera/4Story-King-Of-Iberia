@@ -1,5 +1,6 @@
 // TMapSvr.cpp : WinMain의 구현입니다.
 #include "stdafx.h"
+#include "SoldierTrace.h"
 #include "TMapSvr.h"
 #include "TMapSvrModule.h"
 
@@ -2705,7 +2706,8 @@ DWORD CTMapSvrModule::LoadData()
 				DWORD dwIndex = DWORD(pSpawn->m_vPathPoint.size()-1);
 				DWORD dwDistX = DWORD(abs(pSpawn->m_vPathPoint[dwIndex]->m_fPosX - query->m_fPosX));
 				DWORD dwDistZ = DWORD(abs(pSpawn->m_vPathPoint[dwIndex]->m_fPosZ - query->m_fPosZ));
-				if(sqrt(double(dwDistX*dwDistX + dwDistZ*dwDistZ)) > MAX_ROAMRANGE-ZONE_HOMESIZE)
+				if(pSpawn->m_bRoamType != 6 &&
+					sqrt(double(dwDistX*dwDistX + dwDistZ*dwDistZ)) > MAX_ROAMRANGE-ZONE_HOMESIZE)
 				{
 					LPTPATHPOINT pPath = new TPATHPOINT();
 					pPath->m_fPosX = min(pSpawn->m_vPathPoint[dwIndex]->m_fPosX, query->m_fPosX) + dwDistX/2;
@@ -3021,6 +3023,8 @@ DWORD CTMapSvrModule::LoadData()
 		}
 		UNDEFINE_QUERY()
 
+		if(pSPAWN->m_bRoamType == 6)
+			SoldierTrace("load spawn=%u monsters=%u paths=%u event=%u channels=%u xyz=%.2f,%.2f,%.2f", pSPAWN->m_wID, unsigned(pSPAWN->m_vMAPMON.size()), unsigned(pSPAWN->m_vPathPoint.size()), pSPAWN->m_bEvent, unsigned(m_mapTCHANNEL.size()), pSPAWN->m_fPosX, pSPAWN->m_fPosY, pSPAWN->m_fPosZ);
 		if(pSPAWN->m_bEvent == SE_DEFAULT)
 			for( itCH = m_mapTCHANNEL.begin(); itCH != m_mapTCHANNEL.end(); itCH++)
 				(*itCH).second->AddMonSpawn( pSPAWN, pSPAWN->m_bCountry);
