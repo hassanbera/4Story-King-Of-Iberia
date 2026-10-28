@@ -1,6 +1,6 @@
 # Beni hatırla — uygulama durumu
 
-Durum: kaynak EXE üretildi ve aynı oyun klasöründe aday olarak açıldı. Kullanıcı giriş ekranını gördü; ilk adayda kutucuk görünmedi. Yerleşim düzeltmesi üretildi, görsel ve gerçek hesapla yeniden açma testi bekliyor.
+Durum: tamamlandı. Kullanıcı 29 Ekim 2026 tarihinde son sürümde kullanıcı adı/parolanın dolmasını, Login ile girişi ve karakter ekranından geri dönüşte parolanın korunup oyunun açık kalmasını başarılı olarak onayladı.
 
 ## Hazırlanan davranış
 
@@ -16,8 +16,8 @@ Durum: kaynak EXE üretildi ve aynı oyun klasöründe aday olarak açıldı. Ku
 
 `scripts/Compile-LoginChange.cmd "legacy-DirectX9-Include-klasörü"` ile `TClientWnd.cpp` ve `TNetGM.cpp` derlendi. Bu komut, eski DirectX SDK başlıklarına ve kurulu VS C++ araçlarına ihtiyaç duyar. Aynı dosyadaki mevcut MessageBox çağrısında belirsiz sıfır parametreleri açık boş CString değerleriyle düzeltildi.
 
-## Oyuna yüklemeyi engelleyen durum
+## Çözülen derleme engelleri
 
 İlk tam istemci denemesinde boş SDK ve motor kütüphaneleri tespit edildi. Motor ve arayüz kütüphaneleri yeniden derlendi; eksik ticari SDK'ları kullanmayan ve yalnız yerel sunucuya bağlanan profil ile tam EXE üretildi. Güncel derleme ve kurulum adımları `docs/LOCAL_CLIENT_BUILD.md` içindedir.
 
-Özgün istemcinin yedeği saklanıyor. Oyun içinde görünüm ve yeniden başlatma testi geçmeden özellik tamamlanmış olarak işaretlenmeyecek.
+Özgün istemcinin yedeği saklanıyor. Son kaynak sürümü mevcut oyuna yüklendi ve kullanıcı tarafından kabul edildi. Bu onay giriş/hatırlama/geri dönüş akışı içindir; bütün istemci özelliklerinin kapsamlı regresyon testi anlamına gelmez.

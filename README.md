@@ -10,7 +10,7 @@ Klasörlerin görevleri ve mevcut sınırlar: [depo rehberi](docs/REPOSITORY_GUI
 - `world/yesode/`: 30 sakinin Kuznez rota ağı ve onu üreten veriler.
 - `scripts/legacy-prototype/`: eski çalışma yoluna bağlı deney betikleri. Taşınabilir kurulum aracı olarak henüz doğrulanmadılar.
 - Yerel 3.3 sunucunun Control, World, Login ve Map bileşenleri kaynaklardan derlenerek oynanabilir biçimde test edildi. 30 sakin Kuznez'de gözlendi; kullanıcı hareketleri ve performansı uygun buldu.
-- 29 Ekim'de kaynak istemci EXE'si üretildi ve aynı oyun klasöründe yedekli aday olarak açıldı. Kullanıcı giriş ve karakter ekranına ulaştı; Beni hatırla yerleşimi ve geri dönüşteki çökme için düzeltmeler deneme aşamasında. Güncel durum [yerel istemci derlemesinde](docs/LOCAL_CLIENT_BUILD.md).
+- 29 Ekim'de kaynak istemci EXE'si üretildi ve aynı oyun klasöründe yedekli aday olarak açıldı. Kullanıcı giriş ve karakter ekranına ulaştı; Beni hatırla ve geri dönüşteki çökme düzeltmeleri son sürümde kullanıcı tarafından kabul edildi. Güncel durum [yerel istemci derlemesinde](docs/LOCAL_CLIENT_BUILD.md).
 - Veritabanı yedekleri, istemci varlıkları, hesaplar ve çalıştırılabilir dosyalar Git deposuna alınmadı. Mevcut yerel oyun kurulumu bu depo oluşturulurken değiştirilmedi.
 
 Geliştirme, mevcut PhilipMorris 3.3 oyunu ve veritabanındaki 30 Yesode sakini üzerinden sürer. Bu depo aynı çalışmanın kod geçmişidir. [Tek çalışma temeli](docs/WORKING_BASELINE.md), [proje durumu](docs/PROJECT_STATUS.md) ve [kaynak kökeni](docs/SOURCE_PROVENANCE.md) belgelerine bakın.
