@@ -20,3 +20,7 @@ Kaynak istemci EXE'si üretildi ve aynı oyunda yedekli aday olarak açıldı. K
 
 Bu depo oluşturulurken çalışan oyun kurulumu veya veritabanı değiştirilmedi.
 
+
+## Yesode ortak yol ağı — 29 Ekim
+
+Kaynak yol dosyalarının salt okunur denetimi ve bölgeden bağımsız A* planlayıcısı hazırlandı. Marad–Remings koridoru Caelen’den bağımsız ortak veri olarak tutuluyor; mevcut Kuznez ağıyla dört birleşim adayı henüz etkin değil. Ayrıntı: `docs/navigation/YESODE_ROAD_NETWORK.md`. Bu aşama açık oyunu, çalışan EXE’leri ve SQL verisini değiştirmedi; duraksamalı yürüyüş iyileştirmesi ayrı açık iştir.

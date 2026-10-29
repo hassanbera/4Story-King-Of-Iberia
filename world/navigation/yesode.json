@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "region": "yesode",
+  "mapId": 0,
+  "displayName": "Yesode / Kuznez\u2013Remings pilot",
+  "bounds": {
+    "minX": 5200,
+    "maxX": 5630,
+    "minZ": 4500,
+    "maxZ": 4850
+  },
+  "nativeUnit": "0405",
+  "locations": {
+    "marad": {
+      "npcId": 20058,
+      "displayName": "Marad",
+      "node": "corridor:kuznez_remings:0"
+    },
+    "remings": {
+      "npcId": 20065,
+      "displayName": "Remings",
+      "node": "corridor:kuznez_remings:last"
+    }
+  },
+  "verifiedConnections": [],
+  "policy": {
+    "autoJoinNearbyNodes": false,
+    "recordedWalkDirection": "forward",
+    "nativeGraphIsCandidate": true
+  },
+  "baseGraphs": [
+    {
+      "id": "kuznez",
+      "file": "world/yesode/yesode-graph.json",
+      "bidirectional": true
+    }
+  ],
+  "corridors": [
+    {
+      "id": "kuznez_remings",
+      "file": "world/navigation/corridors/kuznez-remings.json"
+    }
+  ],
+  "pilotJourney": {
+    "from": "marad",
+    "to": "remings"
+  }
+}

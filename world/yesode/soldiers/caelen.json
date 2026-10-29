@@ -40,7 +40,7 @@
       ]
     }
   },
-  "routeStatus": "recorded_player_walk_requires_soldier_replay",
+  "routeStatus": "user_verified_destination_reached_with_pauses",
   "waypoints": [
     [
       5367.3042,
@@ -215,5 +215,10 @@
   ],
   "movement": "walk",
   "onArrival": "hold",
-  "positionEvidence": "Explicit Marad-to-Remings player walk captured by opt-in RouteSurvey; no terrain-height interpolation."
+  "positionEvidence": "Explicit Marad-to-Remings player walk captured by opt-in RouteSurvey; no terrain-height interpolation.",
+  "navigation": {
+    "region": "yesode",
+    "from": "marad",
+    "to": "remings"
+  }
 }

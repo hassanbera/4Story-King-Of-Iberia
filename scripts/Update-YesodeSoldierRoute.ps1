@@ -4,6 +4,14 @@ $ErrorActionPreference='Stop'
 $repo=Split-Path $PSScriptRoot
 $local=Get-Content (Join-Path $repo 'runtime\local-game.json') -Raw | ConvertFrom-Json
 $config=Get-Content (Join-Path $repo 'world\yesode\soldiers\caelen.json') -Raw | ConvertFrom-Json
+if($config.navigation -and -not $Rollback){
+    # Region/corridor data owns the route; the soldier only chooses destinations.
+    $planned=Join-Path $repo 'runtime\soldier-caelen\planned-region-route.json'
+    & python (Join-Path $repo 'scripts\plan_navigation.py') --region $config.navigation.region --from $config.navigation.from --to $config.navigation.to --output $planned
+    if($LASTEXITCODE -ne 0){throw 'No verified regional route; keep the running soldier unchanged.'}
+    $route=Get-Content $planned -Raw | ConvertFrom-Json
+    $config.waypoints=$route.positions
+}
 $root=Split-Path $local.ServerStartScript
 $map=(Resolve-Path (Join-Path $root 'build-probe\TMapSvr\TMapSvr.localdb.exe')).Path
 $candidate=Join-Path $repo 'build\server\TMapSvr\TMapSvr.localdb.exe'

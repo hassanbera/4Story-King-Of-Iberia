@@ -1,0 +1,352 @@
+{
+  "region": "yesode",
+  "mapId": 0,
+  "mapFilesAreNotYesodeBoundary": true,
+  "files": [
+    {
+      "file": "TFLAG00000302.tpf",
+      "sha256": "6ca23c153ae9c152819311b78ab707c065475ca5838c1eba1d59fa1a025f54d2",
+      "bytes": 1706260,
+      "flags": 26272,
+      "directedReferences": 295204,
+      "unresolvedWithinFile": 861,
+      "unresolvedSameUnit": 861,
+      "selfReferences": 0,
+      "duplicateReferences": 0,
+      "foreignUnitIds": 0,
+      "exactFieldRoundtrip": true
+    },
+    {
+      "file": "TFLAG00000303.tpf",
+      "sha256": "b01ec43673495010e2d78553c72e315e0f26a8cf2b3c81f09b1ea0e3f81351fa",
+      "bytes": 1402816,
+      "flags": 22257,
+      "directedReferences": 239418,
+      "unresolvedWithinFile": 65,
+      "unresolvedSameUnit": 65,
+      "selfReferences": 0,
+      "duplicateReferences": 0,
+      "foreignUnitIds": 0,
+      "exactFieldRoundtrip": true
+    },
+    {
+      "file": "TFLAG00000304.tpf",
+      "sha256": "824876816ecd0bd028a4ec6e5d92da50e45d3d9b5c65f044b8af6b8f388a6c3a",
+      "bytes": 1059400,
+      "flags": 15453,
+      "directedReferences": 187584,
+      "unresolvedWithinFile": 173,
+      "unresolvedSameUnit": 173,
+      "selfReferences": 0,
+      "duplicateReferences": 0,
+      "foreignUnitIds": 0,
+      "exactFieldRoundtrip": true
+    },
+    {
+      "file": "TFLAG00000305.tpf",
+      "sha256": "e1789c7f04d682d01002c102c3f4c199db771455b7956f51270197ac1b23e932",
+      "bytes": 890776,
+      "flags": 14939,
+      "directedReferences": 147998,
+      "unresolvedWithinFile": 186,
+      "unresolvedSameUnit": 186,
+      "selfReferences": 0,
+      "duplicateReferences": 0,
+      "foreignUnitIds": 0,
+      "exactFieldRoundtrip": true
+    },
+    {
+      "file": "TFLAG00000401.tpf",
+      "sha256": "adc7edf9fb620a2458305746a32daef4dff5e8e4009e04adda20fb069d459f14",
+      "bytes": 1019208,
+      "flags": 15154,
+      "directedReferences": 179031,
+      "unresolvedWithinFile": 158,
+      "unresolvedSameUnit": 158,
+      "selfReferences": 0,
+      "duplicateReferences": 0,
+      "foreignUnitIds": 0,
+      "exactFieldRoundtrip": true
+    },
+    {
+      "file": "TFLAG00000402.tpf",
+      "sha256": "f47b6cfdc38e02c96cdb3b625078c95944692b3b4e49d4e418fa685e24419373",
+      "bytes": 1264212,
+      "flags": 19847,
+      "directedReferences": 216817,
+      "unresolvedWithinFile": 0,
+      "unresolvedSameUnit": 0,
+      "selfReferences": 0,
+      "duplicateReferences": 0,
+      "foreignUnitIds": 0,
+      "exactFieldRoundtrip": true
+    },
+    {
+      "file": "TFLAG00000403.tpf",
+      "sha256": "0cbdd3e73daebd067747ccbeb04f29b6494b3dbea8d161c4c6b74c6052512ee7",
+      "bytes": 1423536,
+      "flags": 22830,
+      "directedReferences": 241733,
+      "unresolvedWithinFile": 121,
+      "unresolvedSameUnit": 121,
+      "selfReferences": 0,
+      "duplicateReferences": 0,
+      "foreignUnitIds": 0,
+      "exactFieldRoundtrip": true
+    },
+    {
+      "file": "TFLAG00000404.tpf",
+      "sha256": "3a4555d6ed748c162112e83abd13303cc0d4f5a70c01de7fa57e33b99c418a85",
+      "bytes": 946960,
+      "flags": 14513,
+      "directedReferences": 164174,
+      "unresolvedWithinFile": 296,
+      "unresolvedSameUnit": 296,
+      "selfReferences": 0,
+      "duplicateReferences": 0,
+      "foreignUnitIds": 0,
+      "exactFieldRoundtrip": true
+    },
+    {
+      "file": "TFLAG00000405.tpf",
+      "sha256": "3a467db301671610c9cf64e75bc85c2a1af3e2c05cdd03c88f1db05078684271",
+      "bytes": 1493564,
+      "flags": 19355,
+      "directedReferences": 276615,
+      "unresolvedWithinFile": 242,
+      "unresolvedSameUnit": 242,
+      "selfReferences": 0,
+      "duplicateReferences": 0,
+      "foreignUnitIds": 0,
+      "exactFieldRoundtrip": true
+    },
+    {
+      "file": "TFLAG00000406.tpf",
+      "sha256": "09980bf079e4ea6c689a50682f4cbd3baa5e401f75601eafc056ca16662c7157",
+      "bytes": 355704,
+      "flags": 17785,
+      "directedReferences": 0,
+      "unresolvedWithinFile": 0,
+      "unresolvedSameUnit": 0,
+      "selfReferences": 0,
+      "duplicateReferences": 0,
+      "foreignUnitIds": 0,
+      "exactFieldRoundtrip": true
+    },
+    {
+      "file": "TFLAG00000501.tpf",
+      "sha256": "2ef30089fb9b02fd09b443495d2f299fa337a8079f5799c9c9c7c6d27709c296",
+      "bytes": 35900,
+      "flags": 875,
+      "directedReferences": 4599,
+      "unresolvedWithinFile": 6,
+      "unresolvedSameUnit": 6,
+      "selfReferences": 0,
+      "duplicateReferences": 0,
+      "foreignUnitIds": 0,
+      "exactFieldRoundtrip": true
+    },
+    {
+      "file": "TFLAG00000502.tpf",
+      "sha256": "1676b86faffec1459592bcad22bda4803eaf57705ffdd386f0706e20d0bbcf47",
+      "bytes": 2063580,
+      "flags": 29325,
+      "directedReferences": 369269,
+      "unresolvedWithinFile": 871,
+      "unresolvedSameUnit": 871,
+      "selfReferences": 0,
+      "duplicateReferences": 0,
+      "foreignUnitIds": 0,
+      "exactFieldRoundtrip": true
+    },
+    {
+      "file": "TFLAG00000503.tpf",
+      "sha256": "2406965d51fe149eb29212a944ff42c42760d5992a95583a8587d64407b084ee",
+      "bytes": 773428,
+      "flags": 12483,
+      "directedReferences": 130941,
+      "unresolvedWithinFile": 23,
+      "unresolvedSameUnit": 23,
+      "selfReferences": 0,
+      "duplicateReferences": 0,
+      "foreignUnitIds": 0,
+      "exactFieldRoundtrip": true
+    },
+    {
+      "file": "TFLAG00000504.tpf",
+      "sha256": "066b8f4373f06cfd31c44fc390ee60415effacdbcd17231afa28fad2967b0378",
+      "bytes": 885172,
+      "flags": 13539,
+      "directedReferences": 153597,
+      "unresolvedWithinFile": 52,
+      "unresolvedSameUnit": 52,
+      "selfReferences": 0,
+      "duplicateReferences": 0,
+      "foreignUnitIds": 0,
+      "exactFieldRoundtrip": true
+    },
+    {
+      "file": "TFLAG00000505.tpf",
+      "sha256": "d3835f3aad1f296b0f4b91d81a6100bfc86f787a00055772849c6c5ee1d1d9fd",
+      "bytes": 1145640,
+      "flags": 16609,
+      "directedReferences": 203364,
+      "unresolvedWithinFile": 213,
+      "unresolvedSameUnit": 213,
+      "selfReferences": 0,
+      "duplicateReferences": 0,
+      "foreignUnitIds": 0,
+      "exactFieldRoundtrip": true
+    },
+    {
+      "file": "TFLAG00000506.tpf",
+      "sha256": "b9254476c173738839a7deba97d2454813dd990f873a79d05a11b20ff90a2112",
+      "bytes": 384040,
+      "flags": 8884,
+      "directedReferences": 51589,
+      "unresolvedWithinFile": 8,
+      "unresolvedSameUnit": 8,
+      "selfReferences": 0,
+      "duplicateReferences": 0,
+      "foreignUnitIds": 0,
+      "exactFieldRoundtrip": true
+    },
+    {
+      "file": "TFLAG00000602.tpf",
+      "sha256": "b6a9032016616077981c9eb354c524cc594149d41fdad3a86b7e9407c696a1bc",
+      "bytes": 777188,
+      "flags": 13006,
+      "directedReferences": 129266,
+      "unresolvedWithinFile": 5,
+      "unresolvedSameUnit": 5,
+      "selfReferences": 0,
+      "duplicateReferences": 0,
+      "foreignUnitIds": 0,
+      "exactFieldRoundtrip": true
+    },
+    {
+      "file": "TFLAG00000603.tpf",
+      "sha256": "925266f3f93d8e708d14b9cc6bfe67c7681c78a21e14a9c3ec3b9739e801b587",
+      "bytes": 554284,
+      "flags": 11736,
+      "directedReferences": 79890,
+      "unresolvedWithinFile": 9,
+      "unresolvedSameUnit": 9,
+      "selfReferences": 0,
+      "duplicateReferences": 0,
+      "foreignUnitIds": 0,
+      "exactFieldRoundtrip": true
+    },
+    {
+      "file": "TFLAG00000604.tpf",
+      "sha256": "7e27d1131bb0010755748f68a5f4213d8a24a145219c499dd06168db8dfa6cc2",
+      "bytes": 196228,
+      "flags": 4414,
+      "directedReferences": 26986,
+      "unresolvedWithinFile": 41,
+      "unresolvedSameUnit": 41,
+      "selfReferences": 0,
+      "duplicateReferences": 0,
+      "foreignUnitIds": 0,
+      "exactFieldRoundtrip": true
+    },
+    {
+      "file": "TFLAG00000606.tpf",
+      "sha256": "5835cb7032b13bc8d5081d645c24b0e4d90208caf5e2cf836bd5af3105e75a4e",
+      "bytes": 578484,
+      "flags": 10705,
+      "directedReferences": 91095,
+      "unresolvedWithinFile": 5,
+      "unresolvedSameUnit": 5,
+      "selfReferences": 0,
+      "duplicateReferences": 0,
+      "foreignUnitIds": 0,
+      "exactFieldRoundtrip": true
+    }
+  ],
+  "totalFlags": 309981,
+  "pilot": {
+    "file": "TFLAG00000405.tpf",
+    "flags": 19355,
+    "usableDirectedEdges": 276373,
+    "unresolvedReferencesExcluded": 242,
+    "weakComponents": 472,
+    "largestComponentSizes": [
+      1585,
+      1139,
+      797,
+      767,
+      623,
+      596,
+      506,
+      494,
+      428,
+      382
+    ],
+    "accessCandidates": [
+      {
+        "status": "candidate_access_needs_collision_check",
+        "flagId": 67491662,
+        "nativePosition": [
+          5368.56494140625,
+          95.31045532226562,
+          4659.52783203125
+        ],
+        "horizontalGap": 3.1317122205636228,
+        "verticalGapAfterSourceOffset": 5.5322265623658495e-05
+      },
+      {
+        "status": "candidate_access_needs_collision_check",
+        "flagId": 67480680,
+        "nativePosition": [
+          5479.53564453125,
+          85.04950714111328,
+          4773.4794921875
+        ],
+        "horizontalGap": 0.9250588538780936,
+        "verticalGapAfterSourceOffset": 0.00010714111328979925
+      }
+    ],
+    "nativeRouteFound": false,
+    "nativeRouteStatus": "no_route_in_existing_pilot_links"
+  },
+  "npcAccessSummary": {
+    "candidate_access_needs_collision_check": 51,
+    "no_nearby_native_flag": 9
+  },
+  "acceptedNetwork": {
+    "nodes": 60,
+    "directedEdges": 93,
+    "weakComponentSizes": [
+      34,
+      26
+    ],
+    "candidateJunctions": [
+      {
+        "from": "base:kuznez:2",
+        "to": "corridor:kuznez_remings:0",
+        "distance": 2.2544380696745594,
+        "status": "unverified_not_traversable"
+      },
+      {
+        "from": "base:kuznez:9",
+        "to": "corridor:kuznez_remings:1",
+        "distance": 3.7062324670752127,
+        "status": "unverified_not_traversable"
+      },
+      {
+        "from": "base:kuznez:18",
+        "to": "corridor:kuznez_remings:7",
+        "distance": 2.061386962703027,
+        "status": "unverified_not_traversable"
+      },
+      {
+        "from": "base:kuznez:18",
+        "to": "corridor:kuznez_remings:8",
+        "distance": 1.3548479361170138,
+        "status": "unverified_not_traversable"
+      }
+    ]
+  },
+  "runtimeModified": false
+}

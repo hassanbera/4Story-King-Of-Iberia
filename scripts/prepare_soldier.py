@@ -6,6 +6,7 @@ from pathlib import Path
 import struct
 
 from tmon_chart import parse
+from navigation.region import load_region
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -16,6 +17,16 @@ def sha(data):
 
 def main():
     config = json.loads((ROOT / 'world/yesode/soldiers/caelen.json').read_text())
+    if 'navigation' in config:
+        nav = config['navigation']
+        region_file = (ROOT/'world/navigation'/f"{nav['region']}.json").resolve()
+        if not region_file.is_relative_to((ROOT/'world/navigation').resolve()):
+            raise ValueError('Invalid region path')
+        graph, region = load_region(ROOT, region_file)
+        route = graph.route(region['locations'][nav['from']]['node'], region['locations'][nav['to']]['node'])
+        if not route:
+            raise ValueError('No verified regional route for soldier')
+        config['waypoints'] = [graph.positions[n] for n in route]
     points = config['waypoints']
     if not 5 <= len(points) <= 190:
         raise ValueError('Expected a bounded recorded soldier walk')
