@@ -1,4 +1,5 @@
 #include "stdafx.h"
+#include "LocalSurveyMode.h"
 #include "Resource.h"
 #include "TClientWnd.h"
 #include "TItemUpDlg.h"
@@ -657,11 +658,20 @@ void CTClientGame::CalcSCENE( DWORD dwTick)
 		((CTClientRecall *) m_pCtrlHost)->m_bRecallType != TRECALLTYPE_PET ||
 		((CTClientPet *) m_pCtrlHost)->GetTakeUpChar() != m_pMainChar )
 	{
+#ifdef KOI_LOCAL_CLIENT
+        {
+            LocalSurveyMode::ScopedSpeed surveySpeed(m_pMainChar->m_fSpeedFactor,
+                m_vMAP.m_wMapID == 0 && m_pCtrlHost == m_pMainChar && m_pMainChar->GetRidingPet() == NULL && !m_pMainChar->IsDead() &&
+                !m_pMainChar->m_bGhost && !m_pMainChar->IsJump() && !m_pMainChar->IsFall() && !m_pMainChar->m_bSwim);
+#endif
 		m_pMainChar->CalcTick(
 			&vPOS,
 			m_pDevice,
 			m_pRES,
 			dwTick);
+#ifdef KOI_LOCAL_CLIENT
+        }
+#endif
 
 		D3DXVECTOR3 vTNEXT = m_pMainChar->GetPosition();
 		FLOAT fNextH = vPOS.y;
@@ -761,6 +771,17 @@ void CTClientGame::CalcSCENE( DWORD dwTick)
 		&m_vMAP,
 		dwTick);
 
+#ifdef KOI_LOCAL_CLIENT
+    if(LocalSurveyMode::Recording())
+    {
+        D3DXVECTOR3 surveyPosition = m_pMainChar->GetPosition();
+        FLOAT surveyGround = m_vMAP.GetHeight(m_pMainChar, NULL, &surveyPosition, 0.0f, FALSE);
+        LocalSurveyMode::Sample(m_pMainWnd->GetSafeHwnd(), m_vMAP.m_wMapID, surveyPosition, surveyGround,
+            m_pMainChar->m_bAction, m_pMainChar->IsJump() != FALSE, m_pMainChar->IsFall() != FALSE,
+            m_pMainChar->m_bSwim != FALSE, m_pMainChar->m_bGhost != FALSE, m_pMainChar->IsDead() != FALSE,
+            m_pMainChar->m_bBlock != FALSE, m_pCtrlHost == m_pMainChar && m_pMainChar->GetRidingPet() == NULL);
+    }
+#endif
 	CalcTOBJDamage(
 		m_pMainChar,
 		dwTick);
@@ -877,9 +898,17 @@ HRESULT CTClientGame::Render( DWORD dwTickCount)
 		m_pCamera,
 		dwTickCount);
 
+#ifdef KOI_LOCAL_CLIENT
+    LocalSurveyMode::BeginFrame(m_pMainWnd->GetSafeHwnd(), dwTickCount);
+#endif
 	while(dwTotal)
 	{
+#ifdef KOI_LOCAL_CLIENT
+        DWORD surveyStep = LocalSurveyMode::Enabled() && dwTickCount <= 150 ? 25 : TTICK_INTERVAL;
+        DWORD dwTick = min(dwTotal, surveyStep);
+#else
 		DWORD dwTick = min( dwTotal, TTICK_INTERVAL);
+#endif
 
 		CalcSCENE(dwTick);
 		dwTotal -= dwTick;
@@ -9106,6 +9135,11 @@ void CTClientGame::OnChar( UINT nChar, int nRepCnt, UINT nFlags)
 
 void CTClientGame::OnKeyDown( UINT nChar, int nRepCnt, UINT nFlags)
 {
+#ifdef KOI_LOCAL_CLIENT
+    if(LocalSurveyMode::Enabled() && (nChar == VK_F8 || nChar == VK_F9) &&
+        (GetKeyState(VK_CONTROL) & 0x8000) && (GetKeyState(VK_SHIFT) & 0x8000))
+        return; // Mapping controls must not also trigger an action-bar skill.
+#endif
 	CTKeySettingDlg *pKeyDlg = static_cast<CTKeySettingDlg *>(m_vTFRAME[TFRAME_KEYSETTING]);
 
 	if(pKeyDlg->IsVisible())

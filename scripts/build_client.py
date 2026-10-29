@@ -18,7 +18,10 @@ def main():
     parser.add_argument("--dx-sdk", required=True, type=Path)
     parser.add_argument("--allow-cursor-fallback", action="store_true", help="Use the valid source Sword.cur for invalid cursor resources in the build copy only")
     parser.add_argument("--link-only", action="store_true", help="Relink already compiled objects after library builds finish")
+    parser.add_argument("--unit", action="append", help="Recompile selected unchanged-layout units using the existing PCH; omit for a full build")
     args = parser.parse_args()
+    if args.unit and args.link_only:
+        parser.error('--unit and --link-only are mutually exclusive')
     dx = args.dx_sdk.resolve()
     if not (dx / "Include" / "dmusici.h").is_file():
         parser.error("Legacy DirectX SDK root required")
@@ -35,14 +38,22 @@ def main():
              "/DKOREA", "/DKOI_LOCAL_CLIENT", "/DWINVER=0x0601", "/D_WIN32_WINNT=0x0601",
              "/FI" + str(compat), *["/I" + str(p) for p in includes]]
     pch = OUTPUT / "client.pch"
-    if not args.link_only:
+    if args.unit and not pch.is_file():
+        raise RuntimeError('An existing matching client PCH is required for --unit')
+    if not args.link_only and not args.unit:
         build_server.run("pch-client", [*flags, '/Ycstdafx.h', "/Fp" + str(pch), str(CLIENT / "stdafx.cpp")], OUTPUT, env)
     project = (CLIENT / "TClient.vcproj").read_bytes().decode("cp949", errors="replace")
     units = [(CLIENT / path).resolve() for path in re.findall(r'RelativePath="([^"]+\.(?:cpp|c))"', project, re.I)]
     units = [p for p in units if p.name.lower() != "stdafx.cpp"]
     response = OUTPUT / "sources.rsp"
     response.write_text("\n".join('"' + str(p) + '"' for p in units), encoding="utf-8")
-    if not args.link_only:
+    if args.unit:
+        selected = [p for p in units if p.stem in args.unit]
+        if len(selected) != len(set(args.unit)):
+            raise RuntimeError('Unknown or ambiguous client compilation unit')
+        for unit in selected:
+            build_server.run('compile-' + unit.stem, [*flags, '/Yustdafx.h', '/Fp' + str(pch), '/Fo' + str(OUTPUT/(unit.stem+'.obj')), str(unit)], OUTPUT, env)
+    elif not args.link_only:
         build_server.run("compile-client", [*flags, "/MP2", "/Yustdafx.h", "/Fp" + str(pch), "@" + str(response)], OUTPUT, env)
     resource = (CLIENT / "TClient.rc").read_bytes()
     invalid = []

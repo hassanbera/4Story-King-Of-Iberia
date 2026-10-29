@@ -1,0 +1,140 @@
+﻿tour,order,npc_id,name,title,area,x,z,height_y,optional,server_present,db_position_delta
+R01,1,20058,Marad,Training supervisor,Yesode - Kuznez outpost,5366.22,4661.17,95.01,False,True,0.00022861740074106644
+R01,2,20121,Rupeh,Statue Transporter,Yesode - Kuznez outpost,5397.8,4648.82,89.76,False,True,0.0002627747780079785
+R01,3,20063,Orlando,Squire,Yesode - Kuznez outpost,5397.88,4646.3,89.92,False,True,0.00022777891840644225
+R01,4,22746,Nobin,Production specialist,Yesode - Kuznez outpost,5405.03,4633.15,88.41,False,True,0.00023602540317251147
+R01,5,22707,Zeodel Bao,Alchemist,Yesode - Kuznez outpost,5407.21,4631.04,88.43,False,True,5.5243560262148564e-05
+R01,6,22737,Plosch,Tool salesman,Yesode - Kuznez outpost,5408.11,4628.32,88.62,False,True,0.0002227074493008886
+R01,7,22151,Passage Portal,_,Yesode - Kuznez outpost,5388.9,4625.83,88.43,False,True,0.00012506139237042824
+R01,8,20062,Rosemin,Squire,Yesode - Kuznez outpost,5371.3,4610.15,92.92,False,True,0.0002183736902229464
+R01,9,22226,Kalbert,Refiner,Yesode - Kuznez outpost,5369.94,4605.72,92.99,False,True,0.0002227007583673647
+R01,10,20061,Prull,Master blacksmith,Yesode - Kuznez outpost,5366.01,4600.39,93.65,False,True,0.0002713410870947698
+R01,11,22225,Liast,Blacksmith,Yesode - Kuznez outpost,5367.59,4595.34,94.17,False,True,0.000220978455629105
+R01,12,21092,Elsert,Elfish Armour Dealer,Yesode - Kuznez outpost,5375.26,4588.37,94.37,False,True,0.00026205361020595976
+R01,13,21091,Ellisk,Elfish Weapons Dealer,Yesode - Kuznez outpost,5375.02,4583.44,94.36,False,True,6.176625074186303e-05
+R01,14,20060,Ryanband,Supply Knight,Yesode - Kuznez outpost,5375.1,4578.01,94.36,False,True,0.0002539069836561352
+R01,15,21093,Elshain,Elfish Armour Dealer,Yesode - Kuznez outpost,5377.68,4575.56,94.39,False,True,0.0001852907115061129
+R01,16,20538,Starney Binson,Legendary Tailor,Yesode - Kuznez outpost,5380.31,4573.81,94.46,False,True,8.286913282181166e-05
+R01,17,22222,Lamian,Fortune-Teller,Yesode - Kuznez outpost,5389.95,4565.14,97.58,False,True,0.00023841632075135555
+R01,18,20059,General Payon,Leader of the gate guards,Yesode - Kuznez outpost,5393.11,4561.04,99.35,False,True,4.951778496068387
+R01,19,22224,Brey,Vocation training supervisor,Yesode - Kuznez outpost,5402.28,4565.67,97.59,False,True,0.00022863675007773148
+R01,20,20064,Octopus,Squire,Yesode - Kuznez outpost,5412.18,4572.61,97.58,False,True,0.00022269804000608833
+R01,21,25302,Squirrel Army,Crystal Merchant,Yesode - Kuznez outpost,5405.66,4594.63,94.52,False,True,0.0001953413466996437
+R01,22,22223,Ainz,Mystic,Yesode - Kuznez outpost,5395.24,4600.77,94.37,False,True,0.00023520343141556637
+R01,23,23347,Rispes,Help for Beginners,Yesode - Kuznez outpost,5388.83,4600.29,94.3,False,True,8.739970120786659e-05
+R01,24,20381,Gustav,Pandeon missionary,Yesode - Kuznez outpost,5386.95,4600.51,94.22,False,True,0.0003050903203491461
+R01,25,21083,Piras,Banker,Yesode - Kuznez outpost,5387.51,4592.02,95.41,False,True,0.00023521590397319452
+R01,26,25296,Game (normal crystal),_,Yesode - Kuznez outpost,5404.96,4589.91,94.69,True,True,0.00016107731658758024
+R01,27,25295,Game (small crystal),_,Yesode - Kuznez outpost,5406.18,4598.83,94.27,True,False,
+R01,28,23321,Participants,Halloween Party,Yesode - Kuznez outpost,5386.62,4592.31,95.33,True,True,0.0001310324022342225
+R01,29,23320,Participants,Halloween Party,Yesode - Kuznez outpost,5388.38,4591.77,95.46,True,True,0.00011880748327291812
+R01,30,23319,Participants,Halloween Party,Yesode - Kuznez outpost,5397.81,4566.08,97.58,True,True,9.767341444738289e-05
+R01,31,23318,Participants,Halloween Party,Yesode - Kuznez outpost,5396.57,4565.37,97.59,True,True,0.0002112945076810406
+R01,32,23317,Participants,Halloween Party,Yesode - Kuznez outpost,5408.62,4578.73,97.06,True,True,0.00011882903835270087
+R01,33,23316,Participants,Halloween Party,Yesode - Kuznez outpost,5410.17,4579.56,97.45,True,True,9.77039218982476e-05
+R01,34,23315,Participants,Halloween Party,Yesode - Kuznez outpost,5376.41,4650.39,94.29,True,True,0.00020762205385703743
+R01,35,23314,Participants,Halloween Party,Yesode - Kuznez outpost,5375.33,4652.66,94.72,True,True,0.0001746970758140089
+R01,36,23313,Participants,Halloween Party,Yesode - Kuznez outpost,5389.79,4618.59,89.45,True,True,0.0001610877235556155
+R01,37,23312,Participants,Halloween Party,Yesode - Kuznez outpost,5392.03,4618.18,89.67,True,True,0.0002775972573984803
+R01,38,23310,Jack O' Lantern,Halloween,Yesode - Kuznez outpost,5392.63,4591.88,95.33,True,True,0.00016573826692992157
+R01,39,23308,Expert,Burning Pumpkin,Yesode - Kuznez outpost,5394.59,4592.46,95.02,True,True,0.00016109379397634483
+R01,40,23306,Rice Cake Virtuoso,,Yesode - Kuznez outpost,5389.34,4600.33,94.31,True,True,0.00017470986991676246
+R01,41,22917,Weaver,,Yesode - Kuznez outpost,5389.34,4600.33,94.31,True,True,0.00017470986991676246
+R01,42,22916,Altar of origin,_,Yesode - Kuznez outpost,5404.87,4636.7,88.4,True,True,0.00022777666960326073
+R01,43,22900,Tera,Athletes,Yesode - Kuznez outpost,5371.95,4593.28,94.26,True,True,0.00029036076355550683
+R01,44,22863,Beauty,Ticket collector,Yesode - Kuznez outpost,5415.3,4594.7,97.56,True,True,0.0002762243760407419
+R01,45,22861,Cherry,Sweet,Yesode - Kuznez outpost,5390.81,4590.26,95.41,True,True,0.00024161597477109057
+R01,46,22768,Gilda,The Shy One,Yesode - Kuznez outpost,5405.59,4604.65,93.13,True,True,0.00018427791335727775
+R01,47,22767,Schoki,Bitter-sweet,Yesode - Kuznez outpost,5390.81,4590.26,95.41,True,True,0.00024161597477109057
+R01,48,22749,Altar of origin,_,Yesode - Kuznez outpost,5404.87,4636.7,88.4,True,True,0.00022777666960326073
+R01,49,22741,Yvaine,Ms. Clause,Yesode - Kuznez outpost,5393.46,4584.34,94.34,True,True,0.00016110044227023819
+R01,50,22739,Christmas Tree,_,Yesode - Kuznez outpost,5391.84,4581.8,94.18,True,True,0.0002501222269312192
+R01,51,20433,Chest,_,Yesode - Kuznez outpost,5367.13,4605.81,92.99,True,True,0.00013103702207616736
+R02,1,20065,Remings,Leader of the training camp,Mountain Valley of Courageousness,5477.82,4775.8,84.75,False,True,0.0002627660946099185
+R02,2,20128,Sallisar,Kaos monk,Mountain Valley of Courageousness,5516.3,4767.73,95.79,False,True,0.00019628876846910893
+R02,3,20066,Brendel,Assistant of the training camp supervisor,Mountain Valley of Courageousness,5425.35,4983.67,61.71,False,True,0.00012506437110422627
+R02,4,22008,Treasure Chest,_,Mountain Valley of Courageousness,5413.41,4990.33,61.7,True,True,0.0001746944768973771
+R03,1,20086,Blue,Assistant of the training camp supervisor,Soldier canyon,5547.94,4839.78,139.82,False,True,0.00022281092539910014
+R03,2,20085,Koral,Leader of the training camp,Soldier canyon,5630.82,4838.97,139.68,False,True,0.00027768782604622956
+R03,3,20087,Reep,Assistant of the training camp supervisor,Soldier canyon,5637.78,4917.19,158.78,False,True,0.00022269385804940325
+R03,4,20516,Chest,_,Soldier canyon,5538.27,5051.17,181.04,True,True,8.080879505587674e-05
+R04,1,20088,Selberes,Withdrawn adventurer,Ancient city Yarsk,5695.93,4958.05,124.47,False,True,0.00026276893003677354
+R04,2,20092,Elrain,_,Ancient city Yarsk,5745.74,4952.49,118.78,False,True,0.0003314585518141876
+R04,3,20093,Ilrain,_,Ancient city Yarsk,5746.74,4954.04,118.78,False,True,0.0002376110472022134
+R04,4,20094,Elrod,Elfish Consumer Goods Trader,Ancient city Yarsk,5749.81,4950.01,118.8,False,True,0.00024160749459660463
+R04,5,22154,Passage Portal,_,Ancient city Yarsk,5751.52,4968.0,119.6,False,True,1.9590763536132683e-05
+R04,6,20418,Lahula,Villager,Ancient city Yarsk,5745.0,4989.07,123.84,False,True,0.0001758193925434387
+R04,7,20417,Treju,Defenders of Yesode,Ancient city Yarsk,5746.2,4991.12,123.83,False,True,0.00022777891840644225
+R04,8,20096,Logan,Kaos monk,Ancient city Yarsk,5757.35,5030.0,139.27,False,True,9.774966503974967e-05
+R04,9,20091,Kollin,Blacksmith's Assistant,Ancient city Yarsk,5738.63,4911.5,128.72,False,True,0.00011719385776546354
+R04,10,20090,Ulmer,Blacksmith,Ancient city Yarsk,5738.81,4909.65,128.72,False,True,0.00011389232064233771
+R05,1,20089,Wess,Withdrawn administrator,Liberator hill,5896.15,4844.0,117.83,False,True,9.767341426551592e-05
+R05,2,20099,Jin,Assistant of the training camp supervisor,Knight's Cape,6021.3,4861.25,147.8,False,True,0.00019533634058459536
+R05,3,20097,Bronx,Leader of the training camp,Knight's Cape,6038.71,4792.08,141.3,False,True,8.739970120737039e-05
+R05,4,20098,Gimmlet,Assistant of the training camp supervisor,Knight's Cape,6078.68,4726.8,147.01,False,True,0.0002628235060413475
+R05,5,20517,Chest,_,Knight's Cape,6000.35,4680.39,151.11,True,True,0.00016801527351421218
+R05,6,20494,Arrow,_,Knight's Cape,5978.39,4753.49,138.85,True,True,0.00027140543499054376
+R05,7,20493,Arrow,_,Knight's Cape,6031.56,4765.63,137.78,True,True,0.00013102529446682568
+R05,8,20492,Arrow,_,Knight's Cape,5995.87,4797.16,143.65,True,True,0.00019540784434192576
+R05,9,20491,Arrow,_,Knight's Cape,6009.15,4824.28,139.56,True,True,0.00023600961921526798
+R05,10,20490,Arrow,_,Knight's Cape,5960.41,4820.62,138.71,True,True,0.00019542786070519423
+R06,1,20100,Killie,Ghost Evocator of the magical tower,Central Elixia,6033.9,4613.07,141.21,False,True,0.0002011985756777545
+R06,2,20511,Thousand year old plant,_,Evergreen Forest,5831.18,4632.67,118.95,False,True,0.00019238470992097198
+R06,3,20082,Panashi,Gate guard,Evergreen Forest,5764.96,4725.12,120.28,False,True,0.00012353250263409977
+R06,4,20084,Gap,Gate guard,Evergreen Forest,5763.42,4726.64,120.29,False,True,0.00015746863287241844
+R06,5,20430,Chest,_,Sacred Grove,5673.18,4772.22,130.04,True,True,0.00027767239791954076
+R06,6,20083,Saddyn,Gate guard,Sınır / bölge etiketi yok,5763.08,4719.2,120.34,False,True,0.00021038987477721546
+R07,1,20075,Hardy,Lumberjack,Sarnis,5644.68,4519.79,105.3,False,True,0.0001800950856744848
+R07,2,20074,Mabath,Executioner,Sarnis,5644.37,4517.84,105.76,False,True,0.0001953241823428375
+R07,3,20067,Retram,Leader of the Defence of Yesode,Sarnis,5619.44,4521.57,102.87,False,True,0.00018531006166487676
+R07,4,20069,Admiral,Defenders of Yesode,Sarnis,5618.34,4520.01,102.86,False,True,0.0002816843549113501
+R07,5,22153,Passage Portal,_,Sarnis,5618.22,4506.22,102.72,False,True,0.0003038373968513422
+R07,6,22263,Gabbin,Defenders of Yesode,Sarnis,5627.43,4486.47,104.9,False,True,0.0002775954121744494
+R07,7,20070,Yulris,Defenders of Yesode,Sarnis,5602.37,4482.4,102.04,False,True,0.00015254668618211104
+R07,8,20079,Nada,Jung Villager,Sarnis,5601.27,4483.71,101.96,False,True,4.368279763141723e-05
+R07,9,20078,Lisa,Waitress,Sarnis,5590.87,4516.67,104.43,False,True,0.00014084217745565964
+R07,10,20077,Ellemia,Publican,Sarnis,5591.23,4518.55,104.43,False,True,0.00019628687059777342
+R07,11,20076,Jamuru,Lumberjack's Assistant,Sarnis,5559.95,4488.07,105.86,False,True,0.0002627668034695006
+R07,12,20068,Jin,Defenders of Yesode,Sarnis,5558.7,4486.38,105.76,False,True,0.00022778157605418304
+R07,13,20081,Edono,Ghostly administration assistant,Eastern Elixia,5681.11,4435.72,101.99,False,True,2.841666624619931
+R07,14,20080,Ruay,Spirit-like administration director,Eastern Elixia,5682.72,4436.4,101.99,False,True,6.438635098427642
+R07,15,22764,Hadek,Kaos monk,Eastern Elixia,5690.08,4537.0,110.31,False,True,7.81631377367703e-05
+R07,16,20123,&&&,_,Eastern Elixia,5787.64,4540.8,119.12,True,True,11.65544822883265
+R08,1,20073,Biase,Defenders of Yesode,Grasnoya forest,5519.46,4388.2,100.35,False,True,0.00019918629456570458
+R08,2,20072,Swanni,Ghostly administration assistant,Grasnoya forest,5450.39,4399.07,97.94,False,True,0.00022270389472518683
+R08,3,20071,Breecher,Spirit-like administration director,Grasnoya forest,5448.9,4400.54,97.94,False,True,0.00010520733085954153
+R08,4,20127,Stone,_,Ruler Forest,5243.0,4322.0,101.21,False,True,9.155273374972239e-07
+R08,5,20457,Chest,_,Ruler Forest,5240.18,4277.74,101.98,True,True,0.0002929879818007705
+R08,6,20485,Sack,_,Ruler Forest,5208.03,4430.25,102.5,False,True,0.00021484374974534148
+R08,7,20458,Barrel,_,Ruler Forest,5231.48,4517.66,106.04,False,True,0.00015746863321083952
+R08,8,20510,&&&,_,Grasnoya forest,5631.89,4347.27,91.62,True,True,51.38986744582405
+R09,1,20109,Morabia,Margrave of Yesode,Morabia frontier post,5800.67,4436.05,153.16,False,True,0.00021038987477721546
+R09,2,20111,Matan,Margrave's Secretary,Morabia frontier post,5814.09,4435.4,152.64,False,True,0.00018425845480600384
+R09,3,20115,Piji,Guard of the Villa,Morabia frontier post,5841.74,4430.99,144.73,False,True,0.0003314838387870687
+R09,4,20110,Lekrut,Margrave's Gardner,Morabia frontier post,5842.76,4432.18,144.58,False,True,0.000292974471989942
+R09,5,20114,Laim,Defenders of Yesode,Morabia frontier post,5860.29,4449.99,142.49,False,True,0.00023767140023092377
+R09,6,20113,Ricky,Defenders of Yesode,Morabia frontier post,5861.92,4450.44,142.5,False,True,9.765624981810106e-05
+R09,7,20112,Osmand,Margrave's Chef,Morabia frontier post,5842.03,4488.17,142.47,False,True,0.00022861067900937997
+R09,8,20116,Tonik,Guard of the Villa,Morabia frontier post,5836.84,4394.73,137.5,False,True,0.0001574659717367032
+R09,9,20102,Negroni,Knight of the Evocators,Morabia fort,5916.72,4420.21,153.01,False,True,0.00021843509462778345
+R09,10,20438,Tark,Warrior leader,Morabia fort,5916.23,4422.65,153.01,False,True,9.9741604427818e-05
+R09,11,20439,Sepan,Master of the Magic Knights,Morabia fort,5925.2,4419.07,153.9,False,True,0.00026283697110490874
+R09,12,22155,Passage Portal,_,Morabia fort,5938.75,4413.56,155.9,False,True,5.8910783352631524e-05
+R09,13,20106,Al,Gate guard,Morabia fort,5950.18,4402.14,155.36,False,True,0.00022269134871002883
+R09,14,20105,Pul,Gate supplier,Morabia fort,5931.7,4388.48,155.38,False,True,0.00019634735622047045
+R09,15,20103,Jang,Nightwalker Teacher,Morabia fort,5929.4,4389.68,155.38,False,True,0.00020114579960865984
+R09,16,22763,Nosot,Kaos monk,Morabia fort,5963.28,4429.44,161.36,False,True,0.00022269134878979648
+R09,17,20108,Qyu,Gate guard,Morabia fort,5934.41,4447.96,164.75,False,True,10.257828223834478
+R09,18,20440,Ikan,Master archer,Morabia fort,5938.25,4469.77,166.74,False,True,2.0289025625374325e-05
+R09,19,20441,Horatio,Clergyman,Morabia fort,5937.87,4473.16,166.74,False,True,0.00019538973253122052
+R09,20,20101,Ophelia,Paymaster of the Guards,Morabia fort,5946.92,4471.1,188.38,False,True,26.94247390484623
+R09,21,20104,Ann,Gate guard,Morabia fort,6015.65,4446.1,132.35,False,True,0.00013824159681177897
+R09,22,20107,Kay,Gate guard,Morabia fort,6021.31,4446.2,132.2,False,True,0.00020393507164082327
+R10,1,20132,Space-time Portal,_,Canyon of Secrets,6045.42,4307.04,78.78,False,True,8.735493495838123e-05
+R10,2,20124,Cromin,_,Canyon of Secrets,6045.05,4301.02,78.81,False,True,0.0001963018158380161
+R10,3,22262,Gravestone,_,Grave of the noble sword,5842.1,4185.68,140.92,False,True,0.00020109486220059276
+R10,4,20118,Kronan,Boozer,Yesode,5931.8,4333.97,138.14,False,True,0.00029035354666502074
+R10,5,22407,Chest,_,Canyon of Secrets,6041.76,4302.57,78.78,True,True,0.0002929712931204774
+R10,6,20514,Chest,_,Canyon of Secrets,5947.98,4177.81,106.51,True,True,6.180016733205431e-05
+R10,7,20431,Chest,_,Canyon of Secrets,6105.75,4374.93,78.9,True,True,0.00017578787232247717
+R10,8,20122,Fire Starter,Fire Spirit,Yesode,5523.89,4249.64,107.42,True,True,0.0001933581800321442

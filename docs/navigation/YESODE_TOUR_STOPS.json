@@ -1,0 +1,3656 @@
+{
+  "version": 1,
+  "scope": {
+    "mapId": 0,
+    "worldId": 4,
+    "unit": "0405",
+    "bounds": [
+      5120,
+      6144,
+      4096,
+      5120
+    ]
+  },
+  "npcCount": 139,
+  "npcMatchedInDb": 138,
+  "portalNpcCount": 5,
+  "portalArrivals": [
+    {
+      "wPortalID": 1101,
+      "wSpawnID": 1101,
+      "bCountry": 1,
+      "mapId": 0,
+      "x": 5388.81,
+      "y": 88.56,
+      "z": 4630.36,
+      "name": "Yesode - Kuznez outpost"
+    },
+    {
+      "wPortalID": 3101,
+      "wSpawnID": 3101,
+      "bCountry": 1,
+      "mapId": 0,
+      "x": 5390.11,
+      "y": 94.44,
+      "z": 4579.92,
+      "name": "Yesode - Kuznez outpost"
+    },
+    {
+      "wPortalID": 4101,
+      "wSpawnID": 4101,
+      "bCountry": 1,
+      "mapId": 0,
+      "x": 5621.27,
+      "y": 102.29,
+      "z": 4502.89,
+      "name": "Sarnis"
+    },
+    {
+      "wPortalID": 4102,
+      "wSpawnID": 4102,
+      "bCountry": 1,
+      "mapId": 0,
+      "x": 5748.22,
+      "y": 118.55,
+      "z": 4964.51,
+      "name": "Ancient city Yarsk"
+    },
+    {
+      "wPortalID": 4103,
+      "wSpawnID": 4103,
+      "bCountry": 1,
+      "mapId": 0,
+      "x": 5939.25,
+      "y": 156.27,
+      "z": 4418.06,
+      "name": "Morabia fort"
+    },
+    {
+      "wPortalID": 5101,
+      "wSpawnID": 5101,
+      "bCountry": 1,
+      "mapId": 0,
+      "x": 6045.26,
+      "y": 78.79,
+      "z": 4302.77,
+      "name": "Canyon of Secrets"
+    }
+  ],
+  "tours": [
+    {
+      "id": "R01",
+      "title": "Kuznez Outpost — meydan, satıcılar ve kapı",
+      "stops": [
+        {
+          "id": 20058,
+          "template": 33,
+          "name": "Marad",
+          "title": "Training supervisor",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5366.22021484375,
+            95.01000213623047,
+            4661.169921875
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00022861740074106644,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20121,
+          "template": 94,
+          "name": "Rupeh",
+          "title": "Statue Transporter",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5397.7998046875,
+            89.76000213623047,
+            4648.81982421875
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.0002627747780079785,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20063,
+          "template": 38,
+          "name": "Orlando",
+          "title": "Squire",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5397.8798828125,
+            89.91999816894531,
+            4646.2998046875
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00022777891840644225,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 22746,
+          "template": 955,
+          "name": "Nobin",
+          "title": "Production specialist",
+          "type": 20,
+          "country": 1,
+          "position": [
+            5405.02978515625,
+            88.41000366210938,
+            4633.14990234375
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00023602540317251147,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 22707,
+          "template": 955,
+          "name": "Zeodel Bao",
+          "title": "Alchemist",
+          "type": 20,
+          "country": 1,
+          "position": [
+            5407.2099609375,
+            88.43000030517578,
+            4631.0400390625
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 5.5243560262148564e-05,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 22737,
+          "template": 956,
+          "name": "Plosch",
+          "title": "Tool salesman",
+          "type": 2,
+          "country": 1,
+          "position": [
+            5408.10986328125,
+            88.62000274658203,
+            4628.31982421875
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.0002227074493008886,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 22151,
+          "template": 707,
+          "name": "Passage Portal",
+          "title": "_",
+          "type": 8,
+          "country": 1,
+          "position": [
+            5388.89990234375,
+            88.43000030517578,
+            4625.830078125
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00012506139237042824,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20062,
+          "template": 37,
+          "name": "Rosemin",
+          "title": "Squire",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5371.2998046875,
+            92.91999816894531,
+            4610.14990234375
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.0002183736902229464,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 22226,
+          "template": 732,
+          "name": "Kalbert",
+          "title": "Refiner",
+          "type": 18,
+          "country": 1,
+          "position": [
+            5369.93994140625,
+            92.98999786376953,
+            4605.72021484375
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.0002227007583673647,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20061,
+          "template": 36,
+          "name": "Prull",
+          "title": "Master blacksmith",
+          "type": 5,
+          "country": 1,
+          "position": [
+            5366.009765625,
+            93.6500015258789,
+            4600.39013671875
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.0002713410870947698,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 22225,
+          "template": 731,
+          "name": "Liast",
+          "title": "Blacksmith",
+          "type": 17,
+          "country": 1,
+          "position": [
+            5367.58984375,
+            94.16999816894531,
+            4595.33984375
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.000220978455629105,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 21092,
+          "template": 563,
+          "name": "Elsert",
+          "title": "Elfish Armour Dealer",
+          "type": 2,
+          "country": 1,
+          "position": [
+            5375.259765625,
+            94.37000274658203,
+            4588.3701171875
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00026205361020595976,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 21091,
+          "template": 562,
+          "name": "Ellisk",
+          "title": "Elfish Weapons Dealer",
+          "type": 2,
+          "country": 1,
+          "position": [
+            5375.02001953125,
+            94.36000061035156,
+            4583.43994140625
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 6.176625074186303e-05,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20060,
+          "template": 35,
+          "name": "Ryanband",
+          "title": "Supply Knight",
+          "type": 2,
+          "country": 1,
+          "position": [
+            5375.10009765625,
+            94.36000061035156,
+            4578.009765625
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.0002539069836561352,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 21093,
+          "template": 564,
+          "name": "Elshain",
+          "title": "Elfish Armour Dealer",
+          "type": 2,
+          "country": 1,
+          "position": [
+            5377.68017578125,
+            94.38999938964844,
+            4575.56005859375
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.0001852907115061129,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20538,
+          "template": 1358,
+          "name": "Starney Binson",
+          "title": "Legendary Tailor",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5380.31005859375,
+            94.45999908447266,
+            4573.81005859375
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 8.286913282181166e-05,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 22222,
+          "template": 700,
+          "name": "Lamian",
+          "title": "Fortune-Teller",
+          "type": 15,
+          "country": 1,
+          "position": [
+            5389.9501953125,
+            97.58000183105469,
+            4565.14013671875
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00023841632075135555,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20059,
+          "template": 34,
+          "name": "General Payon",
+          "title": "Leader of the gate guards",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5393.10986328125,
+            99.3499984741211,
+            4561.0400390625
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 4.951778496068387,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 22224,
+          "template": 730,
+          "name": "Brey",
+          "title": "Vocation training supervisor",
+          "type": 1,
+          "country": 1,
+          "position": [
+            5402.27978515625,
+            97.58999633789062,
+            4565.669921875
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00022863675007773148,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20064,
+          "template": 39,
+          "name": "Octopus",
+          "title": "Squire",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5412.18017578125,
+            97.58000183105469,
+            4572.60986328125
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00022269804000608833,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 25302,
+          "template": 1137,
+          "name": "Squirrel Army",
+          "title": "Crystal Merchant",
+          "type": 2,
+          "country": 1,
+          "position": [
+            5405.66015625,
+            94.5199966430664,
+            4594.6298828125
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.0001953413466996437,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 22223,
+          "template": 699,
+          "name": "Ainz",
+          "title": "Mystic",
+          "type": 16,
+          "country": 1,
+          "position": [
+            5395.240234375,
+            94.37000274658203,
+            4600.77001953125
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00023520343141556637,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 23347,
+          "template": 1056,
+          "name": "Rispes",
+          "title": "Help for Beginners",
+          "type": 22,
+          "country": 1,
+          "position": [
+            5388.830078125,
+            94.30000305175781,
+            4600.2900390625
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 8.739970120786659e-05,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20381,
+          "template": 289,
+          "name": "Gustav",
+          "title": "Pandeon missionary",
+          "type": 14,
+          "country": 1,
+          "position": [
+            5386.9501953125,
+            94.22000122070312,
+            4600.509765625
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.0003050903203491461,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 21083,
+          "template": 521,
+          "name": "Piras",
+          "title": "Banker",
+          "type": 9,
+          "country": 1,
+          "position": [
+            5387.509765625,
+            95.41000366210938,
+            4592.02001953125
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00023521590397319452,
+          "visitAsLandmark": false
+        }
+      ],
+      "optional": [
+        {
+          "id": 25296,
+          "template": 1136,
+          "name": "Game (normal crystal)",
+          "title": "_",
+          "type": 23,
+          "country": 1,
+          "position": [
+            5404.9599609375,
+            94.69000244140625,
+            4589.91015625
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.00016107731658758024,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 25295,
+          "template": 1136,
+          "name": "Game (small crystal)",
+          "title": "_",
+          "type": 23,
+          "country": 1,
+          "position": [
+            5406.18017578125,
+            94.2699966430664,
+            4598.830078125
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": true,
+          "serverPresent": false,
+          "databaseDelta": null,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 23321,
+          "template": 1039,
+          "name": "Participants",
+          "title": "Halloween Party",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5386.6201171875,
+            95.33000183105469,
+            4592.31005859375
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.0001310324022342225,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 23320,
+          "template": 1038,
+          "name": "Participants",
+          "title": "Halloween Party",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5388.3798828125,
+            95.45999908447266,
+            4591.77001953125
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.00011880748327291812,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 23319,
+          "template": 1049,
+          "name": "Participants",
+          "title": "Halloween Party",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5397.81005859375,
+            97.58000183105469,
+            4566.080078125
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 9.767341444738289e-05,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 23318,
+          "template": 1050,
+          "name": "Participants",
+          "title": "Halloween Party",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5396.56982421875,
+            97.58999633789062,
+            4565.3701171875
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.0002112945076810406,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 23317,
+          "template": 1044,
+          "name": "Participants",
+          "title": "Halloween Party",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5408.6201171875,
+            97.05999755859375,
+            4578.72998046875
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.00011882903835270087,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 23316,
+          "template": 1043,
+          "name": "Participants",
+          "title": "Halloween Party",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5410.169921875,
+            97.44999694824219,
+            4579.56005859375
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 9.77039218982476e-05,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 23315,
+          "template": 1041,
+          "name": "Participants",
+          "title": "Halloween Party",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5376.41015625,
+            94.29000091552734,
+            4650.39013671875
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.00020762205385703743,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 23314,
+          "template": 1054,
+          "name": "Participants",
+          "title": "Halloween Party",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5375.330078125,
+            94.72000122070312,
+            4652.66015625
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.0001746970758140089,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 23313,
+          "template": 1041,
+          "name": "Participants",
+          "title": "Halloween Party",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5389.7900390625,
+            89.44999694824219,
+            4618.58984375
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.0001610877235556155,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 23312,
+          "template": 1040,
+          "name": "Participants",
+          "title": "Halloween Party",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5392.02978515625,
+            89.66999816894531,
+            4618.18017578125
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.0002775972573984803,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 23310,
+          "template": 1036,
+          "name": "Jack O' Lantern",
+          "title": "Halloween",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5392.6298828125,
+            95.33000183105469,
+            4591.8798828125
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.00016573826692992157,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 23308,
+          "template": 1037,
+          "name": "Expert",
+          "title": "Burning Pumpkin",
+          "type": 19,
+          "country": 1,
+          "position": [
+            5394.58984375,
+            95.0199966430664,
+            4592.4599609375
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.00016109379397634483,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 23306,
+          "template": 829,
+          "name": "Rice Cake Virtuoso",
+          "title": "",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5389.33984375,
+            94.30999755859375,
+            4600.330078125
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.00017470986991676246,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 22917,
+          "template": 1009,
+          "name": "Weaver",
+          "title": "",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5389.33984375,
+            94.30999755859375,
+            4600.330078125
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.00017470986991676246,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 22916,
+          "template": 973,
+          "name": "Altar of origin",
+          "title": "_",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5404.8701171875,
+            88.4000015258789,
+            4636.7001953125
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.00022777666960326073,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 22900,
+          "template": 980,
+          "name": "Tera",
+          "title": "Athletes",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5371.9501953125,
+            94.26000213623047,
+            4593.27978515625
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.00029036076355550683,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 22863,
+          "template": 997,
+          "name": "Beauty",
+          "title": "Ticket collector",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5415.2998046875,
+            97.55999755859375,
+            4594.7001953125
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.0002762243760407419,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 22861,
+          "template": 996,
+          "name": "Cherry",
+          "title": "Sweet",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5390.81005859375,
+            95.41000366210938,
+            4590.259765625
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.00024161597477109057,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 22768,
+          "template": 981,
+          "name": "Gilda",
+          "title": "The Shy One",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5405.58984375,
+            93.12999725341797,
+            4604.64990234375
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.00018427791335727775,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 22767,
+          "template": 980,
+          "name": "Schoki",
+          "title": "Bitter-sweet",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5390.81005859375,
+            95.41000366210938,
+            4590.259765625
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.00024161597477109057,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 22749,
+          "template": 973,
+          "name": "Altar of origin",
+          "title": "_",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5404.8701171875,
+            88.4000015258789,
+            4636.7001953125
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.00022777666960326073,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 22741,
+          "template": 959,
+          "name": "Yvaine",
+          "title": "Ms. Clause",
+          "type": 19,
+          "country": 1,
+          "position": [
+            5393.4599609375,
+            94.33999633789062,
+            4584.33984375
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.00016110044227023819,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 22739,
+          "template": 958,
+          "name": "Christmas Tree",
+          "title": "_",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5391.83984375,
+            94.18000030517578,
+            4581.7998046875
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.0002501222269312192,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20433,
+          "template": 323,
+          "name": "Chest",
+          "title": "_",
+          "type": 7,
+          "country": 1,
+          "position": [
+            5367.1298828125,
+            92.98999786376953,
+            4605.81005859375
+          ],
+          "regionId": 10498,
+          "area": "Yesode - Kuznez outpost",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.00013103702207616736,
+          "visitAsLandmark": false
+        }
+      ],
+      "geometryStatus": "itinerary_only_not_a_verified_path",
+      "legs": [
+        {
+          "fromId": 20058,
+          "fromName": "Marad",
+          "fromArea": "Yesode - Kuznez outpost",
+          "toId": 20121,
+          "toName": "Rupeh",
+          "toArea": "Yesode - Kuznez outpost"
+        },
+        {
+          "fromId": 20121,
+          "fromName": "Rupeh",
+          "fromArea": "Yesode - Kuznez outpost",
+          "toId": 20063,
+          "toName": "Orlando",
+          "toArea": "Yesode - Kuznez outpost"
+        },
+        {
+          "fromId": 20063,
+          "fromName": "Orlando",
+          "fromArea": "Yesode - Kuznez outpost",
+          "toId": 22746,
+          "toName": "Nobin",
+          "toArea": "Yesode - Kuznez outpost"
+        },
+        {
+          "fromId": 22746,
+          "fromName": "Nobin",
+          "fromArea": "Yesode - Kuznez outpost",
+          "toId": 22707,
+          "toName": "Zeodel Bao",
+          "toArea": "Yesode - Kuznez outpost"
+        },
+        {
+          "fromId": 22707,
+          "fromName": "Zeodel Bao",
+          "fromArea": "Yesode - Kuznez outpost",
+          "toId": 22737,
+          "toName": "Plosch",
+          "toArea": "Yesode - Kuznez outpost"
+        },
+        {
+          "fromId": 22737,
+          "fromName": "Plosch",
+          "fromArea": "Yesode - Kuznez outpost",
+          "toId": 22151,
+          "toName": "Passage Portal",
+          "toArea": "Yesode - Kuznez outpost"
+        },
+        {
+          "fromId": 22151,
+          "fromName": "Passage Portal",
+          "fromArea": "Yesode - Kuznez outpost",
+          "toId": 20062,
+          "toName": "Rosemin",
+          "toArea": "Yesode - Kuznez outpost"
+        },
+        {
+          "fromId": 20062,
+          "fromName": "Rosemin",
+          "fromArea": "Yesode - Kuznez outpost",
+          "toId": 22226,
+          "toName": "Kalbert",
+          "toArea": "Yesode - Kuznez outpost"
+        },
+        {
+          "fromId": 22226,
+          "fromName": "Kalbert",
+          "fromArea": "Yesode - Kuznez outpost",
+          "toId": 20061,
+          "toName": "Prull",
+          "toArea": "Yesode - Kuznez outpost"
+        },
+        {
+          "fromId": 20061,
+          "fromName": "Prull",
+          "fromArea": "Yesode - Kuznez outpost",
+          "toId": 22225,
+          "toName": "Liast",
+          "toArea": "Yesode - Kuznez outpost"
+        },
+        {
+          "fromId": 22225,
+          "fromName": "Liast",
+          "fromArea": "Yesode - Kuznez outpost",
+          "toId": 21092,
+          "toName": "Elsert",
+          "toArea": "Yesode - Kuznez outpost"
+        },
+        {
+          "fromId": 21092,
+          "fromName": "Elsert",
+          "fromArea": "Yesode - Kuznez outpost",
+          "toId": 21091,
+          "toName": "Ellisk",
+          "toArea": "Yesode - Kuznez outpost"
+        },
+        {
+          "fromId": 21091,
+          "fromName": "Ellisk",
+          "fromArea": "Yesode - Kuznez outpost",
+          "toId": 20060,
+          "toName": "Ryanband",
+          "toArea": "Yesode - Kuznez outpost"
+        },
+        {
+          "fromId": 20060,
+          "fromName": "Ryanband",
+          "fromArea": "Yesode - Kuznez outpost",
+          "toId": 21093,
+          "toName": "Elshain",
+          "toArea": "Yesode - Kuznez outpost"
+        },
+        {
+          "fromId": 21093,
+          "fromName": "Elshain",
+          "fromArea": "Yesode - Kuznez outpost",
+          "toId": 20538,
+          "toName": "Starney Binson",
+          "toArea": "Yesode - Kuznez outpost"
+        },
+        {
+          "fromId": 20538,
+          "fromName": "Starney Binson",
+          "fromArea": "Yesode - Kuznez outpost",
+          "toId": 22222,
+          "toName": "Lamian",
+          "toArea": "Yesode - Kuznez outpost"
+        },
+        {
+          "fromId": 22222,
+          "fromName": "Lamian",
+          "fromArea": "Yesode - Kuznez outpost",
+          "toId": 20059,
+          "toName": "General Payon",
+          "toArea": "Yesode - Kuznez outpost"
+        },
+        {
+          "fromId": 20059,
+          "fromName": "General Payon",
+          "fromArea": "Yesode - Kuznez outpost",
+          "toId": 22224,
+          "toName": "Brey",
+          "toArea": "Yesode - Kuznez outpost"
+        },
+        {
+          "fromId": 22224,
+          "fromName": "Brey",
+          "fromArea": "Yesode - Kuznez outpost",
+          "toId": 20064,
+          "toName": "Octopus",
+          "toArea": "Yesode - Kuznez outpost"
+        },
+        {
+          "fromId": 20064,
+          "fromName": "Octopus",
+          "fromArea": "Yesode - Kuznez outpost",
+          "toId": 25302,
+          "toName": "Squirrel Army",
+          "toArea": "Yesode - Kuznez outpost"
+        },
+        {
+          "fromId": 25302,
+          "fromName": "Squirrel Army",
+          "fromArea": "Yesode - Kuznez outpost",
+          "toId": 22223,
+          "toName": "Ainz",
+          "toArea": "Yesode - Kuznez outpost"
+        },
+        {
+          "fromId": 22223,
+          "fromName": "Ainz",
+          "fromArea": "Yesode - Kuznez outpost",
+          "toId": 23347,
+          "toName": "Rispes",
+          "toArea": "Yesode - Kuznez outpost"
+        },
+        {
+          "fromId": 23347,
+          "fromName": "Rispes",
+          "fromArea": "Yesode - Kuznez outpost",
+          "toId": 20381,
+          "toName": "Gustav",
+          "toArea": "Yesode - Kuznez outpost"
+        },
+        {
+          "fromId": 20381,
+          "fromName": "Gustav",
+          "fromArea": "Yesode - Kuznez outpost",
+          "toId": 21083,
+          "toName": "Piras",
+          "toArea": "Yesode - Kuznez outpost"
+        },
+        {
+          "fromId": 21083,
+          "fromName": "Piras",
+          "fromArea": "Yesode - Kuznez outpost",
+          "toId": 20058,
+          "toName": "Marad",
+          "toArea": "Yesode - Kuznez outpost"
+        }
+      ]
+    },
+    {
+      "id": "R02",
+      "title": "Marad → Remings → Brendel — eğitim vadisi",
+      "stops": [
+        {
+          "id": 20065,
+          "template": 40,
+          "name": "Remings",
+          "title": "Leader of the training camp",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5477.81982421875,
+            84.75,
+            4775.7998046875
+          ],
+          "regionId": 10497,
+          "area": "Mountain Valley of Courageousness",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.0002627660946099185,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20128,
+          "template": 100,
+          "name": "Sallisar",
+          "title": "Kaos monk",
+          "type": 3,
+          "country": 3,
+          "position": [
+            5516.2998046875,
+            95.79000091552734,
+            4767.72998046875
+          ],
+          "regionId": 10497,
+          "area": "Mountain Valley of Courageousness",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00019628876846910893,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20066,
+          "template": 41,
+          "name": "Brendel",
+          "title": "Assistant of the training camp supervisor",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5425.35009765625,
+            61.709999084472656,
+            4983.669921875
+          ],
+          "regionId": 10497,
+          "area": "Mountain Valley of Courageousness",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00012506437110422627,
+          "visitAsLandmark": false
+        }
+      ],
+      "optional": [
+        {
+          "id": 22008,
+          "template": 348,
+          "name": "Treasure Chest",
+          "title": "_",
+          "type": 7,
+          "country": 0,
+          "position": [
+            5413.41015625,
+            61.70000076293945,
+            4990.330078125
+          ],
+          "regionId": 10497,
+          "area": "Mountain Valley of Courageousness",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.0001746944768973771,
+          "visitAsLandmark": false
+        }
+      ],
+      "geometryStatus": "itinerary_only_not_a_verified_path",
+      "legs": [
+        {
+          "fromId": 20058,
+          "fromName": "Marad",
+          "fromArea": "Yesode - Kuznez outpost",
+          "toId": 20065,
+          "toName": "Remings",
+          "toArea": "Mountain Valley of Courageousness"
+        },
+        {
+          "fromId": 20065,
+          "fromName": "Remings",
+          "fromArea": "Mountain Valley of Courageousness",
+          "toId": 20128,
+          "toName": "Sallisar",
+          "toArea": "Mountain Valley of Courageousness"
+        },
+        {
+          "fromId": 20128,
+          "fromName": "Sallisar",
+          "fromArea": "Mountain Valley of Courageousness",
+          "toId": 20066,
+          "toName": "Brendel",
+          "toArea": "Mountain Valley of Courageousness"
+        },
+        {
+          "fromId": 20066,
+          "fromName": "Brendel",
+          "fromArea": "Mountain Valley of Courageousness",
+          "toId": 20065,
+          "toName": "Remings",
+          "toArea": "Mountain Valley of Courageousness"
+        }
+      ]
+    },
+    {
+      "id": "R03",
+      "title": "Soldier Canyon — Blue, Koral ve Reep",
+      "stops": [
+        {
+          "id": 20086,
+          "template": 61,
+          "name": "Blue",
+          "title": "Assistant of the training camp supervisor",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5547.93994140625,
+            139.82000732421875,
+            4839.77978515625
+          ],
+          "regionId": 10504,
+          "area": "Soldier canyon",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00022281092539910014,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20085,
+          "template": 60,
+          "name": "Koral",
+          "title": "Leader of the training camp",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5630.81982421875,
+            139.67999267578125,
+            4838.97021484375
+          ],
+          "regionId": 10504,
+          "area": "Soldier canyon",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00027768782604622956,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20087,
+          "template": 62,
+          "name": "Reep",
+          "title": "Assistant of the training camp supervisor",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5637.77978515625,
+            158.77999877929688,
+            4917.18994140625
+          ],
+          "regionId": 10504,
+          "area": "Soldier canyon",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00022269385804940325,
+          "visitAsLandmark": false
+        }
+      ],
+      "optional": [
+        {
+          "id": 20516,
+          "template": 348,
+          "name": "Chest",
+          "title": "_",
+          "type": 7,
+          "country": 1,
+          "position": [
+            5538.27001953125,
+            181.0399932861328,
+            5051.169921875
+          ],
+          "regionId": 10504,
+          "area": "Soldier canyon",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 8.080879505587674e-05,
+          "visitAsLandmark": false
+        }
+      ],
+      "geometryStatus": "itinerary_only_not_a_verified_path",
+      "legs": [
+        {
+          "fromId": 20065,
+          "fromName": "Remings",
+          "fromArea": "Mountain Valley of Courageousness",
+          "toId": 20086,
+          "toName": "Blue",
+          "toArea": "Soldier canyon"
+        },
+        {
+          "fromId": 20086,
+          "fromName": "Blue",
+          "fromArea": "Soldier canyon",
+          "toId": 20085,
+          "toName": "Koral",
+          "toArea": "Soldier canyon"
+        },
+        {
+          "fromId": 20085,
+          "fromName": "Koral",
+          "fromArea": "Soldier canyon",
+          "toId": 20087,
+          "toName": "Reep",
+          "toArea": "Soldier canyon"
+        }
+      ]
+    },
+    {
+      "id": "R04",
+      "title": "Ancient City Yarsk — portal ve yerleşim",
+      "stops": [
+        {
+          "id": 20088,
+          "template": 63,
+          "name": "Selberes",
+          "title": "Withdrawn adventurer",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5695.93017578125,
+            124.47000122070312,
+            4958.0498046875
+          ],
+          "regionId": 10505,
+          "area": "Ancient city Yarsk",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00026276893003677354,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20092,
+          "template": 67,
+          "name": "Elrain",
+          "title": "_",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5745.740234375,
+            118.77999877929688,
+            4952.490234375
+          ],
+          "regionId": 10505,
+          "area": "Ancient city Yarsk",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.0003314585518141876,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20093,
+          "template": 68,
+          "name": "Ilrain",
+          "title": "_",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5746.740234375,
+            118.77999877929688,
+            4954.0400390625
+          ],
+          "regionId": 10505,
+          "area": "Ancient city Yarsk",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.0002376110472022134,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20094,
+          "template": 69,
+          "name": "Elrod",
+          "title": "Elfish Consumer Goods Trader",
+          "type": 2,
+          "country": 1,
+          "position": [
+            5749.81005859375,
+            118.80000305175781,
+            4950.009765625
+          ],
+          "regionId": 10505,
+          "area": "Ancient city Yarsk",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00024160749459660463,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 22154,
+          "template": 707,
+          "name": "Passage Portal",
+          "title": "_",
+          "type": 8,
+          "country": 1,
+          "position": [
+            5751.52001953125,
+            119.5999984741211,
+            4968.0
+          ],
+          "regionId": 10505,
+          "area": "Ancient city Yarsk",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 1.9590763536132683e-05,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20418,
+          "template": 309,
+          "name": "Lahula",
+          "title": "Villager",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5745.0,
+            123.83999633789062,
+            4989.06982421875
+          ],
+          "regionId": 10505,
+          "area": "Ancient city Yarsk",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.0001758193925434387,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20417,
+          "template": 44,
+          "name": "Treju",
+          "title": "Defenders of Yesode",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5746.2001953125,
+            123.83000183105469,
+            4991.1201171875
+          ],
+          "regionId": 10505,
+          "area": "Ancient city Yarsk",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00022777891840644225,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20096,
+          "template": 70,
+          "name": "Logan",
+          "title": "Kaos monk",
+          "type": 3,
+          "country": 3,
+          "position": [
+            5757.35009765625,
+            139.27000427246094,
+            5030.0
+          ],
+          "regionId": 10505,
+          "area": "Ancient city Yarsk",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 9.774966503974967e-05,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20091,
+          "template": 66,
+          "name": "Kollin",
+          "title": "Blacksmith's Assistant",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5738.6298828125,
+            128.72000122070312,
+            4911.5
+          ],
+          "regionId": 10505,
+          "area": "Ancient city Yarsk",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00011719385776546354,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20090,
+          "template": 65,
+          "name": "Ulmer",
+          "title": "Blacksmith",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5738.81005859375,
+            128.72000122070312,
+            4909.64990234375
+          ],
+          "regionId": 10505,
+          "area": "Ancient city Yarsk",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00011389232064233771,
+          "visitAsLandmark": false
+        }
+      ],
+      "optional": [],
+      "geometryStatus": "itinerary_only_not_a_verified_path",
+      "legs": [
+        {
+          "fromId": 20087,
+          "fromName": "Reep",
+          "fromArea": "Soldier canyon",
+          "toId": 20088,
+          "toName": "Selberes",
+          "toArea": "Ancient city Yarsk"
+        },
+        {
+          "fromId": 20088,
+          "fromName": "Selberes",
+          "fromArea": "Ancient city Yarsk",
+          "toId": 20092,
+          "toName": "Elrain",
+          "toArea": "Ancient city Yarsk"
+        },
+        {
+          "fromId": 20092,
+          "fromName": "Elrain",
+          "fromArea": "Ancient city Yarsk",
+          "toId": 20093,
+          "toName": "Ilrain",
+          "toArea": "Ancient city Yarsk"
+        },
+        {
+          "fromId": 20093,
+          "fromName": "Ilrain",
+          "fromArea": "Ancient city Yarsk",
+          "toId": 20094,
+          "toName": "Elrod",
+          "toArea": "Ancient city Yarsk"
+        },
+        {
+          "fromId": 20094,
+          "fromName": "Elrod",
+          "fromArea": "Ancient city Yarsk",
+          "toId": 22154,
+          "toName": "Passage Portal",
+          "toArea": "Ancient city Yarsk"
+        },
+        {
+          "fromId": 22154,
+          "fromName": "Passage Portal",
+          "fromArea": "Ancient city Yarsk",
+          "toId": 20418,
+          "toName": "Lahula",
+          "toArea": "Ancient city Yarsk"
+        },
+        {
+          "fromId": 20418,
+          "fromName": "Lahula",
+          "fromArea": "Ancient city Yarsk",
+          "toId": 20417,
+          "toName": "Treju",
+          "toArea": "Ancient city Yarsk"
+        },
+        {
+          "fromId": 20417,
+          "fromName": "Treju",
+          "fromArea": "Ancient city Yarsk",
+          "toId": 20096,
+          "toName": "Logan",
+          "toArea": "Ancient city Yarsk"
+        },
+        {
+          "fromId": 20096,
+          "fromName": "Logan",
+          "fromArea": "Ancient city Yarsk",
+          "toId": 20091,
+          "toName": "Kollin",
+          "toArea": "Ancient city Yarsk"
+        },
+        {
+          "fromId": 20091,
+          "fromName": "Kollin",
+          "fromArea": "Ancient city Yarsk",
+          "toId": 20090,
+          "toName": "Ulmer",
+          "toArea": "Ancient city Yarsk"
+        }
+      ]
+    },
+    {
+      "id": "R05",
+      "title": "Liberator Hill ve Knight’s Cape — Wess ve doğu eğitim kampı",
+      "stops": [
+        {
+          "id": 20089,
+          "template": 64,
+          "name": "Wess",
+          "title": "Withdrawn administrator",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5896.14990234375,
+            117.83000183105469,
+            4844.0
+          ],
+          "regionId": 10506,
+          "area": "Liberator hill",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 9.767341426551592e-05,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20099,
+          "template": 73,
+          "name": "Jin",
+          "title": "Assistant of the training camp supervisor",
+          "type": 0,
+          "country": 1,
+          "position": [
+            6021.2998046875,
+            147.8000030517578,
+            4861.25
+          ],
+          "regionId": 10507,
+          "area": "Knight's Cape",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00019533634058459536,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20097,
+          "template": 71,
+          "name": "Bronx",
+          "title": "Leader of the training camp",
+          "type": 0,
+          "country": 1,
+          "position": [
+            6038.7099609375,
+            141.3000030517578,
+            4792.080078125
+          ],
+          "regionId": 10507,
+          "area": "Knight's Cape",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 8.739970120737039e-05,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20098,
+          "template": 72,
+          "name": "Gimmlet",
+          "title": "Assistant of the training camp supervisor",
+          "type": 0,
+          "country": 1,
+          "position": [
+            6078.68017578125,
+            147.00999450683594,
+            4726.7998046875
+          ],
+          "regionId": 10507,
+          "area": "Knight's Cape",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.0002628235060413475,
+          "visitAsLandmark": false
+        }
+      ],
+      "optional": [
+        {
+          "id": 20517,
+          "template": 348,
+          "name": "Chest",
+          "title": "_",
+          "type": 7,
+          "country": 1,
+          "position": [
+            6000.35009765625,
+            151.11000061035156,
+            4680.39013671875
+          ],
+          "regionId": 10507,
+          "area": "Knight's Cape",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.00016801527351421218,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20494,
+          "template": 344,
+          "name": "Arrow",
+          "title": "_",
+          "type": 7,
+          "country": 1,
+          "position": [
+            5978.39013671875,
+            138.85000610351562,
+            4753.490234375
+          ],
+          "regionId": 10507,
+          "area": "Knight's Cape",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.00027140543499054376,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20493,
+          "template": 344,
+          "name": "Arrow",
+          "title": "_",
+          "type": 7,
+          "country": 1,
+          "position": [
+            6031.56005859375,
+            137.77999877929688,
+            4765.6298828125
+          ],
+          "regionId": 10507,
+          "area": "Knight's Cape",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.00013102529446682568,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20492,
+          "template": 344,
+          "name": "Arrow",
+          "title": "_",
+          "type": 7,
+          "country": 1,
+          "position": [
+            5995.8701171875,
+            143.64999389648438,
+            4797.16015625
+          ],
+          "regionId": 10507,
+          "area": "Knight's Cape",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.00019540784434192576,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20491,
+          "template": 344,
+          "name": "Arrow",
+          "title": "_",
+          "type": 7,
+          "country": 1,
+          "position": [
+            6009.14990234375,
+            139.55999755859375,
+            4824.27978515625
+          ],
+          "regionId": 10507,
+          "area": "Knight's Cape",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.00023600961921526798,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20490,
+          "template": 344,
+          "name": "Arrow",
+          "title": "_",
+          "type": 7,
+          "country": 1,
+          "position": [
+            5960.41015625,
+            138.7100067138672,
+            4820.6201171875
+          ],
+          "regionId": 10507,
+          "area": "Knight's Cape",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.00019542786070519423,
+          "visitAsLandmark": false
+        }
+      ],
+      "geometryStatus": "itinerary_only_not_a_verified_path",
+      "legs": [
+        {
+          "fromId": 20090,
+          "fromName": "Ulmer",
+          "fromArea": "Ancient city Yarsk",
+          "toId": 20089,
+          "toName": "Wess",
+          "toArea": "Liberator hill"
+        },
+        {
+          "fromId": 20089,
+          "fromName": "Wess",
+          "fromArea": "Liberator hill",
+          "toId": 20099,
+          "toName": "Jin",
+          "toArea": "Knight's Cape"
+        },
+        {
+          "fromId": 20099,
+          "fromName": "Jin",
+          "fromArea": "Knight's Cape",
+          "toId": 20097,
+          "toName": "Bronx",
+          "toArea": "Knight's Cape"
+        },
+        {
+          "fromId": 20097,
+          "fromName": "Bronx",
+          "fromArea": "Knight's Cape",
+          "toId": 20098,
+          "toName": "Gimmlet",
+          "toArea": "Knight's Cape"
+        }
+      ]
+    },
+    {
+      "id": "R06",
+      "title": "Central Elixia → Evergreen Forest → Sacred Grove",
+      "stops": [
+        {
+          "id": 20100,
+          "template": 74,
+          "name": "Killie",
+          "title": "Ghost Evocator of the magical tower",
+          "type": 0,
+          "country": 1,
+          "position": [
+            6033.89990234375,
+            141.2100067138672,
+            4613.06982421875
+          ],
+          "regionId": 10514,
+          "area": "Central Elixia",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.0002011985756777545,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20511,
+          "template": 347,
+          "name": "Thousand year old plant",
+          "title": "_",
+          "type": 7,
+          "country": 1,
+          "position": [
+            5831.18017578125,
+            118.94999694824219,
+            4632.669921875
+          ],
+          "regionId": 10502,
+          "area": "Evergreen Forest",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00019238470992097198,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20082,
+          "template": 57,
+          "name": "Panashi",
+          "title": "Gate guard",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5764.9599609375,
+            120.27999877929688,
+            4725.1201171875
+          ],
+          "regionId": 10502,
+          "area": "Evergreen Forest",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00012353250263409977,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20084,
+          "template": 59,
+          "name": "Gap",
+          "title": "Gate guard",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5763.419921875,
+            120.29000091552734,
+            4726.64013671875
+          ],
+          "regionId": 10502,
+          "area": "Evergreen Forest",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00015746863287241844,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20430,
+          "template": 320,
+          "name": "Chest",
+          "title": "_",
+          "type": 7,
+          "country": 3,
+          "position": [
+            5673.18017578125,
+            130.0399932861328,
+            4772.22021484375
+          ],
+          "regionId": 10503,
+          "area": "Sacred Grove",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.00027767239791954076,
+          "visitAsLandmark": true
+        },
+        {
+          "id": 20083,
+          "template": 58,
+          "name": "Saddyn",
+          "title": "Gate guard",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5763.080078125,
+            120.33999633789062,
+            4719.2001953125
+          ],
+          "regionId": 10496,
+          "area": "Sınır / bölge etiketi yok",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00021038987477721546,
+          "visitAsLandmark": false
+        }
+      ],
+      "optional": [],
+      "geometryStatus": "itinerary_only_not_a_verified_path",
+      "legs": [
+        {
+          "fromId": 20098,
+          "fromName": "Gimmlet",
+          "fromArea": "Knight's Cape",
+          "toId": 20100,
+          "toName": "Killie",
+          "toArea": "Central Elixia"
+        },
+        {
+          "fromId": 20100,
+          "fromName": "Killie",
+          "fromArea": "Central Elixia",
+          "toId": 20511,
+          "toName": "Thousand year old plant",
+          "toArea": "Evergreen Forest"
+        },
+        {
+          "fromId": 20511,
+          "fromName": "Thousand year old plant",
+          "fromArea": "Evergreen Forest",
+          "toId": 20082,
+          "toName": "Panashi",
+          "toArea": "Evergreen Forest"
+        },
+        {
+          "fromId": 20082,
+          "fromName": "Panashi",
+          "fromArea": "Evergreen Forest",
+          "toId": 20084,
+          "toName": "Gap",
+          "toArea": "Evergreen Forest"
+        },
+        {
+          "fromId": 20084,
+          "fromName": "Gap",
+          "fromArea": "Evergreen Forest",
+          "toId": 20430,
+          "toName": "Chest",
+          "toArea": "Sacred Grove"
+        },
+        {
+          "fromId": 20430,
+          "fromName": "Chest",
+          "fromArea": "Sacred Grove",
+          "toId": 20083,
+          "toName": "Saddyn",
+          "toArea": "Sınır / bölge etiketi yok"
+        }
+      ]
+    },
+    {
+      "id": "R07",
+      "title": "Sarnis ve Eastern Elixia",
+      "stops": [
+        {
+          "id": 20075,
+          "template": 50,
+          "name": "Hardy",
+          "title": "Lumberjack",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5644.68017578125,
+            105.30000305175781,
+            4519.7900390625
+          ],
+          "regionId": 10501,
+          "area": "Sarnis",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.0001800950856744848,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20074,
+          "template": 49,
+          "name": "Mabath",
+          "title": "Executioner",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5644.3701171875,
+            105.76000213623047,
+            4517.83984375
+          ],
+          "regionId": 10501,
+          "area": "Sarnis",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.0001953241823428375,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20067,
+          "template": 42,
+          "name": "Retram",
+          "title": "Leader of the Defence of Yesode",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5619.43994140625,
+            102.87000274658203,
+            4521.56982421875
+          ],
+          "regionId": 10501,
+          "area": "Sarnis",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00018531006166487676,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20069,
+          "template": 44,
+          "name": "Admiral",
+          "title": "Defenders of Yesode",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5618.33984375,
+            102.86000061035156,
+            4520.009765625
+          ],
+          "regionId": 10501,
+          "area": "Sarnis",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.0002816843549113501,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 22153,
+          "template": 707,
+          "name": "Passage Portal",
+          "title": "_",
+          "type": 8,
+          "country": 1,
+          "position": [
+            5618.22021484375,
+            102.72000122070312,
+            4506.22021484375
+          ],
+          "regionId": 10501,
+          "area": "Sarnis",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.0003038373968513422,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 22263,
+          "template": 42,
+          "name": "Gabbin",
+          "title": "Defenders of Yesode",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5627.43017578125,
+            104.9000015258789,
+            4486.47021484375
+          ],
+          "regionId": 10501,
+          "area": "Sarnis",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.0002775954121744494,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20070,
+          "template": 45,
+          "name": "Yulris",
+          "title": "Defenders of Yesode",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5602.3701171875,
+            102.04000091552734,
+            4482.39990234375
+          ],
+          "regionId": 10501,
+          "area": "Sarnis",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00015254668618211104,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20079,
+          "template": 54,
+          "name": "Nada",
+          "title": "Jung Villager",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5601.27001953125,
+            101.95999908447266,
+            4483.7099609375
+          ],
+          "regionId": 10501,
+          "area": "Sarnis",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 4.368279763141723e-05,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20078,
+          "template": 53,
+          "name": "Lisa",
+          "title": "Waitress",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5590.8701171875,
+            104.43000030517578,
+            4516.669921875
+          ],
+          "regionId": 10501,
+          "area": "Sarnis",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00014084217745565964,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20077,
+          "template": 52,
+          "name": "Ellemia",
+          "title": "Publican",
+          "type": 2,
+          "country": 1,
+          "position": [
+            5591.22998046875,
+            104.43000030517578,
+            4518.5498046875
+          ],
+          "regionId": 10501,
+          "area": "Sarnis",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00019628687059777342,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20076,
+          "template": 51,
+          "name": "Jamuru",
+          "title": "Lumberjack's Assistant",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5559.9501953125,
+            105.86000061035156,
+            4488.06982421875
+          ],
+          "regionId": 10501,
+          "area": "Sarnis",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.0002627668034695006,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20068,
+          "template": 43,
+          "name": "Jin",
+          "title": "Defenders of Yesode",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5558.7001953125,
+            105.76000213623047,
+            4486.3798828125
+          ],
+          "regionId": 10501,
+          "area": "Sarnis",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00022778157605418304,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20081,
+          "template": 56,
+          "name": "Edono",
+          "title": "Ghostly administration assistant",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5681.10986328125,
+            101.98999786376953,
+            4435.72021484375
+          ],
+          "regionId": 10512,
+          "area": "Eastern Elixia",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 2.841666624619931,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20080,
+          "template": 55,
+          "name": "Ruay",
+          "title": "Spirit-like administration director",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5682.72021484375,
+            101.98999786376953,
+            4436.39990234375
+          ],
+          "regionId": 10512,
+          "area": "Eastern Elixia",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 6.438635098427642,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 22764,
+          "template": 70,
+          "name": "Hadek",
+          "title": "Kaos monk",
+          "type": 3,
+          "country": 3,
+          "position": [
+            5690.080078125,
+            110.30999755859375,
+            4537.0
+          ],
+          "regionId": 10512,
+          "area": "Eastern Elixia",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 7.81631377367703e-05,
+          "visitAsLandmark": false
+        }
+      ],
+      "optional": [
+        {
+          "id": 20123,
+          "template": 96,
+          "name": "&&&",
+          "title": "_",
+          "type": 7,
+          "country": 1,
+          "position": [
+            5787.64013671875,
+            119.12000274658203,
+            4540.7998046875
+          ],
+          "regionId": 10512,
+          "area": "Eastern Elixia",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 11.65544822883265,
+          "visitAsLandmark": false
+        }
+      ],
+      "geometryStatus": "itinerary_only_not_a_verified_path",
+      "legs": [
+        {
+          "fromId": 20083,
+          "fromName": "Saddyn",
+          "fromArea": "Sınır / bölge etiketi yok",
+          "toId": 20075,
+          "toName": "Hardy",
+          "toArea": "Sarnis"
+        },
+        {
+          "fromId": 20075,
+          "fromName": "Hardy",
+          "fromArea": "Sarnis",
+          "toId": 20074,
+          "toName": "Mabath",
+          "toArea": "Sarnis"
+        },
+        {
+          "fromId": 20074,
+          "fromName": "Mabath",
+          "fromArea": "Sarnis",
+          "toId": 20067,
+          "toName": "Retram",
+          "toArea": "Sarnis"
+        },
+        {
+          "fromId": 20067,
+          "fromName": "Retram",
+          "fromArea": "Sarnis",
+          "toId": 20069,
+          "toName": "Admiral",
+          "toArea": "Sarnis"
+        },
+        {
+          "fromId": 20069,
+          "fromName": "Admiral",
+          "fromArea": "Sarnis",
+          "toId": 22153,
+          "toName": "Passage Portal",
+          "toArea": "Sarnis"
+        },
+        {
+          "fromId": 22153,
+          "fromName": "Passage Portal",
+          "fromArea": "Sarnis",
+          "toId": 22263,
+          "toName": "Gabbin",
+          "toArea": "Sarnis"
+        },
+        {
+          "fromId": 22263,
+          "fromName": "Gabbin",
+          "fromArea": "Sarnis",
+          "toId": 20070,
+          "toName": "Yulris",
+          "toArea": "Sarnis"
+        },
+        {
+          "fromId": 20070,
+          "fromName": "Yulris",
+          "fromArea": "Sarnis",
+          "toId": 20079,
+          "toName": "Nada",
+          "toArea": "Sarnis"
+        },
+        {
+          "fromId": 20079,
+          "fromName": "Nada",
+          "fromArea": "Sarnis",
+          "toId": 20078,
+          "toName": "Lisa",
+          "toArea": "Sarnis"
+        },
+        {
+          "fromId": 20078,
+          "fromName": "Lisa",
+          "fromArea": "Sarnis",
+          "toId": 20077,
+          "toName": "Ellemia",
+          "toArea": "Sarnis"
+        },
+        {
+          "fromId": 20077,
+          "fromName": "Ellemia",
+          "fromArea": "Sarnis",
+          "toId": 20076,
+          "toName": "Jamuru",
+          "toArea": "Sarnis"
+        },
+        {
+          "fromId": 20076,
+          "fromName": "Jamuru",
+          "fromArea": "Sarnis",
+          "toId": 20068,
+          "toName": "Jin",
+          "toArea": "Sarnis"
+        },
+        {
+          "fromId": 20068,
+          "fromName": "Jin",
+          "fromArea": "Sarnis",
+          "toId": 20081,
+          "toName": "Edono",
+          "toArea": "Eastern Elixia"
+        },
+        {
+          "fromId": 20081,
+          "fromName": "Edono",
+          "fromArea": "Eastern Elixia",
+          "toId": 20080,
+          "toName": "Ruay",
+          "toArea": "Eastern Elixia"
+        },
+        {
+          "fromId": 20080,
+          "fromName": "Ruay",
+          "fromArea": "Eastern Elixia",
+          "toId": 22764,
+          "toName": "Hadek",
+          "toArea": "Eastern Elixia"
+        }
+      ]
+    },
+    {
+      "id": "R08",
+      "title": "Grasnoya Forest ve Ruler Forest",
+      "stops": [
+        {
+          "id": 20073,
+          "template": 48,
+          "name": "Biase",
+          "title": "Defenders of Yesode",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5519.4599609375,
+            100.3499984741211,
+            4388.2001953125
+          ],
+          "regionId": 10499,
+          "area": "Grasnoya forest",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00019918629456570458,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20072,
+          "template": 47,
+          "name": "Swanni",
+          "title": "Ghostly administration assistant",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5450.39013671875,
+            97.94000244140625,
+            4399.06982421875
+          ],
+          "regionId": 10499,
+          "area": "Grasnoya forest",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00022270389472518683,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20071,
+          "template": 46,
+          "name": "Breecher",
+          "title": "Spirit-like administration director",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5448.89990234375,
+            97.94000244140625,
+            4400.5400390625
+          ],
+          "regionId": 10499,
+          "area": "Grasnoya forest",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00010520733085954153,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20127,
+          "template": 99,
+          "name": "Stone",
+          "title": "_",
+          "type": 7,
+          "country": 1,
+          "position": [
+            5243.0,
+            101.20999908447266,
+            4322.0
+          ],
+          "regionId": 10500,
+          "area": "Ruler Forest",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 9.155273374972239e-07,
+          "visitAsLandmark": true
+        },
+        {
+          "id": 20457,
+          "template": 334,
+          "name": "Chest",
+          "title": "_",
+          "type": 7,
+          "country": 1,
+          "position": [
+            5240.18017578125,
+            101.9800033569336,
+            4277.740234375
+          ],
+          "regionId": 10500,
+          "area": "Ruler Forest",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.0002929879818007705,
+          "visitAsLandmark": true
+        },
+        {
+          "id": 20485,
+          "template": 343,
+          "name": "Sack",
+          "title": "_",
+          "type": 7,
+          "country": 1,
+          "position": [
+            5208.02978515625,
+            102.5,
+            4430.25
+          ],
+          "regionId": 10500,
+          "area": "Ruler Forest",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00021484374974534148,
+          "visitAsLandmark": true
+        },
+        {
+          "id": 20458,
+          "template": 335,
+          "name": "Barrel",
+          "title": "_",
+          "type": 7,
+          "country": 1,
+          "position": [
+            5231.47998046875,
+            106.04000091552734,
+            4517.66015625
+          ],
+          "regionId": 10500,
+          "area": "Ruler Forest",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00015746863321083952,
+          "visitAsLandmark": true
+        }
+      ],
+      "optional": [
+        {
+          "id": 20510,
+          "template": 346,
+          "name": "&&&",
+          "title": "_",
+          "type": 7,
+          "country": 1,
+          "position": [
+            5631.89013671875,
+            91.62000274658203,
+            4347.27001953125
+          ],
+          "regionId": 10499,
+          "area": "Grasnoya forest",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 51.38986744582405,
+          "visitAsLandmark": false
+        }
+      ],
+      "geometryStatus": "itinerary_only_not_a_verified_path",
+      "legs": [
+        {
+          "fromId": 22764,
+          "fromName": "Hadek",
+          "fromArea": "Eastern Elixia",
+          "toId": 20073,
+          "toName": "Biase",
+          "toArea": "Grasnoya forest"
+        },
+        {
+          "fromId": 20073,
+          "fromName": "Biase",
+          "fromArea": "Grasnoya forest",
+          "toId": 20072,
+          "toName": "Swanni",
+          "toArea": "Grasnoya forest"
+        },
+        {
+          "fromId": 20072,
+          "fromName": "Swanni",
+          "fromArea": "Grasnoya forest",
+          "toId": 20071,
+          "toName": "Breecher",
+          "toArea": "Grasnoya forest"
+        },
+        {
+          "fromId": 20071,
+          "fromName": "Breecher",
+          "fromArea": "Grasnoya forest",
+          "toId": 20127,
+          "toName": "Stone",
+          "toArea": "Ruler Forest"
+        },
+        {
+          "fromId": 20127,
+          "fromName": "Stone",
+          "fromArea": "Ruler Forest",
+          "toId": 20457,
+          "toName": "Chest",
+          "toArea": "Ruler Forest"
+        },
+        {
+          "fromId": 20457,
+          "fromName": "Chest",
+          "fromArea": "Ruler Forest",
+          "toId": 20485,
+          "toName": "Sack",
+          "toArea": "Ruler Forest"
+        },
+        {
+          "fromId": 20485,
+          "fromName": "Sack",
+          "fromArea": "Ruler Forest",
+          "toId": 20458,
+          "toName": "Barrel",
+          "toArea": "Ruler Forest"
+        }
+      ]
+    },
+    {
+      "id": "R09",
+      "title": "Morabia Frontier Post ve Morabia Fort",
+      "stops": [
+        {
+          "id": 20109,
+          "template": 83,
+          "name": "Morabia",
+          "title": "Margrave of Yesode",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5800.669921875,
+            153.16000366210938,
+            4436.0498046875
+          ],
+          "regionId": 10508,
+          "area": "Morabia frontier post",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00021038987477721546,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20111,
+          "template": 85,
+          "name": "Matan",
+          "title": "Margrave's Secretary",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5814.08984375,
+            152.63999938964844,
+            4435.39990234375
+          ],
+          "regionId": 10508,
+          "area": "Morabia frontier post",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00018425845480600384,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20115,
+          "template": 89,
+          "name": "Piji",
+          "title": "Guard of the Villa",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5841.740234375,
+            144.72999572753906,
+            4430.990234375
+          ],
+          "regionId": 10508,
+          "area": "Morabia frontier post",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.0003314838387870687,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20110,
+          "template": 84,
+          "name": "Lekrut",
+          "title": "Margrave's Gardner",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5842.759765625,
+            144.5800018310547,
+            4432.18017578125
+          ],
+          "regionId": 10508,
+          "area": "Morabia frontier post",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.000292974471989942,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20114,
+          "template": 88,
+          "name": "Laim",
+          "title": "Defenders of Yesode",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5860.2900390625,
+            142.49000549316406,
+            4449.990234375
+          ],
+          "regionId": 10508,
+          "area": "Morabia frontier post",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00023767140023092377,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20113,
+          "template": 87,
+          "name": "Ricky",
+          "title": "Defenders of Yesode",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5861.919921875,
+            142.5,
+            4450.43994140625
+          ],
+          "regionId": 10508,
+          "area": "Morabia frontier post",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 9.765624981810106e-05,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20112,
+          "template": 86,
+          "name": "Osmand",
+          "title": "Margrave's Chef",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5842.02978515625,
+            142.47000122070312,
+            4488.169921875
+          ],
+          "regionId": 10508,
+          "area": "Morabia frontier post",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00022861067900937997,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20116,
+          "template": 90,
+          "name": "Tonik",
+          "title": "Guard of the Villa",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5836.83984375,
+            137.5,
+            4394.72998046875
+          ],
+          "regionId": 10508,
+          "area": "Morabia frontier post",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.0001574659717367032,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20102,
+          "template": 76,
+          "name": "Negroni",
+          "title": "Knight of the Evocators",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5916.72021484375,
+            153.00999450683594,
+            4420.2099609375
+          ],
+          "regionId": 10509,
+          "area": "Morabia fort",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00021843509462778345,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20438,
+          "template": 326,
+          "name": "Tark",
+          "title": "Warrior leader",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5916.22998046875,
+            153.00999450683594,
+            4422.64990234375
+          ],
+          "regionId": 10509,
+          "area": "Morabia fort",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 9.9741604427818e-05,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20439,
+          "template": 327,
+          "name": "Sepan",
+          "title": "Master of the Magic Knights",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5925.2001953125,
+            153.89999389648438,
+            4419.06982421875
+          ],
+          "regionId": 10509,
+          "area": "Morabia fort",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00026283697110490874,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 22155,
+          "template": 707,
+          "name": "Passage Portal",
+          "title": "_",
+          "type": 8,
+          "country": 1,
+          "position": [
+            5938.75,
+            155.89999389648438,
+            4413.56005859375
+          ],
+          "regionId": 10509,
+          "area": "Morabia fort",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 5.8910783352631524e-05,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20106,
+          "template": 80,
+          "name": "Al",
+          "title": "Gate guard",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5950.18017578125,
+            155.36000061035156,
+            4402.14013671875
+          ],
+          "regionId": 10509,
+          "area": "Morabia fort",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00022269134871002883,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20105,
+          "template": 79,
+          "name": "Pul",
+          "title": "Gate supplier",
+          "type": 2,
+          "country": 1,
+          "position": [
+            5931.7001953125,
+            155.3800048828125,
+            4388.47998046875
+          ],
+          "regionId": 10509,
+          "area": "Morabia fort",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00019634735622047045,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20103,
+          "template": 77,
+          "name": "Jang",
+          "title": "Nightwalker Teacher",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5929.39990234375,
+            155.3800048828125,
+            4389.68017578125
+          ],
+          "regionId": 10509,
+          "area": "Morabia fort",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00020114579960865984,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 22763,
+          "template": 100,
+          "name": "Nosot",
+          "title": "Kaos monk",
+          "type": 3,
+          "country": 3,
+          "position": [
+            5963.27978515625,
+            161.36000061035156,
+            4429.43994140625
+          ],
+          "regionId": 10509,
+          "area": "Morabia fort",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00022269134878979648,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20108,
+          "template": 82,
+          "name": "Qyu",
+          "title": "Gate guard",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5934.41015625,
+            164.75,
+            4447.9599609375
+          ],
+          "regionId": 10509,
+          "area": "Morabia fort",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 10.257828223834478,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20440,
+          "template": 328,
+          "name": "Ikan",
+          "title": "Master archer",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5938.25,
+            166.74000549316406,
+            4469.77001953125
+          ],
+          "regionId": 10509,
+          "area": "Morabia fort",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 2.0289025625374325e-05,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20441,
+          "template": 329,
+          "name": "Horatio",
+          "title": "Clergyman",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5937.8701171875,
+            166.74000549316406,
+            4473.16015625
+          ],
+          "regionId": 10509,
+          "area": "Morabia fort",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00019538973253122052,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20101,
+          "template": 75,
+          "name": "Ophelia",
+          "title": "Paymaster of the Guards",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5946.919921875,
+            188.3800048828125,
+            4471.10009765625
+          ],
+          "regionId": 10509,
+          "area": "Morabia fort",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 26.94247390484623,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20104,
+          "template": 78,
+          "name": "Ann",
+          "title": "Gate guard",
+          "type": 0,
+          "country": 1,
+          "position": [
+            6015.64990234375,
+            132.35000610351562,
+            4446.10009765625
+          ],
+          "regionId": 10509,
+          "area": "Morabia fort",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00013824159681177897,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20107,
+          "template": 81,
+          "name": "Kay",
+          "title": "Gate guard",
+          "type": 0,
+          "country": 1,
+          "position": [
+            6021.31005859375,
+            132.1999969482422,
+            4446.2001953125
+          ],
+          "regionId": 10509,
+          "area": "Morabia fort",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00020393507164082327,
+          "visitAsLandmark": false
+        }
+      ],
+      "optional": [],
+      "geometryStatus": "itinerary_only_not_a_verified_path",
+      "legs": [
+        {
+          "fromId": 20458,
+          "fromName": "Barrel",
+          "fromArea": "Ruler Forest",
+          "toId": 20109,
+          "toName": "Morabia",
+          "toArea": "Morabia frontier post"
+        },
+        {
+          "fromId": 20109,
+          "fromName": "Morabia",
+          "fromArea": "Morabia frontier post",
+          "toId": 20111,
+          "toName": "Matan",
+          "toArea": "Morabia frontier post"
+        },
+        {
+          "fromId": 20111,
+          "fromName": "Matan",
+          "fromArea": "Morabia frontier post",
+          "toId": 20115,
+          "toName": "Piji",
+          "toArea": "Morabia frontier post"
+        },
+        {
+          "fromId": 20115,
+          "fromName": "Piji",
+          "fromArea": "Morabia frontier post",
+          "toId": 20110,
+          "toName": "Lekrut",
+          "toArea": "Morabia frontier post"
+        },
+        {
+          "fromId": 20110,
+          "fromName": "Lekrut",
+          "fromArea": "Morabia frontier post",
+          "toId": 20114,
+          "toName": "Laim",
+          "toArea": "Morabia frontier post"
+        },
+        {
+          "fromId": 20114,
+          "fromName": "Laim",
+          "fromArea": "Morabia frontier post",
+          "toId": 20113,
+          "toName": "Ricky",
+          "toArea": "Morabia frontier post"
+        },
+        {
+          "fromId": 20113,
+          "fromName": "Ricky",
+          "fromArea": "Morabia frontier post",
+          "toId": 20112,
+          "toName": "Osmand",
+          "toArea": "Morabia frontier post"
+        },
+        {
+          "fromId": 20112,
+          "fromName": "Osmand",
+          "fromArea": "Morabia frontier post",
+          "toId": 20116,
+          "toName": "Tonik",
+          "toArea": "Morabia frontier post"
+        },
+        {
+          "fromId": 20116,
+          "fromName": "Tonik",
+          "fromArea": "Morabia frontier post",
+          "toId": 20102,
+          "toName": "Negroni",
+          "toArea": "Morabia fort"
+        },
+        {
+          "fromId": 20102,
+          "fromName": "Negroni",
+          "fromArea": "Morabia fort",
+          "toId": 20438,
+          "toName": "Tark",
+          "toArea": "Morabia fort"
+        },
+        {
+          "fromId": 20438,
+          "fromName": "Tark",
+          "fromArea": "Morabia fort",
+          "toId": 20439,
+          "toName": "Sepan",
+          "toArea": "Morabia fort"
+        },
+        {
+          "fromId": 20439,
+          "fromName": "Sepan",
+          "fromArea": "Morabia fort",
+          "toId": 22155,
+          "toName": "Passage Portal",
+          "toArea": "Morabia fort"
+        },
+        {
+          "fromId": 22155,
+          "fromName": "Passage Portal",
+          "fromArea": "Morabia fort",
+          "toId": 20106,
+          "toName": "Al",
+          "toArea": "Morabia fort"
+        },
+        {
+          "fromId": 20106,
+          "fromName": "Al",
+          "fromArea": "Morabia fort",
+          "toId": 20105,
+          "toName": "Pul",
+          "toArea": "Morabia fort"
+        },
+        {
+          "fromId": 20105,
+          "fromName": "Pul",
+          "fromArea": "Morabia fort",
+          "toId": 20103,
+          "toName": "Jang",
+          "toArea": "Morabia fort"
+        },
+        {
+          "fromId": 20103,
+          "fromName": "Jang",
+          "fromArea": "Morabia fort",
+          "toId": 22763,
+          "toName": "Nosot",
+          "toArea": "Morabia fort"
+        },
+        {
+          "fromId": 22763,
+          "fromName": "Nosot",
+          "fromArea": "Morabia fort",
+          "toId": 20108,
+          "toName": "Qyu",
+          "toArea": "Morabia fort"
+        },
+        {
+          "fromId": 20108,
+          "fromName": "Qyu",
+          "fromArea": "Morabia fort",
+          "toId": 20440,
+          "toName": "Ikan",
+          "toArea": "Morabia fort"
+        },
+        {
+          "fromId": 20440,
+          "fromName": "Ikan",
+          "fromArea": "Morabia fort",
+          "toId": 20441,
+          "toName": "Horatio",
+          "toArea": "Morabia fort"
+        },
+        {
+          "fromId": 20441,
+          "fromName": "Horatio",
+          "fromArea": "Morabia fort",
+          "toId": 20101,
+          "toName": "Ophelia",
+          "toArea": "Morabia fort"
+        },
+        {
+          "fromId": 20101,
+          "fromName": "Ophelia",
+          "fromArea": "Morabia fort",
+          "toId": 20104,
+          "toName": "Ann",
+          "toArea": "Morabia fort"
+        },
+        {
+          "fromId": 20104,
+          "fromName": "Ann",
+          "fromArea": "Morabia fort",
+          "toId": 20107,
+          "toName": "Kay",
+          "toArea": "Morabia fort"
+        }
+      ]
+    },
+    {
+      "id": "R10",
+      "title": "Canyon of Secrets, Gravestone ve kalan sınır durakları",
+      "stops": [
+        {
+          "id": 20132,
+          "template": 707,
+          "name": "Space-time Portal",
+          "title": "_",
+          "type": 8,
+          "country": 1,
+          "position": [
+            6045.419921875,
+            78.77999877929688,
+            4307.0400390625
+          ],
+          "regionId": 10511,
+          "area": "Canyon of Secrets",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 8.735493495838123e-05,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20124,
+          "template": 97,
+          "name": "Cromin",
+          "title": "_",
+          "type": 7,
+          "country": 1,
+          "position": [
+            6045.0498046875,
+            78.80999755859375,
+            4301.02001953125
+          ],
+          "regionId": 10511,
+          "area": "Canyon of Secrets",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.0001963018158380161,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 22262,
+          "template": 748,
+          "name": "Gravestone",
+          "title": "_",
+          "type": 7,
+          "country": 1,
+          "position": [
+            5842.10009765625,
+            140.9199981689453,
+            4185.68017578125
+          ],
+          "regionId": 10510,
+          "area": "Grave of the noble sword",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00020109486220059276,
+          "visitAsLandmark": true
+        },
+        {
+          "id": 20118,
+          "template": 91,
+          "name": "Kronan",
+          "title": "Boozer",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5931.7998046875,
+            138.13999938964844,
+            4333.97021484375
+          ],
+          "regionId": 10518,
+          "area": "Yesode",
+          "optional": false,
+          "serverPresent": true,
+          "databaseDelta": 0.00029035354666502074,
+          "visitAsLandmark": false
+        }
+      ],
+      "optional": [
+        {
+          "id": 22407,
+          "template": 98,
+          "name": "Chest",
+          "title": "_",
+          "type": 7,
+          "country": 1,
+          "position": [
+            6041.759765625,
+            78.77999877929688,
+            4302.56982421875
+          ],
+          "regionId": 10511,
+          "area": "Canyon of Secrets",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.0002929712931204774,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20514,
+          "template": 348,
+          "name": "Chest",
+          "title": "_",
+          "type": 7,
+          "country": 1,
+          "position": [
+            5947.97998046875,
+            106.51000213623047,
+            4177.81005859375
+          ],
+          "regionId": 10511,
+          "area": "Canyon of Secrets",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 6.180016733205431e-05,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20431,
+          "template": 321,
+          "name": "Chest",
+          "title": "_",
+          "type": 7,
+          "country": 3,
+          "position": [
+            6105.75,
+            78.9000015258789,
+            4374.93017578125
+          ],
+          "regionId": 10511,
+          "area": "Canyon of Secrets",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.00017578787232247717,
+          "visitAsLandmark": false
+        },
+        {
+          "id": 20122,
+          "template": 95,
+          "name": "Fire Starter",
+          "title": "Fire Spirit",
+          "type": 0,
+          "country": 1,
+          "position": [
+            5523.89013671875,
+            107.41999816894531,
+            4249.64013671875
+          ],
+          "regionId": 10516,
+          "area": "Yesode",
+          "optional": true,
+          "serverPresent": true,
+          "databaseDelta": 0.0001933581800321442,
+          "visitAsLandmark": false
+        }
+      ],
+      "geometryStatus": "itinerary_only_not_a_verified_path",
+      "legs": [
+        {
+          "fromId": 20107,
+          "fromName": "Kay",
+          "fromArea": "Morabia fort",
+          "toId": 20132,
+          "toName": "Space-time Portal",
+          "toArea": "Canyon of Secrets"
+        },
+        {
+          "fromId": 20132,
+          "fromName": "Space-time Portal",
+          "fromArea": "Canyon of Secrets",
+          "toId": 20124,
+          "toName": "Cromin",
+          "toArea": "Canyon of Secrets"
+        },
+        {
+          "fromId": 20124,
+          "fromName": "Cromin",
+          "fromArea": "Canyon of Secrets",
+          "toId": 22262,
+          "toName": "Gravestone",
+          "toArea": "Grave of the noble sword"
+        },
+        {
+          "fromId": 22262,
+          "fromName": "Gravestone",
+          "fromArea": "Grave of the noble sword",
+          "toId": 20118,
+          "toName": "Kronan",
+          "toArea": "Yesode"
+        }
+      ]
+    }
+  ],
+  "runtimeModified": false,
+  "sources": [
+    {
+      "file": "Tcd\\TRegion.tcd",
+      "sha256": "aff90ee49f470969c72fcb76e7d3e8e0ede539e90c7f0ac76ee3ad4a8f1eaf14"
+    },
+    {
+      "file": "Tcd\\TNPC00000405.tcd",
+      "sha256": "3591e41832d819e58d4a3baf0c31d12371e04dcfdcf967be4d16c2b0c3df385f"
+    },
+    {
+      "file": "Tcd\\TMinimap.tcd",
+      "sha256": "73d8502dc5a0ccc4a6ec6d1ae89ff34d19ae5855038a243b9d24371085d1c9ba"
+    },
+    {
+      "file": "Tcd\\TPortal.tcd",
+      "sha256": "95e5dd7adf45703416f9efeabf430cd815bf25b24c1a9a296a18d3c241af7db2"
+    },
+    {
+      "file": "Tcd\\TMAP.tcd",
+      "sha256": "b3a93f2780b81db36e42e5317083105976613b4a6e7ac3c44009cceccab7eb91"
+    },
+    {
+      "file": "Data\\MAP\\EM2000001_41.tmu",
+      "sha256": "20a39befa65d2858d6824dc71269b28f40daea9b8b3d59e6bb27587a1bc6d4cb"
+    }
+  ]
+}
