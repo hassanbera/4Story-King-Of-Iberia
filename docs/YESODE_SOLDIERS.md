@@ -38,3 +38,15 @@ Tanılama, Caelen'in Marad yanında 289 HP ile doğduğunu, doğru hücreye ekle
 34 noktalı kayıtlı rota mevcut oyuna yedekli uygulandı. Yalnız Map süreci yeniden başlatıldı; Login/World süreçleri açık kaldı. SQL son nokta kontrolü ve sunucu günlüğü doğrulandı: 34 kayıtlı nokta + motorun başlangıç noktası = 35 bellek noktası. Önceki yanlış yükseklikte otomatik ara nokta eklenmiyor. Mevcut 30 sakin korunuyor; rota kaydı devre dışı. Caelen’in yeni rotayı oyun içinde tamamlayıp Remings yanında durmasının kullanıcı kabulü bekleniyor.
 
 Kullanıcı Caelen’in Remings’e vardığını doğruladı; yürüyüşte duraksama bildirdi. Ortak koridor veri modeline geçiş ve mevcut yerel yol dosyalarının denetimi `docs/navigation/YESODE_ROAD_NETWORK.md` içinde kayıtlıdır. Bu geçiş sırasında çalışan oyun yeniden başlatılmadı.
+
+
+## İkinci acemi — Edric
+
+32701 kimlikli Edric, insan erkek Warrior olarak mevcut oyuna eklendi. Derion seviye 1 kılıç/kalkan ve Bronze Lightweight zırh takımı kullanır. İnsan erkek görünüşü kabul edilmiş Tovan şablonundan (32606, yüz 6506), davranış/stat şablonu Caelen'den alındı; boy ölçeği 0,75. Caelen'in yüzü ve ölçeği korunur.
+
+`world/yesode/soldiers/edric.json` kendi yol noktalarını içermez: Yesode bölgesinde Marad → Remings hedeflerini seçer. Ortak koridorun ikinci noktasından başlar (`startWaypoint=1`); böylece Caelen ile üst üste doğmaz. Son 33 nokta ortak planlayıcıdan alınır, hedef aynı Remings durağıdır. Yeni yürüyüş kaydı alınmadı.
+
+Hazırlama: `python scripts/prepare_soldier.py --config world/yesode/soldiers/edric.json`.
+Yükleme/geri alma: oyun kapalıyken `scripts/Install-AdditionalSoldier.ps1 -Name edric` veya `-Name edric -Rollback`. İlk Caelen kurulumunun geri alma paketine dokunulmaz. Sonradan başka TMon değişikliği varsa hash kontrolü toplu geri almaya izin vermez; önce daha yeni eklemenin kendi paketi ele alınmalıdır.
+
+Yükleme sırasında COPY_ONLY/CHECKSUM SQL yedeği ve VERIFYONLY kontrolü alındı; yalnız Map yeniden başlatıldı. Önceki bütün statik monster/spawn/mapmon/path satırları dışlanan yeni ID dışında sayım ve checksum ile karşılaştırıldı. Önceki 2.360 istemci kaydı, Caelen dahil, bayt düzeyinde aynı kaldı. Veritabanı 30 sakin ve 2 asker içeriyor; Caelen 34, Edric 33 SQL yol noktası kullanıyor. Sunucu Edric'in başlangıçta 289 HP ile doğru harita hücresine girdiğini kaydetti. Görünüş ve yürüyüşün kullanıcı kontrolü bekleniyor; önceki duraksama davranışına bu eklemede müdahale edilmedi.

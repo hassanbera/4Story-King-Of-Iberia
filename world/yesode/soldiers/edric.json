@@ -1,0 +1,31 @@
+{
+  "title": "Yesode Acemisi",
+  "race": "human",
+  "sex": "male",
+  "class": "warrior",
+  "country": 1,
+  "level": 1,
+  "equipment": {
+    "0": 121,
+    "1": 1021,
+    "3": 4601,
+    "5": 4602,
+    "6": 4603,
+    "7": 4605,
+    "8": 4604
+  },
+  "movement": "walk",
+  "onArrival": "hold",
+  "navigation": {
+    "region": "yesode",
+    "from": "marad",
+    "to": "remings",
+    "startWaypoint": 1
+  },
+  "id": 32701,
+  "name": "Edric",
+  "size": 0.75,
+  "clientTemplate": 32606,
+  "serverTemplate": 32700,
+  "routeStatus": "shared_corridor_ready_for_visual_test"
+}

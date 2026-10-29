@@ -1,7 +1,9 @@
 """Prepare one soldier chart/SQL candidate; never modifies the running game."""
+import argparse
 import hashlib
 import json
 import math
+import re
 from pathlib import Path
 import struct
 
@@ -16,7 +18,17 @@ def sha(data):
 
 
 def main():
-    config = json.loads((ROOT / 'world/yesode/soldiers/caelen.json').read_text())
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--config', type=Path, default=ROOT/'world/yesode/soldiers/caelen.json')
+    args = parser.parse_args()
+    config = json.loads(args.config.read_text())
+    if not re.fullmatch(r'[A-Za-z][A-Za-z0-9]{1,23}', config['name']) or not 32700 <= config['id'] <= 32767:
+        raise ValueError('Invalid prototype soldier name or reserved ID')
+    if (config['race'], config['sex'], config['class']) != ('human','male','warrior'):
+        raise ValueError('This prototype builder supports human male warriors only')
+    size = config.get('size', .77)
+    if not .70 <= size <= .82:
+        raise ValueError('Unexpected human prototype size')
     if 'navigation' in config:
         nav = config['navigation']
         region_file = (ROOT/'world/navigation'/f"{nav['region']}.json").resolve()
@@ -26,6 +38,10 @@ def main():
         route = graph.route(region['locations'][nav['from']]['node'], region['locations'][nav['to']]['node'])
         if not route:
             raise ValueError('No verified regional route for soldier')
+        offset = nav.get('startWaypoint', 0)
+        if not isinstance(offset, int) or not 0 <= offset <= len(route)-5:
+            raise ValueError('Invalid start point inside the shared corridor')
+        route = route[offset:]
         config['waypoints'] = [graph.positions[n] for n in route]
     points = config['waypoints']
     if not 5 <= len(points) <= 190:
@@ -49,6 +65,7 @@ def main():
         equip[int(slot)] = item
     struct.pack_into('<19H', raw, base['equip_offset'], *equip)
     struct.pack_into('<4H', raw, base['skill_offset'], 726, 0, 0, 0)
+    struct.pack_into('<f', raw, base['size_offset'], size)
     # Rewrite variable strings after patching fixed offsets, from right to left.
     for start, end, text in ((base['name_start'], base['name_end'], config['name']),
                              (4, base['name_start'], config['title'])):
@@ -61,12 +78,15 @@ def main():
     assert all(checked[i]['raw'] == r['raw'] for i, r in records.items())
     assert checked[ident]['equip'] == tuple(equip)
     assert checked[ident]['title'] == config['title']
-    out = ROOT / 'runtime/soldier-caelen'
+    out = ROOT / ('runtime/soldier-'+config['name'].lower())
     out.mkdir(exist_ok=True)
+    if (out/'installed.json').exists():
+        raise ValueError('Keep the installed soldier rollback package intact')
     (out / 'TMon.candidate.tcd').write_bytes(candidate)
     (out / 'TMon.before.tcd').write_bytes(original)
-    manifest = {'id': ident, 'chartPath': str(chart), 'beforeSha256': sha(original),
-                'candidateSha256': sha(candidate), 'unchangedExistingRecords': len(records)}
+    manifest = {'id': ident, 'name': config['name'], 'chartPath': str(chart), 'beforeSha256': sha(original),
+                'candidateSha256': sha(candidate), 'unchangedExistingRecords': len(records),
+                'waypointCount': len(points), 'navigation': config.get('navigation')}
     (out / 'manifest.json').write_text(json.dumps(manifest, indent=2))
 
     # Clone established friendly humanoid warrior behavior, without copying loot.
@@ -95,7 +115,7 @@ BEGIN TRANSACTION;
 SELECT * INTO #soldier FROM dbo.TMONSTERCHART WHERE wID={config['serverTemplate']};
 IF @@ROWCOUNT <> 1 THROW 51000, 'Warrior template missing', 1;
 UPDATE #soldier SET wID={ident},szName='{config['name']}',szName2='{config['name']}',bClass=0,
- bLevel=1,wMonAttr=1,fSize=0.77,bRoamProb=100,wSkill1=726,wSkill2=0,wSkill3=0,wSkill4=0;
+ bLevel=1,wMonAttr=1,fSize={size},bRoamProb=100,wSkill1=726,wSkill2=0,wSkill3=0,wSkill4=0;
 INSERT dbo.TMONSTERCHART SELECT * FROM #soldier;
 SELECT * INTO #spawn FROM dbo.TMONSPAWNCHART WHERE wID=32600;
 UPDATE #spawn SET wID={ident},fPosX={x},fPosY={y},fPosZ={z},bRoamType=6;
